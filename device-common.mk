@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
     camera.device@3.4-impl \
+    camera.exynos5 \
     Snap
 
 # Configstore
