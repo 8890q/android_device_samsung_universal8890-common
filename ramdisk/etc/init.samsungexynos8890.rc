@@ -5,6 +5,8 @@ import init.samsung.rc
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
+    write /sys/block/zram0/comp_algorithm lz4
+
 on init
     start watchdogd
     mkdir /preload 0771 system system
