@@ -883,6 +883,9 @@
     <!-- The device supports freeform window management -->
     <bool name="config_freeformWindowManagement">true</bool>
 
+    <!-- For performance and storage reasons, limit the number of fingerprints per user -->
+    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
+
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
