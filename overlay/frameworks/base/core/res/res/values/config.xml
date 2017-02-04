@@ -153,6 +153,9 @@
     -->
     <integer name="config_LTE_RSRP_threshold_type">2</integer>
 
+    <!-- The default iface on which to monitor data use -->
+    <string name="config_datause_iface" translatable="false">rmnet4</string>
+
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
