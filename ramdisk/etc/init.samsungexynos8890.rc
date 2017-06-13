@@ -197,6 +197,9 @@ on init
     # DATA_INJECTION
     chown system radio /sys/class/sensors/ssp_sensor/data_injection_enable
 
+    # Set HW revision (should be ro.revision on note fe)
+    setprop ro.boot.hardware.revision ${ro.boot.hw_rev}
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
