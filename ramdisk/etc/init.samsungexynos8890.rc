@@ -622,6 +622,8 @@ on fs
     swapon_all /fstab.samsungexynos8890
     setprop ro.crypto.fuse_sdcard true
 
+    setprop sys.usb.ffs.aio_compat 1
+
     # Permissions for TouchScreen
     chown system radio /sys/class/sec/tsp/cmd
     chown system system /sys/class/sec/tsp/input/enabled
