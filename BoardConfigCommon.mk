@@ -166,7 +166,7 @@ BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Shims
-TARGET_LD_SHIM_LIBS := \
+TARGET_LD_SHIM_LIBS += \
     /vendor/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so \
     /vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
     /vendor/lib64/libexynosdisplay.so|/vendor/lib64/libexynosdisplay_shim.so \
