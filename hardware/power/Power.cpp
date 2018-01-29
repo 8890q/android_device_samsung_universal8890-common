@@ -71,7 +71,7 @@ out:
     set("/sys/power/cpuhotplug/max_online_cpu", interactive ? "8" : "6");
 
     setProfile(interactive ? PowerProfile::POWER_SAVE : PowerProfile::BALANCED);
-    
+
     return Void();
 }
 
@@ -108,16 +108,23 @@ Return<void> Power::powerHint(PowerHint hint, int32_t data) {
     return Void();
 }
 
-Return<void> Power::setFeature(Feature feature __unused, bool activate __unused) {
+Return<void> Power::setFeature(Feature feature, bool activate) {
     if (!initialized) {
         initialize();
     }
 
-#ifdef TAP_TO_WAKE_NODE
     if (feature == Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE) {
-        set(TAP_TO_WAKE_NODE, activate ? "1" : "0");
+        if (activate) {
+            std::string screen_size = get<std::string>("/sys/class/graphics/fb0/virtual_size", "");
+            if (!screen_size.empty()) {
+                set("/sys/class/sec/tsp/cmd", "aod_enable,1");
+                set("/sys/class/sec/tsp/cmd", "set_aod_rect," + screen_size + ",0,0");
+            }
+        } else {
+            set("/sys/class/sec/tsp/cmd", "aod_enable,0");
+            set("/sys/class/sec/tsp/cmd", "set_aod_rect,0,0,0,0");
+        }
     }
-#endif
 
     return Void();
 }
@@ -156,7 +163,7 @@ void Power::initialize() {
     set(cpuInteractivePaths.at(1) + "/timer_rate", "20000");
     set(cpuInteractivePaths.at(1) + "/timer_slack", "20000");
     set(cpuInteractivePaths.at(1) + "/min_sample_time", "40000");
-    set(cpuInteractivePaths.at(1) + "/boostpulse_duration", "40000");  
+    set(cpuInteractivePaths.at(1) + "/boostpulse_duration", "40000");
 
     initialized = true;
 }
