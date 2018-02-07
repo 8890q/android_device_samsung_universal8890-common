@@ -618,8 +618,8 @@ on charger
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor powersave
     
 on fs
-    mount_all /fstab.samsungexynos8890
-    swapon_all /fstab.samsungexynos8890
+    mount_all /vendor/etc/fstab.samsungexynos8890
+    swapon_all /vendor/etc/fstab.samsungexynos8890
     setprop ro.crypto.fuse_sdcard true
 
     setprop sys.usb.ffs.aio_compat 1
