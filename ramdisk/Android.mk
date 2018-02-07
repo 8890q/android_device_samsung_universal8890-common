@@ -5,7 +5,7 @@ LOCAL_MODULE		:= fstab.samsungexynos8890
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= BOOT
 LOCAL_SRC_FILES     := etc/fstab.samsungexynos8890
-LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -20,7 +20,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE		:= init.recovery.samsungexynos8890.rc
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES        := etc/init.recovery.samsungexynos8890.rc
+LOCAL_SRC_FILES     := etc/init.recovery.samsungexynos8890.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
