@@ -1,0 +1,19 @@
+# Graphics
+vendor/lib/hw/hwcomposer.exynos5.so
+vendor/lib/hw/memtrack.universal8890.so
+vendor/lib/libexynosdisplay.so
+vendor/lib/libexynosutils.so
+vendor/lib/libexynosv4l2.so
+vendor/lib/libfimg.so
+vendor/lib/libhdmi.so
+vendor/lib/libhwcutils.so
+vendor/lib/libmpp.so
+vendor/lib64/hw/hwcomposer.exynos5.so
+vendor/lib64/hw/memtrack.universal8890.so
+vendor/lib64/libexynosdisplay.so
+vendor/lib64/libexynosutils.so
+vendor/lib64/libexynosv4l2.so
+vendor/lib64/libfimg.so
+vendor/lib64/libhdmi.so
+vendor/lib64/libhwcutils.so
+vendor/lib64/libmpp.so
