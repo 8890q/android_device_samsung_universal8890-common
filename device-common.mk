@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
+# Filesystem tools for resizing system partitions
+PRODUCT_PACKAGES += \
+    e2fsck_static \
+    resize2fs_static
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.samsung
