@@ -40,6 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LKMD
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.log_stats=true \
+    ro.lmk.use_minfree_levels=true \
     ro.lmk.use_psi=false
 
 # Media
