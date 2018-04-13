@@ -539,10 +539,12 @@ on boot
     chown system system /dev/cpuset/foreground/cpus
     chown system system /dev/cpuset/background/cpus
     chown system system /dev/cpuset/system-background/cpus
+    chown system system /dev/cpuset/restricted/cpus
     chmod 664 /dev/cpuset/top-app/cpus
     chmod 664 /dev/cpuset/foreground/cpus
     chmod 664 /dev/cpuset/background/cpus
     chmod 664 /dev/cpuset/system-background/cpus
+    chmod 666 /dev/cpuset/restricted/cpus
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/top-app/mems 0
     write /dev/cpuset/foreground/cpus 0-2,4-7
@@ -551,6 +553,7 @@ on boot
     write /dev/cpuset/background/mems 0
     write /dev/cpuset/system-background/cpus 0-2
     write /dev/cpuset/system-background/mems 0
+    write /dev/cpuset/restricted/cpus 0-3
 
     # Switch Device
     chown system radio /sys/class/sec/switch/afc_disable
