@@ -1,0 +1,7 @@
+libGLES_mali.so
+libMcClient.so
+libMcRegistry.so
+libOpenCL.so
+libOpenCL.so.1
+libOpenCL.so.1.1
+vulkan.exynos5.so
