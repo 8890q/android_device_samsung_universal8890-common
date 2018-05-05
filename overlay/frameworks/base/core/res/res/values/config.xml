@@ -947,7 +947,7 @@
          and less churn of the storage media.
          The PERSIST mode results in data persisting in the journal beyond the life of
          a transaction, so it interacts poorly with SECURE_DELETE. -->
-    <string name="db_default_journal_mode" translatable="false">PERSIST</string>
+    <string name="db_default_journal_mode" translatable="false">MEMORY</string>
 
     <!-- The database synchronization mode when using the default journal mode.
          FULL is safest and preserves durability at the cost of extra fsyncs.
