@@ -204,6 +204,7 @@ on post-fs
 
 on late-fs
     # Start services for Boot Animation
+    start hwservicemanager
     start servicemanager
     start surfaceflinger
     start bootanim
