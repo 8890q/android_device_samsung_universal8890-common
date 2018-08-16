@@ -142,6 +142,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # SECComp filters
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib64/libexynoscamera.so|/system/lib64/libexynoscamera_shim.so \
+    /system/lib/libexynoscamera.so|/system/lib/libexynoscamera_shim.so
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
