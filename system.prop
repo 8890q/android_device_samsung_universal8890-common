@@ -1,0 +1,10 @@
+# Read DS/SS property
+import /efs/factory.prop
+
+# Boot device
+ro.boot.bootdevice=155a0000.ufs
+
+#Cmc properties
+ro.cmc.device_type=pd
+ro.cmc.version=2.0
+
