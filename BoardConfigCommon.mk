@@ -82,3 +82,6 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOOTLOADER_BOARD_NAME := universal8890
 TARGET_SOC := exynos8890
+
+# Inherit from the proprietary version
+-include vendor/samsung/universal8890-common/BoardConfigVendor.mk
