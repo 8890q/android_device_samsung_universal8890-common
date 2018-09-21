@@ -88,6 +88,9 @@ TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOOTLOADER_BOARD_NAME := universal8890
 TARGET_SOC := exynos8890
 
+# Renderscript
+OVERRIDE_RS_DRIVER := libRSDriverArm.so
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_HAVE_SAMSUNG_WIFI          := true
