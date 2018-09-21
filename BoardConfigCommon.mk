@@ -34,6 +34,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53.a57
 
+# Audio
+TARGET_AUDIOHAL_VARIANT := samsung
+
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
