@@ -88,6 +88,9 @@ TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOOTLOADER_BOARD_NAME := universal8890
 TARGET_SOC := exynos8890
 
+# Renderscript
+OVERRIDE_RS_DRIVER := libRSDriverArm.so
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
