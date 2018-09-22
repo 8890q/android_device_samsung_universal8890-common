@@ -108,6 +108,9 @@ OVERRIDE_RS_DRIVER := libRSDriverArm.so
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SECComp filters
+BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
