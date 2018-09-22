@@ -108,6 +108,9 @@ TARGET_SOC := exynos8890
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos8890
+
 # Renderscript
 OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
