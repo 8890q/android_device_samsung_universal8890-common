@@ -175,6 +175,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.samsungexynos8890 \
+    init.samsung.rc \
+    init.samsungexynos8890.rc \
+    init.samsungexynos8890.usb.rc \
+    ueventd.samsungexynos8890.rc
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -184,6 +192,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3-radio-service.samsung \
     android.hardware.radio@1.2 \
     vendor.samsung.hardware.radio@1.2 \
+    init.baseband.rc \
     libxml2
 
 # Copy stock APN config as lineage one seams to be quite broken and outdated
