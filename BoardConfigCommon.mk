@@ -105,6 +105,9 @@ TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 # Renderscript
 OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
+# SECComp filters
+BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_HAVE_SAMSUNG_WIFI          := true
