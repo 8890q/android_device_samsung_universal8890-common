@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey
+    
+# DTB tool    
+PRODUCT_HOST_PACKAGES += \
+    dtbhtoolExynos
 
 # Fingerprint
 PRODUCT_PACKAGES += \
