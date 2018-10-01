@@ -195,6 +195,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-service.exynos
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.samsungexynos8890 \

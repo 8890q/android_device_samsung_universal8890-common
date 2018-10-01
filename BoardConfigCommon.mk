@@ -105,6 +105,9 @@ TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOOTLOADER_BOARD_NAME := universal8890
 TARGET_SOC := exynos8890
 
+# Power
+TARGET_POWERHAL_VARIANT := samsung
+
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
