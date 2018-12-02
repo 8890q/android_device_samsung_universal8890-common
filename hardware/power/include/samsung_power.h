@@ -37,7 +37,7 @@ static const std::vector<std::string> cpuInteractivePaths = {
 };
 
 /* double tap to wake node */
-//#define TAP_TO_WAKE_NODE "/sys/android_touch/doubletap2wake"
+#define TAP_TO_WAKE_NODE "/sys/android_touch/doubletap2wake"
 
 /* interactive normal profile */
 #define INTERACTIVE_NORMAL_L_HISPEED_FREQ "858000"
