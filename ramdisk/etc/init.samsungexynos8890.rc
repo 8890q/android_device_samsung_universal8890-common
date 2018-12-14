@@ -915,6 +915,14 @@ on fs
     # Permission for DRM Key
     chmod 0644 /factory/wv.keys
 
+    # Restore the previous batt_capacity_max (if it exists)
+    copy /efs/Battery/prev_batt_capacity_max /sys/class/power_supply/battery/batt_capacity_max
+
+on shutdown
+    # Fix permissions then store the current batt_capacity_max value in the EFS partition
+    chmod 600 /sys/class/power_supply/battery/batt_capacity_max
+    copy /sys/class/power_supply/battery/batt_capacity_max /efs/Battery/prev_batt_capacity_max
+
 service charger /charger
     class charger
     seclabel u:r:healtd:s0
