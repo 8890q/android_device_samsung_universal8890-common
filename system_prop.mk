@@ -31,7 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwc.winupdate=1 \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
-    ro.opengles.version=196610
+    ro.opengles.version=196610 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
