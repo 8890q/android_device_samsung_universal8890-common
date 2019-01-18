@@ -63,6 +63,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Display
+TARGET_SCREEN_DENSITY := 560
+
 # Exclude AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
