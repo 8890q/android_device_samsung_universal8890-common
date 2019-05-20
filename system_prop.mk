@@ -38,6 +38,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=mdfpp
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=0
+
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.fw_dl_on_boot=false \
