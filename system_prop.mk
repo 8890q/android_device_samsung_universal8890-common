@@ -37,6 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=mdfpp
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=0
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
