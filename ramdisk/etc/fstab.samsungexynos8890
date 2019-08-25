@@ -9,7 +9,7 @@
 /dev/block/platform/155a0000.ufs/by-name/SYSTEM           /system     ext4      ro,errors=panic,noload                                                                                  wait,recoveryonly
 /dev/block/platform/155a0000.ufs/by-name/EFS              /efs        ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic             wait,check,recoveryonly
 /dev/block/platform/155a0000.ufs/by-name/CACHE            /cache      ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic             wait,check
-/dev/block/platform/155a0000.ufs/by-name/USERDATA         /data       ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic             wait,check,quota,encryptable=footer,reservedsize=128M
+/dev/block/platform/155a0000.ufs/by-name/USERDATA         /data       ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic             wait,check,quota,encryptable=/dev/block/platform/155a0000.ufs/by-name/TOMBSTONES,reservedsize=128M
 
 # ADD FOR OTA
 /dev/block/platform/155a0000.ufs/by-name/OTA              /misc       emmc      defaults                                                                                                defaults
