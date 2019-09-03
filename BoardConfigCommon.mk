@@ -61,6 +61,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE  := ext4
 BOARD_HAS_LARGE_FILESYSTEM := true
