@@ -180,6 +180,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
     $(COMMON_PATH)/configs/nfc/nfc_key:$(TARGET_COPY_OUT_SYSTEM)/etc/nfc_key
 
+# Offmode charger
+# Use LineageOS images if available, aosp ones otherwise
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    lineage_charger_res_images
+
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
