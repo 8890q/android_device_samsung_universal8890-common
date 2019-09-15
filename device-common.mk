@@ -337,6 +337,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui_vendor
 
+# s-pen
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/samsung-sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
