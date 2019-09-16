@@ -50,7 +50,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 
 # Camera
-TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_8890
+TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := //$(COMMON_PATH):libcamera_parameters_8890
 
 # Charger
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
