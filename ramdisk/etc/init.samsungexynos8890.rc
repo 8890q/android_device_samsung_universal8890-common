@@ -930,6 +930,7 @@ on shutdown
 
 service charger /system/bin/charger
     class charger
+    capabilities SYS_BOOT
     seclabel u:r:healtd:s0
 
 # Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
