@@ -39,6 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
     ro.sf.init.lcd_density=560 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.surface_flinger.protected_contents=true \
     ro.zygote.disable_gl_preload=true
 
 # Keystore
