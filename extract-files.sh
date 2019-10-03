@@ -78,4 +78,7 @@ sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/l
 sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
 sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib64/libsec-ril.so
 
+# Remove wpa_supplicant service from wifi.rc
+sed -i "41,51d" $BLOB_ROOT/vendor/etc/init/wifi.rc
+
 "$MY_DIR"/setup-makefiles.sh
