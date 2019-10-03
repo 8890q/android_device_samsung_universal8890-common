@@ -87,4 +87,7 @@ patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib/li
 patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
 patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib64/libsec-ril.so
 
+# Remove wpa_supplicant service from wifi.rc
+sed -i "41,51d" $BLOB_ROOT/vendor/etc/init/wifi.rc
+
 "$MY_DIR"/setup-makefiles.sh
