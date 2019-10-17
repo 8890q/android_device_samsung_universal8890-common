@@ -928,7 +928,7 @@ on shutdown
     chmod 600 /sys/class/power_supply/battery/batt_capacity_max
     copy /sys/class/power_supply/battery/batt_capacity_max /efs/Battery/prev_batt_capacity_max
 
-service charger /charger
+service charger /system/bin/charger
     class charger
     seclabel u:r:healtd:s0
 
