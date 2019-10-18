@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Iorapd: Enable iorapd perfetto tracing for app starts
+PRODUCT_PRODUCT_PROPERTIES += \
+    iorapd.perfetto.enable=true
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
