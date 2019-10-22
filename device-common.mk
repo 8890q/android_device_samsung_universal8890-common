@@ -155,12 +155,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
