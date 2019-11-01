@@ -19,6 +19,8 @@ COMMON_PATH := device/samsung/universal8890-common
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    device/samsung/universal8890-common/overlay/lineage-sdk
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
