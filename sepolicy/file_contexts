@@ -307,7 +307,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.atrace@1\.0-service\.universal8890               u:object_r:hal_atrace_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.samsung    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service\.universal8890            u:object_r:hal_bluetooth_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey                       u:object_r:hal_drm_clearkey_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service\.clearkey                       u:object_r:hal_drm_clearkey_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine                       u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.samsung                      u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-armnn                u:object_r:hal_neuralnetworks_default_exec:s0
