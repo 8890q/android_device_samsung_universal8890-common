@@ -38,6 +38,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=mdfpp
 
+# LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.kill_timeout_ms=1000 \
+    ro.lmk.log_stats=true \
+    ro.lmk.upgrade_pressure=60 \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.use_psi=false
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0 \
