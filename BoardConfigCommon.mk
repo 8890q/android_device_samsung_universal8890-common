@@ -105,6 +105,9 @@ GREEN_LED_PATH := "/sys/class/leds/led_g/brightness"
 BLUE_LED_PATH := "/sys/class/leds/led_b/brightness"
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
+# LMKD stats logging
+TARGET_LMKD_STATS_LOG := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 41943040
 BOARD_CACHEIMAGE_PARTITION_SIZE    := 209715200
