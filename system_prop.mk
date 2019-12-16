@@ -37,6 +37,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=mdfpp
 
+# LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.log_stats=true \
+    ro.lmk.use_psi=false
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0 \
