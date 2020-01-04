@@ -149,11 +149,13 @@ vendor/lib/libexynosutils.so
 vendor/lib/libion_exynos.so
 vendor/lib/libmpp.so
 vendor/lib/egl/libGLES_mali.so
+vendor/lib/hw/vulkan.exynos5.so|ae955e66f7ffd7a7b95d1308153dbd80247d1a70
 vendor/lib64/libcsc.so
 vendor/lib64/libexynosutils.so
 vendor/lib64/libion_exynos.so
 vendor/lib64/libmpp.so
 vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/hw/vulkan.exynos5.so|b9e8beff8afa583eac522dcbe8cf4e417203f28c
 
 # Keymaster
 lib/libskeymaster.so
