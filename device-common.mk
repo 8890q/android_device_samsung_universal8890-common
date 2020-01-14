@@ -157,9 +157,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-# Iorapd: Enable iorapd perfetto tracing for app starts
+# iorapd
 PRODUCT_PRODUCT_PROPERTIES += \
-    iorapd.perfetto.enable=true
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
