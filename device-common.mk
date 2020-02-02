@@ -86,9 +86,6 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     Snap
 
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/camera/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-impl \
