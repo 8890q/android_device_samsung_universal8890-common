@@ -1,7 +1,7 @@
-# platform_app.te
+# domain.te
 
-allow platform_app {
+allow domain {
     debugfs_ion
     debugfs_mali
     debugfs_mali_mem
-}:dir search;
+}:dir r_dir_perms;
