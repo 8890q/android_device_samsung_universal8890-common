@@ -1,11 +1,5 @@
 # bootanim.te
 
-allow bootanim{
-     debugfs_ion
-     debugfs_mali
-     debugfs_mali_mem
-}:dir search;
-
 allow bootanim video_device:chr_file rw_file_perms;
 
 get_prop(bootanim, userspace_reboot_exported_prop)

@@ -1,7 +1,0 @@
-# untrusted_app.te
-
-allow untrusted_app {
-    debugfs_ion
-    debugfs_mali
-    debugfs_mali_mem
-}:dir search;

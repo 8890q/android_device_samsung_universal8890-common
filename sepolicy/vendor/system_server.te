@@ -5,12 +5,6 @@ binder_call(system_server, gpsd)
 # used to access the fwk_sensor_hwservice over hwbinder
 binder_call(system_server, hal_camera_default)
 
-allow system_server {
-    debugfs_ion
-    debugfs_mali
-    debugfs_mali_mem
-}:dir r_dir_perms;
-
 allow system_server debugfs_ion:file r_file_perms;
 
 allow system_server sensor_device:chr_file rw_file_perms;
