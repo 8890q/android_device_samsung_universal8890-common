@@ -33,7 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=560 \
-    ro.sf.init.lcd_density=560
+    ro.sf.init.lcd_density=560 \
+    ro.zygote.disable_gl_preload=true
 
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
