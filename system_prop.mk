@@ -66,6 +66,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.slsi_platform=1
 
+# Widevine
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.direct.interface=p2p-dev-wlan0
