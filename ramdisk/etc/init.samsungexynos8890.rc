@@ -4,6 +4,7 @@ import /vendor/etc/init/hw/init.samsung.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
+    mount tracefs /sys/kernel/tracing
 
     write /sys/block/zram0/comp_algorithm lz4
 
@@ -318,6 +319,10 @@ on boot
     # Allow to access debugfs for system:system
     chmod 755 /sys/kernel/debug
     chown system system /sys/kernel/debug
+
+    # Allow to access tracefs for system:system
+    chmod 0755 /sys/kernel/tracing
+    chown system system /sys/kernel/tracing
 
     # Set up kernel tracing, but disable it by default
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
