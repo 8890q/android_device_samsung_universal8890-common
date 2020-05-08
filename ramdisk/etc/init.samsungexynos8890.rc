@@ -981,3 +981,5 @@ on property:ro.debuggable=1
     
 on property:sys.boot_completed=1
     setprop sys.io.scheduler bfq
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1    
