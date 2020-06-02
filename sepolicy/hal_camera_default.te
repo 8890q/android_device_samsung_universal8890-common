@@ -1,0 +1,16 @@
+allow hal_camera_default sysfs_camera:dir search;
+allow hal_camera_default sysfs_camera:file rw_file_perms;
+
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
+allow hal_camera_default camera_data_file:file { open read };
+allow hal_camera_default camera_data_file:dir search;
+
+allow hal_camera_default debugfs_ion:dir search;
+
+allow hal_camera_default sysfs_camera:lnk_file read;
+allow hal_camera_default camera_data_file:dir write;
+allow hal_camera_default camera_data_file:dir add_name;
+allow hal_camera_default camera_data_file:file create;
+allow hal_camera_default camera_data_file:file write;
+
+vndbinder_use(hal_camera_default)

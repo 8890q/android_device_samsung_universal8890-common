@@ -163,6 +163,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # SECComp filters
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/libexynoscamera.so|/system/lib64/libexynoscamera_shim.so \
