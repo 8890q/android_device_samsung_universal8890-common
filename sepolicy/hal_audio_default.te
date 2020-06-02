@@ -1,0 +1,5 @@
+allow hal_audio_default efs_file:dir search;
+allow hal_audio_default sec_efs_file:dir search;
+allow hal_audio_default sec_efs_file:file read;
+allow hal_audio_default sec_efs_file:file open;
+

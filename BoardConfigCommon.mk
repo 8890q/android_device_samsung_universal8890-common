@@ -157,6 +157,10 @@ OVERRIDE_RS_DRIVER := libRSDriverArm.so
 # SECComp filters
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 
+# SELinux
+BOARD_SEPOLICY_DIRS := $(COMMON_PATH)/sepolicy
+BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/libexynoscamera.so|/system/lib64/libexynoscamera_shim.so \
