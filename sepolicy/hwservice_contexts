@@ -1,0 +1,7 @@
+vendor.samsung.hardware.gnss::ISecGnss                           u:object_r:hal_sec_gnss_hwservice:s0
+vendor.samsung.hardware.nfc::ISecNfc                             u:object_r:hal_sec_nfc_hwservice:s0
+vendor.samsung.hardware.radio::IRadio                            u:object_r:hal_sec_radio_hwservice:s0
+vendor.samsung.hardware.radio.channel::ISecChannel               u:object_r:hal_sec_radio_channel_hwservice:s0
+vendor.samsung.hardware.radio.configsvc::IConfigSvc              u:object_r:hal_sec_radio_configsvc_hwservice:s0
+vendor.samsung.hardware.radio.secbridge::ISecBridge              u:object_r:hal_sec_radio_secbridge_hwservice:s0
+vendor.samsung.hardware.radio.sechook::IOemHook                  u:object_r:hal_sec_radio_sechook_hwservice:s0
