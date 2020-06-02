@@ -1,0 +1,4 @@
+allow hwservicemanager gpsd:binder transfer;
+allow hwservicemanager lhd:binder transfer;
+allow hwservicemanager hal_radio_configsvc_default:binder call;
+

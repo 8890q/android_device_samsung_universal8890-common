@@ -1,0 +1,11 @@
+allow hal_nfc_default hal_sec_nfc_hwservice:hwservice_manager { add find };
+allow hal_nfc_default nfc_data_file:dir search;
+allow hal_nfc_default nfc_data_file:file { read write };
+allow hal_nfc_default nfc_data_file:file open;
+allow hal_nfc_default nfc_data_file:file getattr;
+allow hal_nfc_default nfc_data_file:dir write;
+allow hal_nfc_default nfc_data_file:dir add_name;
+allow hal_nfc_default nfc_data_file:file create;
+
+set_prop(hal_nfc_default, nfc_prop)
+
