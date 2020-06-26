@@ -202,6 +202,14 @@ on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
+on late-fs
+    # Start services for Boot Animation
+    start servicemanager
+    start surfaceflinger
+    start bootanim
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.samsungexynos8890 --late
+
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
     setprop vold.post_fs_data_done 1
@@ -630,7 +638,7 @@ on charger
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor interactive
 
 on fs
-    mount_all /vendor/etc/fstab.samsungexynos8890
+    mount_all /vendor/etc/fstab.samsungexynos8890  --early
     swapon_all /vendor/etc/fstab.samsungexynos8890
     setprop ro.crypto.fuse_sdcard true
 
