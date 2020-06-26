@@ -211,6 +211,7 @@ lib64/omx/libOMX.Exynos.WMV.Decoder.so
 # Radio - RIL
 etc/mtu-conf.xml
 lib/libsecnativefeature.so
+lib/libsecril-client.so|efe0e5588f4a91b112c3012afb6a871f97b1f0f8
 lib/vendor.samsung.hardware.radio.channel@1.0.so
 lib/vendor.samsung.hardware.radio.secbridge@1.0.so
 lib/vendor.samsung.hardware.radio.sechook@1.0.so
