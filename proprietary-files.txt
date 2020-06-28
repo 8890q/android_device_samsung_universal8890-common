@@ -236,6 +236,12 @@ vendor/lib64/libsec-ril-dsds.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libvndsecril-client.so
 
+# Renderscript - from G950FXXS9DTEB
+vendor/lib/libRSDriverArm.so|5be71eb8211a720a07b463930927c29722e9427f
+vendor/lib/libbccArm.so|4cb4060248991d72ae9fb0c39b97589cad55c6ef
+vendor/lib64/libRSDriverArm.so|d90aef5e298f8379f59663c5c56458b429b1099b
+vendor/lib64/libbccArm.so|57fbd00728967fc467833737c83f1653cef15a27
+
 # RIL
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_chn.bin
