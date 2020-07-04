@@ -122,11 +122,10 @@
 # Data Files
 
 # Biometrics
-/data/biometrics(/.*)?             u:object_r:fingerprintd_data_file:s0
 /data/vendor/biometrics(/.*)?      u:object_r:fingerprintd_vendor_data_file:s0
 
 # Camera
-/data/camera(/.*)?                u:object_r:camera_data_file:s0
+/data/vendor/camera(/.*)?          u:object_r:camera_vendor_data_file:s0
 
 # Display
 /data/vendor/display(/.*)?        u:object_r:display_vendor_data_file:s0
@@ -153,7 +152,7 @@
 /data/misc/mcRegistry(/.*)?       u:object_r:mobicore_data_file:s0
 
 # Wifi
-/data/misc/conn(/.*)?             u:object_r:wifi_data_file:s0
+/data/vendor/conn(/.*)?           u:object_r:wifi_vendor_data_file:s0
 
 ####################################
 # Sysfs
@@ -225,7 +224,10 @@
 /sys/module/modem_ctrl_ss310ap/parameters/ds_detect     u:object_r:sysfs_modem:s0
 
 # MST node
-/sys/devices/virtual/mstldo/mst_drv	                 u:object_r:sysfs_mst:s0
+/sys/devices/virtual/mstldo(/.*) 	                 u:object_r:sysfs_mst:s0
+
+# Power
+/sys/power/rtc_status                                  u:object_r:sysfs_power:s0
 
 # Rild
 /sys/devices/virtual/misc/multipdp(/.*)                 u:object_r:sysfs_multipdp:s0
@@ -247,6 +249,7 @@
 /sys/devices/virtual/sec/bsp(/.*)?                u:object_r:sysfs_sec_bsp:s0 
 /sys/devices/virtual/sec/motor(/.*)?              u:object_r:sysfs_sec_motor:s0 
 /sys/devices/virtual/sec/sdcard(/.*)?             u:object_r:sysfs_sec_sdcard:s0 
+/sys/devices/virtual/sec/sddata(/.*)?             u:object_r:sysfs_sec_sddata:s0 
 /sys/devices/virtual/sec/sdinfo(/.*)?             u:object_r:sysfs_sec_sdinfo:s0 
 /sys/devices/virtual/sec/sec_heavy_cpu(/.*)?      u:object_r:sysfs_sec_sec_heavy_cpu:s0 
 /sys/devices/virtual/sec/sec-pa-thermistor(/.*)?  u:object_r:sysfs_sec_pa_thermistor:s0 
@@ -268,33 +271,37 @@
 # Wifi
 /sys/module/dhd/parameters/firmware_path    u:object_r:sysfs_wifi:s0
 /sys/module/dhd/parameters/nvram_path       u:object_r:sysfs_wifi:s0
+/sys/wifi(/.*)?                             u:object_r:sysfs_wifi:s0
 
 ####################################
 # Daemons
 #
 
-/(vendor|system/vendor)/bin/mcDriverDaemon    u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/modemloader       u:object_r:modemloader_exec:s0
-/(vendor|system/vendor)/bin/wifiloader        u:object_r:wifiloader_exec:s0
-/(vendor|system/vendor)/bin/macloader         u:object_r:macloader_exec:s0
-/(vendor|system/vendor)/bin/hw/gpsd           u:object_r:gpsd_exec:s0
-/(vendor|system/vendor)/bin/sensorhubservice  u:object_r:sensorhubservice_exec:s0
-/(vendor|system/vendor)/bin/hw/lhd            u:object_r:lhd_exec:s0
 /(vendor|system/vendor)/bin/cbd               u:object_r:cpboot-daemon_exec:s0
+/(vendor|system/vendor)/bin/mcDriverDaemon    u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/sensorhubservice  u:object_r:sensorhubservice_exec:s0
+/(vendor|system/vendor)/bin/hw/gpsd           u:object_r:gpsd_exec:s0
+/(vendor|system/vendor)/bin/hw/lhd            u:object_r:lhd_exec:s0
+/(vendor|system/vendor)/bin/hw/macloader      u:object_r:macloader_exec:s0
 
 ####################################
 # HIDL
 #
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.samsung    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service\.universal8890            u:object_r:hal_bluetooth_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey                       u:object_r:hal_drm_clearkey_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine                       u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.samsung                      u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service\.exynos                       u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.radio@1\.3-radio-service\.samsung                u:object_r:hal_radio_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.3-service\.samsung                   u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/sec\.android\.hardware\.nfc@1\.1-service                            u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-exynos           u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.samsung                        u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@1\.0-service                        u:object_r:hal_gnss_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.nfc@1\.0-service                         u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.radio\.configsvc@1\.0-service            u:object_r:hal_radio_configsvc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung_slsi\.hardware\.ExynosHWCServiceTW@1\.0-service     u:object_r:hal_vendor_hwcservice_default_exec:s0
 
+# files in /system
+/system/bin/move_widevine_data\.sh                         u:object_r:move-widevine-data-sh_exec:s0
