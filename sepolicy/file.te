@@ -31,6 +31,8 @@ type proc_reset_reason, fs_type, proc_type;
 type proc_simslot_count, fs_type, proc_type;
 type proc_input_devices, fs_type, proc_type;
 type proc_sec, fs_type, proc_type;
+type proc_audit, fs_type, proc_type;
+type proc_bluetooth, fs_type, proc_type;
 
 ### sysfs types
 type sysfs_mdnie, fs_type, sysfs_type, mlstrustedobject;
@@ -72,6 +74,7 @@ type sysfs_sec_wlan, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_sec_bsp, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_sec_motor, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_sec_sdcard, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_sddata, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_sec_sdinfo, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_sec_sec_heavy_cpu, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_sec_pa_thermistor, fs_type, sysfs_type, mlstrustedobject;
@@ -79,12 +82,17 @@ type sysfs_sec_ap_thermistor, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_mst, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_dsm, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_hmt, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_vmscan, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_scsi_host, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_pcie, fs_type, sysfs_type, mlstrustedobject;
 
 ### data types
+type camera_vendor_data_file, data_file_type, file_type;
 type display_vendor_data_file, file_type, data_file_type;
 type fingerprintd_vendor_data_file, data_file_type, file_type;
 type radio_vendor_data_file, data_file_type, file_type;
 type gps_vendor_file, data_file_type, file_type;
+type wifi_vendor_data_file, data_file_type, file_type;
 
 # debugfs
 type debugfs_mali, fs_type, debugfs_type;
