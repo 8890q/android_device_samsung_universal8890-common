@@ -57,6 +57,7 @@ allow init gps_data_file:file lock;
 allow init gps_device:chr_file { open read write };
 allow init gps_vendor_file:fifo_file write;
 allow init gps_vendor_file:file lock;
+allow init gps_device:chr_file ioctl;
 
 # CPU permissions
 allow init sysfs_devices_system_cpu:file rw_file_perms;
@@ -123,13 +124,24 @@ allow init sysfs_dsm:lnk_file read;
 allow init sysfs_dsm:file setattr;
 allow init sysfs_input:lnk_file read;
 allow init sysfs_hmt:file setattr;
-allow init sysfs_bluetooth_writable:file { setattr };
+allow init sysfs_bluetooth_writable:file { setattr open read write };
+allow init sysfs_sec_sdcard:file setattr;
+allow init sysfs_sec_sdinfo:file setattr;
+allow init sysfs_sec_sensorhub:file setattr;
+allow init sysfs_mst:file setattr;
+allow init sysfs_scsi_host:dir relabelfrom;
+allow init sysfs_scsi_host:file { relabelfrom setattr };
+allow init sysfs_sec_sddata:file setattr;
+allow init sysfs_vmscan:file setattr;
+allow init sysfs_pcie:file setattr;
 
 # Proc files
 allow init proc_reset_reason:file { rw_file_perms setattr };
 allow init proc_vm:file rw_file_perms;
 allow init proc_simslot_count:file rw_file_perms;
 allow init proc_sec:file { rw_file_perms setattr };
+allow init proc_audit:file setattr;
+allow init proc_bluetooth:file setattr;
 
 # Sockets
 allow init socket_device:sock_file { read write getattr setattr create unlink };

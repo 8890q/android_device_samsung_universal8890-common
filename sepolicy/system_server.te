@@ -63,4 +63,3 @@ allow system_server debugfs_ion:file { getattr open read };
 allow system_server debugfs_mali:dir { open read search };
 
 allow system_server crash_dump:process getpgid;
-

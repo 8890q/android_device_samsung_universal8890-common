@@ -53,9 +53,6 @@ allow rild mnt_user_file:lnk_file r_file_perms;
 # Modem firmware download
 allow rild radio_block_device:blk_file r_file_perms;
 
-# persist.ril.modem.board
-set_prop(modemloader, radio_prop)
-
 # /dev/knox_kap
 allow rild knox_device:chr_file r_file_perms;
 
@@ -81,6 +78,9 @@ allow rild hal_sec_radio_sechook_hwservice:hwservice_manager add;
 
 allow rild hal_radio_default:binder call;
 allow rild imei_efs_file:file setattr;
+
+allow rild hal_audio_default:dir search;
+allow rild hal_audio_default:file { getattr open read };
 
 set_prop(rild, cpboot-daemon_prop)
 

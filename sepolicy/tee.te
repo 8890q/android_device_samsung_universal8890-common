@@ -17,7 +17,7 @@ allow tee property_socket:sock_file write;
 allow tee init:unix_stream_socket connectto;
 
 # sys.mobicore.enable
-set_prop(tee, tee_prop)
+set_prop(tee, vendor_mobicoredaemon_prop)
 
 allow tee prov_efs_file:dir search;
 
