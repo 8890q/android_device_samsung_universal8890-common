@@ -43,6 +43,7 @@ allow lhd sysfs_lhd:file open;
 allow lhd gps_vendor_file:dir add_name;
 allow lhd gps_vendor_file:file create;
 allow lhd gps_vendor_file:fifo_file create;
+allow lhd sysfs_sec_sensorhub:file { open read write };
 
 # Allow hal to take wakelock
 wakelock_use(lhd)

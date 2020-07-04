@@ -7,5 +7,4 @@ allow hal_nfc_default nfc_data_file:dir write;
 allow hal_nfc_default nfc_data_file:dir add_name;
 allow hal_nfc_default nfc_data_file:file create;
 
-set_prop(hal_nfc_default, nfc_prop)
-
+set_prop(hal_nfc_default, vendor_nfc_prop)
