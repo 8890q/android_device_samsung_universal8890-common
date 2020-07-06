@@ -1,4 +1,7 @@
 # CP-Boot Daemon
+type vendor_camera_prop, property_type;
+
+# CP-Boot Daemon
 type cpboot-daemon_prop, property_type;
 
 # HWC
