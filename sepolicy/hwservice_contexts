@@ -1,3 +1,4 @@
+vendor.samsung.hardware.camera.provider::ISecCameraProvider      u:object_r:hal_camera_hwservice:s0
 vendor.samsung.hardware.gnss::ISecGnss                           u:object_r:hal_sec_gnss_hwservice:s0
 vendor.samsung.hardware.nfc::ISecNfc                             u:object_r:hal_sec_nfc_hwservice:s0
 vendor.samsung.hardware.radio::IRadio                            u:object_r:hal_sec_radio_hwservice:s0
