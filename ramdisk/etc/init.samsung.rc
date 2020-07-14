@@ -973,9 +973,12 @@ service mobicore /vendor/bin/mcDriverDaemon -r /vendor/app/mcRegistry/FFFFFFFF00
     group system
     disabled
 
-# HWC data
 on property:sys.boot_completed=1
+    # HWC data
     mkdir /data/vendor/log/hwc 0771 system graphics
+    # Hack for vibrator service
+    stop vendor.vibrator-1-3
+    start vendor.vibrator-1-3
 
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
