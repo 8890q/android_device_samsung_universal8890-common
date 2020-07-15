@@ -316,10 +316,6 @@ vendor/lib/libhwc2onfbadapter.so
 vendor/lib64/libhwc2on1adapter.so
 vendor/lib64/libhwc2onfbadapter.so
 
-# Thermal
-vendor/lib/hw/thermal.universal8890.so
-vendor/lib64/hw/thermal.universal8890.so
-
 # Wifi
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
