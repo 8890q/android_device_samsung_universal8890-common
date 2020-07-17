@@ -1,3 +1,6 @@
+### dev types
+type NAD_REFER_block_device, dev_type;
+
 ### efs types
 type app_efs_file, file_type;
 type battery_efs_file, file_type;
@@ -7,6 +10,8 @@ type sec_efs_file, file_type;
 type nfc_efs_file, file_type;
 type ota_efs_file, file_type;
 type pfw_efs_file, file_type;
+type ssm_efs_file, file_type;
+type cpdebug_efs_file, file_type;
 
 # widewine, drm
 type cpk_efs_file, file_type;
@@ -93,6 +98,8 @@ type fingerprintd_vendor_data_file, data_file_type, file_type;
 type radio_vendor_data_file, data_file_type, file_type;
 type gps_vendor_file, data_file_type, file_type;
 type wifi_vendor_data_file, data_file_type, file_type;
+type firmware_data_file, file_type, data_file_type, core_data_file_type;
+type cas_data_file, file_type, data_file_type, core_data_file_type;
 
 # debugfs
 type debugfs_mali, fs_type, debugfs_type;
