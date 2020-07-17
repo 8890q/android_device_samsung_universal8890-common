@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/swcodec/ld.config.txt
 
+# Atrace HAL
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service.universal8890
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
