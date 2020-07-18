@@ -111,6 +111,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
+# FastCharge
+PRODUCT_PACKAGES += \
+    FastCharge
+
 # Filesystem tools for resizing system partitions
 PRODUCT_PACKAGES += \
     e2fsck_static \
