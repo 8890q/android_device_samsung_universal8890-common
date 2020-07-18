@@ -107,6 +107,10 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# FastCharge
+PRODUCT_PACKAGES += \
+    FastCharge
+
 # Filesystem tools for resizing system partitions
 PRODUCT_PACKAGES += \
     e2fsck_static \
