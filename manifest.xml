@@ -374,6 +374,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.samsung_slsi.hardware.configstore</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IExynosHWCConfigs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.samsung_slsi.hardware.ExynosHWCServiceTW</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
