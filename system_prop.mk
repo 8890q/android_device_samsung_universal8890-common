@@ -36,6 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.running_without_sync_framework=false \
     ro.surface_flinger.vsync_event_phase_offset_ns=0 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=0 \
+    ro.vendor.ddk.set.afbc=1 \
     ro.zygote.disable_gl_preload=true
 
 # Keystore
