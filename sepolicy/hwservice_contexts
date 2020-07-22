@@ -7,3 +7,4 @@ vendor.samsung.hardware.radio.configsvc::IConfigSvc              u:object_r:hal_
 vendor.samsung.hardware.radio.secbridge::ISecBridge              u:object_r:hal_sec_radio_secbridge_hwservice:s0
 vendor.samsung.hardware.radio.sechook::IOemHook                  u:object_r:hal_sec_radio_sechook_hwservice:s0
 vendor.samsung_slsi.hardware.ExynosHWCServiceTW::IExynosHWCServiceTW  u:object_r:hal_vendor_surfaceflinger_hwservice:s0
+vendor.samsung_slsi.hardware.configstore::IExynosHWCConfigs  u:object_r:hal_configstore_ISurfaceFlingerConfigs:s0

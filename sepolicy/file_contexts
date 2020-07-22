@@ -320,6 +320,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@2\.4-service            u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@1\.0-service                        u:object_r:hal_gnss_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.radio\.configsvc@1\.0-service            u:object_r:hal_radio_configsvc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung_slsi\.hardware\.configstore@1\.0-service		       u:object_r:hal_configstore_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung_slsi\.hardware\.ExynosHWCServiceTW@1\.0-service     u:object_r:hal_vendor_hwcservice_default_exec:s0
 
 # files in /system
