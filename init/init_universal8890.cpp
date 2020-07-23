@@ -77,3 +77,12 @@ void set_ro_product_prop(char const prop[], char const value[])
         property_override(prop_name.c_str(), value, false);
     }
 }
+
+void set_build_fingerprint(char const value[])
+{
+    property_override("ro.build.fingerprint", value, false);
+    property_override("ro.bootimage.build.fingerprint", value, false);
+    property_override("ro.odm.build.fingerprint", value, false);
+    property_override("ro.system.build.fingerprint", value, false);
+    property_override("ro.vendor.build.fingerprint", value, false);
+};
