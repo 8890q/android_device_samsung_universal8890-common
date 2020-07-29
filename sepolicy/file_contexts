@@ -211,6 +211,7 @@
 
 # Graphics/Panel
 /sys/devices/13900000.dsim/lcd/panel(/.*)?          u:object_r:sysfs_graphics:s0
+/sys/class/lcd/panel/smart_on                       u:object_r:sysfs_graphics:s0
 
 # GPU
 /sys/devices/14ac0000.mali(/.*)?                    u:object_r:sysfs_mali:s0

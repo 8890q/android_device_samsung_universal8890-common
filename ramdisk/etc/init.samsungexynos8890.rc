@@ -715,6 +715,7 @@ on fs
     chown system system /sys/class/lcd/panel/SVC_OCTA
     chown system system /sys/class/lcd/panel/dpui
     chown system system /sys/class/lcd/panel/dpui_dbg
+    chown system system /sys/class/lcd/panel/smart_on
 
     # Permissions for MDNIE
     chown system system /sys/class/mdnie/mdnie/mode
