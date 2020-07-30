@@ -134,6 +134,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1-impl \
     android.hardware.gnss@1.0-service
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/gps/gps.conf:system/etc/gps.conf
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
