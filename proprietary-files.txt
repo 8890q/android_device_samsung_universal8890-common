@@ -33,7 +33,7 @@ vendor/firmware/bcm4359C0_semco.hcd
 
 # Camera
 lib/libexynoscamera.so
-lib/libexynoscamera3.so
+lib/libexynoscamera3.so|eedea7c25de711dc82f8ead4820c2a989dc95794
 lib/libexynosgscaler.so
 lib/libexynosscaler.so
 lib/libhwjpeg.so
