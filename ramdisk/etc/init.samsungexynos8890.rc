@@ -702,6 +702,7 @@ on fs
     chown system system /sys/class/mdnie/mdnie/whiteRGB
     chown system system /sys/class/mdnie/mdnie/color_lens
     chown system system /sys/class/mdnie/mdnie/light_notification
+    chown system system /sys/class/mdnie/mdnie/lux
 
     # Permissions for System LSI NFC
     # NFC : Permissions for NFC
