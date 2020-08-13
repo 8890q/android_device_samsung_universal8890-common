@@ -26,6 +26,7 @@ etc/firmware/moon-dsp5-dsm.bin
 etc/firmware/moon-dsp5-dsm.wmfw
 etc/firmware/moon-dsp6-ez2-control.wmfw
 etc/firmware/moon-dsp6-lpsd-control.bin
+lib/libaudioroute.so|46fcafe8de5c4fe078ad9e9e613bc260fd137106
 
 # Bluetooth
 vendor/firmware/bcm4359C0_murata.hcd
