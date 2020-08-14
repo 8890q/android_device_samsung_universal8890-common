@@ -73,6 +73,8 @@ allow gpsd fwk_sensor_hwservice:hwservice_manager find;
 
 allow system_server gpsd:binder call;
 
+allow gpsd self:netlink_kobject_uevent_socket read;
+
 # Allow hal to take wakelock
 wakelock_use(gpsd)
 
