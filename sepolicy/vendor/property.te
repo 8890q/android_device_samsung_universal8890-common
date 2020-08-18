@@ -1,8 +1,8 @@
 # Camera
-type vendor_camera_prop, property_type;
+vendor_internal_prop(vendor_camera_prop);
 
 # HWC
-type vendor_hwc_prop, property_type;
+vendor_internal_prop(vendor_hwc_prop);
 
 # NFC
-type vendor_nfc_prop, property_type;
+vendor_internal_prop(vendor_nfc_prop);
