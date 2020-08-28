@@ -221,7 +221,7 @@
 	<!-- media playback -->
 	<path name="media-handset">
 		<ctl name="HPOUT3L Input 1" value="AIF1RX1" />
-		<ctl name="HPOUT3L Input 2" value="AIF1RX2" />
+		<ctl name="HPOUT3R Input 1" value="AIF1RX2" />
 		<ctl name="RCV Switch" value="1" />
 	</path>
 
