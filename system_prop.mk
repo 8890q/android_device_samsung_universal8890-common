@@ -23,8 +23,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.systemaudiodebug=arizona
 
 # Factory Reset Protection
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.frp.pst=/dev/block/persistent
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.frp.pst=/dev/block/persistent
 
 # Fastbootd
 PRODUCT_PROPERTY_OVERRIDES += \
