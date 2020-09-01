@@ -16,7 +16,7 @@ ro.cmc.device_type=pd
 ro.cmc.version=2.0
 
 # Factory Reset Protection
-ro.frp.pst=/dev/block/persistent
+#ro.frp.pst=/dev/block/persistent
 
 # Graphics
 debug.hwc.winupdate=1
