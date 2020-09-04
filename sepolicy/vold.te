@@ -9,3 +9,5 @@ allow vold sysfs_mmc:file w_file_perms;
 r_dir_file(vold, proc_dt_firmware)
 
 allow vold sysfs_scsi_host:file rw_file_perms;
+
+dontaudit vold hal_bootctl_hwservice:hwservice_manager find;
