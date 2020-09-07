@@ -1254,10 +1254,10 @@
 		<ctl name="Third Mic Switch" value="1" />
 	</path>
 
-	<path name="headset-mic">
+	<!--path name="headset-mic">
 		<ctl name="LHPF1 Input 1" value="IN2L" />
 		<ctl name="Headset Mic Switch" value="1" />
-	</path>
+	</path-->
 
 	<!-- media input -->
 	<path name="media-mic">
@@ -1266,8 +1266,9 @@
 	</path>
 
 	<path name="media-headset-mic">
+		<ctl name="LHPF1 Input 1" value="IN2L" />
+		<ctl name="Headset Mic Switch" value="1" />	
 		<path name="capture_channel_left" />
-		<path name="headset-mic" />
 	</path>
 
 	<path name="media-headphone-mic">
@@ -1284,18 +1285,20 @@
 	</path>
 
 	<!-- camcorder input -->
-	<path name="camcorder-mic">
+	<!-- path name="camcorder-mic">
 		<path name="capture_channel_invert" />
 		<path name="main-mic" />
 		<path name="2nd-mic" />
-	</path>
+	</path> -->
 
 	<path name="camcorder-headset-mic">
 		<path name="media-headset-mic" />
 	</path>
 
 	<path name="camcorder-headphone-mic">
-		<path name="camcorder-mic" />
+		<path name="capture_channel_invert" />
+		<path name="main-mic" />
+		<path name="2nd-mic" />
 	</path>
 
 	<!-- voice input -->
@@ -2406,7 +2409,8 @@
 	</path>
 
 	<path name="tty_mode-full-mic">
-		<path name="headset-mic" />
+		<ctl name="LHPF1 Input 1" value="IN2L" />
+		<ctl name="Headset Mic Switch" value="1" />
 		<ctl name="ASRC1IN1L Input" value="LHPF1" />
 		<ctl name="ASRC1IN1R Input" value="LHPF1" />
 		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
@@ -2414,7 +2418,8 @@
 	</path>
 
 	<path name="tty_mode-hco-mic">
-		<path name="headset-mic" />
+		<ctl name="LHPF1 Input 1" value="IN2L" />
+		<ctl name="Headset Mic Switch" value="1" />
 		<ctl name="ASRC1IN1L Input" value="LHPF1" />
 		<ctl name="ASRC1IN1R Input" value="LHPF1" />
 		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
@@ -4756,12 +4761,12 @@
 		<path name="gain-media-mic"/>
 	</path>
 
-	<!-- samsung uses the same path name
 	<path name="headset-mic">
-                <path name="media-headset-mic"/>
-                <path name="gain-media-headset-mic"/>
+		<ctl name="LHPF1 Input 1" value="IN2L" />
+		<ctl name="Headset Mic Switch" value="1" />
+		<path name="capture_channel_left"/>
+		<path name="gain-media-headset-mic"/>
 	</path>
-	-->
 
 	<path name="voice-mic">
 		<path name="incall_nb-speaker-mic"/>
@@ -4813,10 +4818,12 @@
 		<path name="gain-media-bt-sco-headset-in"/>
 	</path>
 
-	<!-- samsung uses the same path
 	<path name="camcorder-mic">
+		<path name="capture_channel_invert"/>
+		<path name="main-mic"/>
+		<path name="2nd-mic"/>
+		<path name="gain-camcorder-mic"/>
 	</path>
-	-->
 
 	<path name="voice-rec-mic">
 		<path name="recording-mic"/>
