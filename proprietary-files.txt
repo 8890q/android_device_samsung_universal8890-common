@@ -25,11 +25,61 @@ etc/firmware/moon-dsp5-dsm.bin
 etc/firmware/moon-dsp5-dsm.wmfw
 etc/firmware/moon-dsp6-ez2-control.wmfw
 etc/firmware/moon-dsp6-lpsd-control.bin
-lib/libaudioroute.so|46fcafe8de5c4fe078ad9e9e613bc260fd137106
+
+# Audio HAL
+lib/hw/audio.playback_record.default.so:vendor/lib/hw/audio.playback_record.default.so
+lib/hw/audio.primary.universal8890.so:vendor/lib/hw/audio.primary.universal8890.so
+lib/hw/audio.tms.default.so:vendor/lib/hw/audio.tms.default.so
+lib/libsamsungpowersound.so:vendor/lib/libsamsungpowersound.so
+lib/libSamsungPostProcessConvertor.so:vendor/lib/libSamsungPostProcessConvertor.so
+lib/libsamsungSoundbooster_plus_legacy.so:vendor/lib/libsamsungSoundbooster_plus_legacy.so
+lib/lib_SamsungRec_06002.so:vendor/lib/lib_SamsungRec_06002.so
+lib/lib_SoundAlive_AlbumArt_ver105.so:vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
+lib/lib_SoundAlive_play_plus_hal_ver126c.so:vendor/lib/lib_SoundAlive_play_plus_hal_ver126c.so
+lib/lib_SoundAlive_play_plus_ver127a.so:vendor/lib/lib_SoundAlive_play_plus_ver127a.so
+lib/lib_SoundAlive_SRC384_ver320.so:vendor/lib/lib_SoundAlive_SRC384_ver320.so
+lib/lib_SoundBooster_ver710.so:vendor/lib/lib_SoundBooster_ver710.so
+lib/lib_SoundBooster_hal_ver700.so:vendor/lib/lib_SoundBooster_hal_ver700.so
+lib/libSoundAlive_VSP_ver315b_arm.so:vendor/lib/libSoundAlive_VSP_ver315b_arm.so
+lib/lib_soundaliveresampler.so:vendor/lib/lib_soundaliveresampler.so
+lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
+lib/libaudioroute.so
+lib/librecordalive.so:vendor/lib/librecordalive.so
+lib/libsamsungDiamondVoice.so:vendor/lib/libsamsungDiamondVoice.so
+lib/libsecaudiocoreutils.so:vendor/lib/libsecaudiocoreutils.so
+lib/libsecaudioinfo.so:vendor/lib/libsecaudioinfo.so
+lib/libtinyalsa.so
+lib/libunshorten.so:vendor/lib/libunshorten.so
+lib64/libsecaudiocoreutils.so:vendor/lib64/libsecaudiocoreutils.so
+lib64/libsecaudioinfo.so:vendor/lib64/libsecaudioinfo.so
+lib64/libSoundAlive_SRC192_ver205a.so:vendor/lib64/libSoundAlive_SRC192_ver205a.so
+lib64/libSoundAlive_VSP_ver316a_ARMCpp_64bit.so:vendor/lib64/libSoundAlive_VSP_ver316a_ARMCpp_64bit.so
+lib64/lib_SoundAlive_SRC384_ver320.so:vendor/lib64/lib_SoundAlive_SRC384_ver320.so
+lib64/lib_soundaliveresampler.so:vendor/lib64/lib_soundaliveresampler.so
+lib64/libsecaudiocoreutils.so:vendor/lib64/libsecaudiocoreutils.so
+lib64/libsecaudioinfo.so:vendor/lib64/libsecaudioinfo.so
+lib64/libtinyalsa.so
+vendor/lib/libHMT.so
+vendor/lib/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib/soundfx/libaudioeffectoffload.so
+vendor/lib/soundfx/libaudiosaplus_sec.so
+vendor/lib/soundfx/libgearvr.so
+vendor/lib/soundfx/libmysound.so
+vendor/lib/soundfx/libmyspace.so
+vendor/lib/soundfx/libplaybackrecorder.so
+vendor/lib/soundfx/libsamsungSoundbooster_plus.so
 
 # Bluetooth
+lib/android.hardware.bluetooth.a2dp@1.0.so
+lib64/android.hardware.bluetooth.a2dp@1.0.so
+lib64/android.hardware.bluetooth@1.0.so
+lib64/vendor.samsung.hardware.bluetooth@1.0.so:vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
+vendor/bin/hw/android.hardware.bluetooth@1.0-service
+vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
 vendor/firmware/bcm4359C0_murata.hcd
 vendor/firmware/bcm4359C0_semco.hcd
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
+vendor/lib64/libbt-vendor.so
 
 # Camera
 lib/libexynoscamera.so:vendor/lib/libexynoscamera.so
@@ -228,7 +278,6 @@ vendor/bin/secril_config_svc|0c48e7ebcc2635c228ecbb37a290248849075f99
 vendor/etc/init/init.vendor.rilcommon.rc|bcc99fdc49022c36250bb7c914cc351f1af8adb1
 
 # Radio - RIL - from N975FXXU6ZTK6
-lib/libsecril-client.so|af77c32b35ab1a2b7ee5f38e529e7eb8dee0a195
 vendor/bin/cbd|aae9a11fefb25f0293aa7da714a093d5f017d826
 vendor/bin/hw/rild|c77d17bde3312077a77a3a8238a62e649a996f44
 vendor/etc/mtu-conf.xml|f31f160f59aeb36e307d4ba7e0384d102d7416f2

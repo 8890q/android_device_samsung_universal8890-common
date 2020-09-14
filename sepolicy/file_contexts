@@ -171,6 +171,9 @@
 ####################################
 # Sysfs
 
+# Audio
+/sys/devices/seiren(/.*)?                                    u:object_r:sysfs_seiren:s0
+
 # Audio Codec
 /sys/devices/virtual/dsm/maxdsm_cal(/.*)?		 u:object_r:sysfs_dsm:s0
 /sys/devices/virtual/dsm/max98506(/.*)?                u:object_r:sysfs_codec:s0
