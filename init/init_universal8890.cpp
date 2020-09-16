@@ -37,8 +37,6 @@
 
 #include "init_universal8890.h"
 
-using android::init::property_set;
-
 // copied from build/tools/releasetools/ota_from_target_files.py
 // but with "." at the end and empty entry
 std::vector<std::string> ro_product_props_default_source_order = {
@@ -50,15 +48,6 @@ std::vector<std::string> ro_product_props_default_source_order = {
     "system.",
 };
 
-void gsm_properties(const char default_network[])
-{
-    // Dynamic GSM Properties
-    property_set("ro.telephony.default_network", default_network);
-
-    // Static GSM Properties
-    property_set("telephony.lteOnGsmDevice", "1");
-}
-
 void property_override(char const prop[], char const value[], bool add)
 {
     auto pi = (prop_info *) __system_property_find(prop);
@@ -68,6 +57,15 @@ void property_override(char const prop[], char const value[], bool add)
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
     }
+}
+
+void gsm_properties(const char default_network[])
+{
+    // Dynamic GSM Properties
+    property_override("ro.telephony.default_network", default_network);
+
+    // Static GSM Properties
+    property_override("telephony.lteOnGsmDevice", "1");
 }
 
 void set_ro_product_prop(char const prop[], char const value[])
