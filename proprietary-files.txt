@@ -302,7 +302,7 @@ vendor/lib64/libhwc2onfbadapter.so
 # Wifi
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
-vendor/etc/init/wifi.rc
+vendor/etc/init/wifi.rc:vendor/etc/init/wifi_sec.rc
 vendor/etc/init/wifi_brcm.rc
 vendor/etc/wifi/bcmdhd_clm.blob
 vendor/etc/wifi/bcmdhd_ibss.bin_c0_plus_blob
