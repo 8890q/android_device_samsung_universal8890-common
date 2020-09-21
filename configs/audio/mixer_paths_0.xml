@@ -3905,9 +3905,9 @@
 	</path>
 
 	<path name="gain-media-headset-mic">
-		<ctl name="IN2L Volume" value="24" />
-		<ctl name="IN2L Digital Volume" value="80" />
-		<ctl name="LHPF1 Input 1 Volume" value="20" />
+		<ctl name="IN2L Volume" value="32" />
+		<ctl name="IN2L Digital Volume" value="131" />
+		<ctl name="LHPF1 Input 1 Volume" value="34" />
 	</path>
 
 	<path name="gain-media-headphone-mic">
@@ -3943,14 +3943,14 @@
 
 	<!-- voice recording input volume -->
 	<path name="gain-recording-mic">
-		<ctl name="IN1R Digital Volume" value="167" />
+		<ctl name="IN1R Digital Volume" value="137" />
 		<ctl name="LHPF1 Input 1 Volume" value="32" />
 	</path>
 
 	<path name="gain-recording-headset-mic">
-		<ctl name="IN2L Volume" value="30" />
-		<ctl name="IN2L Digital Volume" value="101" />
-		<ctl name="LHPF1 Input 1 Volume" value="32" />
+		<ctl name="IN2L Volume" value="32" />
+		<ctl name="IN2L Digital Volume" value="131" />
+		<ctl name="LHPF1 Input 1 Volume" value="34" />
 	</path>
 
 	<path name="gain-recording-headphone-mic">
