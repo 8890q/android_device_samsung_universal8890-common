@@ -37,6 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwc.winupdate=1 \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
+    ro.bq.gpu_to_cpu_unsupported=1 \
     ro.hardware.egl=mali \
     ro.hardware.vulkan=mali \
     ro.opengles.version=196610 \
