@@ -171,7 +171,11 @@ TARGET_LD_SHIM_LIBS := \
     /system/lib64/libexynosdisplay.so|/system/lib64/libexynosdisplay_shim.so \
     /system/lib/libexynosdisplay.so|/system/lib/libexynosdisplay_shim.so \
     /system/lib64/hw/hwcomposer.exynos5.so|/system/lib64/libexynosdisplay_shim.so \
-    /system/lib/hw/hwcomposer.exynos5.so|/system/lib/libexynosdisplay_shim.so
+    /system/lib/hw/hwcomposer.exynos5.so|/system/lib/libexynosdisplay_shim.so \
+    /vendor/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so \
+    /vendor/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
+    /vendor/lib64/libsec-ril-dsds.so|/vendor/lib64/libcutils_shim.so \
+    /vendor/lib64/libsec-ril.so|/vendor/lib64/libcutils_shim.so
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
