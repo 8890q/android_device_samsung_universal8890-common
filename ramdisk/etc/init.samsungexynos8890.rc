@@ -305,11 +305,8 @@ on post-fs-data
     # Permissions for PCIe
     chown system system /sys/devices/15660000.pcie0/pcie_sysfs
 
-    # Samsung Pay
-    mkdir /efs/pfw_data 0760 spay spay
-
     # MST/NFC Switch
-    chown spay system /dev/mst_ctrl
+    chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
 
 on boot
