@@ -63,4 +63,13 @@ sed -i -z "s/    setprop wifi.interface wlan0\n\n/    setprop wifi.interface wla
 # replace SSLv3_client_method with SSLv23_method
 sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" $BLOB_ROOT/vendor/bin/hw/gpsd
 
+# Replace protobuf with vndk29 compat libs for specified libs
+sed -i "s/libprotobuf-cpp-lite.so/libprotobuf-cpp-li10.so/g" $BLOB_ROOT/vendor/lib/libwvhidl.so
+sed -i "s/libprotobuf-cpp-lite.so/libprotobuf-cpp-li10.so/g" $BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
+
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib/libsec-ril-dsds.so
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib/libsec-ril.so
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib64/libsec-ril.so
+
 "$MY_DIR"/setup-makefiles.sh
