@@ -69,4 +69,13 @@ sed -i "s|system/lib|vendor/lib|g" $BLOB_ROOT/vendor/lib64/libExynosOMX_Core.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libfloatingfeature.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libfloatingfeature.so
 
+# Replace protobuf with vndk29 compat libs for specified libs
+sed -i "s/libprotobuf-cpp-lite.so/libprotobuf-cpp-li10.so/g" $BLOB_ROOT/vendor/lib/libwvhidl.so
+sed -i "s/libprotobuf-cpp-lite.so/libprotobuf-cpp-li10.so/g" $BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
+
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib/libsec-ril-dsds.so
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib/libsec-ril.so
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
+sed -i "s/libprotobuf-cpp-full.so/libprotobuf-cpp-fu10.so/g" $BLOB_ROOT/vendor/lib64/libsec-ril.so
+
 "$MY_DIR"/setup-makefiles.sh
