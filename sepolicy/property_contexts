@@ -20,6 +20,10 @@ vendor.sys.mobicoredaemon.enable   u:object_r:vendor_mobicoredaemon_prop:s0
 persist.nfc.log.index              u:object_r:vendor_nfc_prop:s0
 vendor.nfc.fw.                     u:object_r:vendor_nfc_prop:s0 
 
+# Radio
+ro.vendor.multisim.                u:object_r:vendor_radio_prop:s0
+ro.multisim.simslotcount           u:object_r:radio_prop:s0
+
 # Wifi
 wifi.active.interface      u:object_r:wifi_prop:s0
 wifi.direct.interface      u:object_r:wifi_prop:s0
