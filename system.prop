@@ -1,5 +1,8 @@
 # Read DS/SS property
-import /efs/factory.prop
+#import /efs/factory.prop
+
+# temp disable hwc
+debug.sf.disable_hwc=1
 
 # Boot device
 ro.boot.bootdevice=155a0000.ufs

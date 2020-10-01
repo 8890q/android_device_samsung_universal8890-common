@@ -136,6 +136,7 @@ on post-fs-data
     chmod 0660 /dev/t-base-tui
     chown system system /dev/t-base-tui
     start mobicore
+    start ril_config
 
     #SideSync
     chown system system /dev/android_ssusbcon
@@ -951,6 +952,12 @@ on charger
 on property:vold.decrypt=trigger_restart_framework
     mkdir /data/vendor/mcRegistry 0775 system system
     mkdir /data/misc/mcRegistry 0775 system system
+
+service ril_config /vendor/bin/sh /vendor/etc/ril_config.sh
+    class main
+    user radio
+    oneshot
+    disabled
 
 # MobiCore startup
 service mobicore /vendor/bin/mcDriverDaemon -r /vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin -r /vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin -r /vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin -r /vendor/app/mcRegistry/ffffffffd0000000000000000000001c.tlbin
