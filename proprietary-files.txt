@@ -216,7 +216,6 @@ vendor/bin/cbd
 vendor/bin/hw/rild
 vendor/bin/hw/vendor.samsung.hardware.radio.configsvc@1.0-service
 vendor/etc/init/init.vendor.rilchip.rc
-vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/vendor.samsung.hardware.radio.configsvc@1.0-service.rc
 vendor/lib/libreference-ril.so
 vendor/lib/libril.so
@@ -230,6 +229,10 @@ vendor/lib64/librilutils.so
 vendor/lib64/libsec-ril-dsds.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libvndsecril-client.so
+
+# Radio - RIL - from G960FXXSBETH2
+vendor/bin/secril_config_svc|0c48e7ebcc2635c228ecbb37a290248849075f99
+vendor/etc/init/init.vendor.rilcommon.rc|bcc99fdc49022c36250bb7c914cc351f1af8adb1
 
 # Renderscript - from G950FXXS9DTEB
 vendor/lib/libRSDriverArm.so|5be71eb8211a720a07b463930927c29722e9427f

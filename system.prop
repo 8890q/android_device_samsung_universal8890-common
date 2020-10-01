@@ -1,6 +1,3 @@
-# Read DS/SS property
-import /efs/factory.prop
-
 # Audio
 af.fast_track_multiplier=1
 audio_hal.force_voice_config=wide
