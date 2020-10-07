@@ -175,12 +175,8 @@ vendor/lib64/libmpp.so
 vendor/lib64/egl/libGLES_mali.so
 
 # Keymaster
-lib/libskeymaster.so
-lib64/libskeymaster.so
-vendor/lib/libskeymaster3device.so
 vendor/lib64/libkeymaster_mdfpp.so
 vendor/lib64/libkeymaster_helper.so
-vendor/lib64/libskeymaster3device.so
 vendor/lib64/hw/keystore.mdfpp.so
 
 # Memtrack
@@ -188,8 +184,6 @@ vendor/lib/hw/memtrack.universal8890.so
 vendor/lib64/hw/memtrack.universal8890.so
 
 # NFC
-lib64/android.hardware.nfc@1.0.so
-lib64/android.hardware.nfc@1.1.so
 lib64/vendor.samsung.hardware.nfc@1.1.so
 vendor/bin/hw/sec.android.hardware.nfc@1.1-service
 vendor/etc/init/sec.android.hardware.nfc@1.1-service.rc
