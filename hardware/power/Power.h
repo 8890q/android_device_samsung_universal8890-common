@@ -67,7 +67,6 @@ struct Power : public IPower, public ILineagePower {
     bool initialized;
     bool touchkeys_blocked;
     std::string sec_touchkey;
-    std::string sec_touchscreen;
     PowerProfile current_profile;
     std::vector<std::string> hispeed_freqs;
     std::vector<std::string> max_freqs;
