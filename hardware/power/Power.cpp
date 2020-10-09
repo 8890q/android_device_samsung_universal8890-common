@@ -63,10 +63,6 @@ Return<void> Power::setInteractive(bool interactive) {
         }
     }
 
-    if (!sec_touchscreen.empty()) {
-        set(sec_touchscreen, interactive ? "1" : "0");
-    }
-
     if (!sec_touchkey.empty()) {
         if (!interactive) {
             int button_state = get(sec_touchkey, -1);
@@ -201,9 +197,6 @@ void Power::findInputNodes() {
                 if (content == "sec_touchkey") {
                     sec_touchkey = de.path().string().append("/enabled");
                     LOG(INFO) << "found sec_touchkey: " << sec_touchkey;
-                } else if (content == "sec_touchscreen") {
-                    sec_touchscreen = de.path().string().append("/enabled");
-                    LOG(INFO) << "found sec_touchscreen: " << sec_touchscreen;
                 }
             }
         }
