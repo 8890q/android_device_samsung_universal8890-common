@@ -65,8 +65,6 @@ struct Power : public IPower, public ILineagePower {
     void sendBoost(int duration_us);
 
     bool initialized;
-    bool touchkeys_blocked;
-    std::string sec_touchkey;
     PowerProfile current_profile;
     std::vector<std::string> hispeed_freqs;
     std::vector<std::string> max_freqs;

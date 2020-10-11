@@ -63,30 +63,6 @@ Return<void> Power::setInteractive(bool interactive) {
         }
     }
 
-    if (!sec_touchkey.empty()) {
-        if (!interactive) {
-            int button_state = get(sec_touchkey, -1);
-
-            if (button_state < 0) {
-                LOG(ERROR) << "Failed to read touchkey state";
-                goto out;
-            }
-
-            /*
-             * If button_state is 0, the keys have been disabled by another component
-             * (for example lineagehw), which means we don't want them to be enabled when resuming
-             * from suspend.
-             */
-            if (button_state == 0) {
-                touchkeys_blocked = true;
-            }
-        }
-
-        if (!touchkeys_blocked) {
-            set(sec_touchkey, interactive ? "1" : "0");
-        }
-    }
-
 out:
     for (const std::string& interactivePath : cpuInteractivePaths) {
         set(interactivePath + "/io_is_busy", interactive ? "1" : "0");
@@ -189,16 +165,6 @@ void Power::findInputNodes() {
         /* we are only interested in the input devices that we can access */
         if (ec || de.path().string().find("/sys/class/input/input") == std::string::npos) {
             continue;
-        }
-
-        for (auto& de2 : std::filesystem::directory_iterator(de.path(), ec)) {
-            if (!ec && de2.path().string().find("/name") != std::string::npos) {
-                std::string content = get<std::string>(de2.path(), "");
-                if (content == "sec_touchkey") {
-                    sec_touchkey = de.path().string().append("/enabled");
-                    LOG(INFO) << "found sec_touchkey: " << sec_touchkey;
-                }
-            }
         }
     }
 }
