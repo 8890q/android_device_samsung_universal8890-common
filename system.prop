@@ -18,6 +18,9 @@ ro.charger.enable_suspend=true
 ro.cmc.device_type=pd
 ro.cmc.version=2.0
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Factory Reset Protection
 ro.frp.pst=/dev/block/persistent
 
