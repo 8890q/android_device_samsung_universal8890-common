@@ -20,7 +20,6 @@ COMMON_PATH := device/samsung/universal8890-common
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    device/samsung/universal8890-common/overlay/packages/apps/Snap \
     device/samsung/universal8890-common/overlay/hardware/samsung/AdvancedDisplay
 
 # Boot animation
