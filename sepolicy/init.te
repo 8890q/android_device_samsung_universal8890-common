@@ -142,6 +142,7 @@ allow init proc_simslot_count:file rw_file_perms;
 allow init proc_sec:file { rw_file_perms setattr };
 allow init proc_audit:file setattr;
 allow init proc_bluetooth:file setattr;
+allow init proc_last_kmsg:file { r_file_perms setattr };
 
 # Sockets
 allow init socket_device:sock_file { read write getattr setattr create unlink };

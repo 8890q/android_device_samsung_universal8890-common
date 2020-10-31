@@ -75,6 +75,8 @@ allow system_server gpsd:binder call;
 
 allow gpsd self:netlink_kobject_uevent_socket read;
 
+allow gpsd vendor_radio_prop:file { getattr open read };
+
 # Allow hal to take wakelock
 wakelock_use(gpsd)
 
