@@ -62,4 +62,9 @@ allow system_server debugfs_ion:dir search;
 allow system_server debugfs_ion:file { getattr open read };
 allow system_server debugfs_mali:dir { open read search };
 
+allow system_server proc_last_kmsg:file { getattr open read };
+
+get_prop(system_server, userspace_reboot_exported_prop)
+get_prop(system_server, userspace_reboot_config_prop)
+
 allow system_server crash_dump:process getpgid;
