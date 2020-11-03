@@ -195,7 +195,6 @@ WIFI_DRIVER_FW_PATH_AP           := "/system/vendor/etc/wifi/bcmdhd_apsta.bin"
 WIFI_BAND                        := 802_11_ABG
 WIFI_HIDL_FEATURE_AWARE          := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
-WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # Inherit from the proprietary version
 -include vendor/samsung/universal8890-common/BoardConfigVendor.mk
