@@ -206,7 +206,6 @@ WIFI_DRIVER_FW_PATH_STA          := "/system/vendor/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/vendor/etc/wifi/bcmdhd_apsta.bin"
 WIFI_BAND                        := 802_11_ABG
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
-WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit from the proprietary version
