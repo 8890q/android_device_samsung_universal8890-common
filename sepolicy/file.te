@@ -90,6 +90,7 @@ type sysfs_hmt, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_vmscan, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_scsi_host, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_pcie, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mfc, fs_type, sysfs_type, mlstrustedobject;
 
 ### data types
 type camera_vendor_data_file, data_file_type, file_type;

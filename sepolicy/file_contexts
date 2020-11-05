@@ -229,6 +229,9 @@
 # mDNIe
 /sys/devices/13900000.dsim/lcd/panel/mdnie(/.*)         u:object_r:sysfs_mdnie:s0 
 
+# MFC
+/sys/devices/152e0000.mfc0/video8(/.*)?                   u:object_r:sysfs_mfc:s0
+
 # MFD node
 /sys/module/sec_core/parameters(/.*)?                   u:object_r:sysfs_sec_mfd:s0
 
