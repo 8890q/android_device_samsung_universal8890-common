@@ -5,6 +5,7 @@ allow mediacodec system_file:dir r_dir_perms;
 r_dir_file(mediacodec, sysfs_v4l);
 
 allow mediacodec sysfs_camera:file { getattr open read };
+allow mediacodec sysfs_mfc:file { getattr open read };
 
 allow mediacodec debugfs_ion:dir search;
 
