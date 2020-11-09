@@ -101,6 +101,7 @@ type gps_vendor_file, data_file_type, file_type;
 type wifi_vendor_data_file, data_file_type, file_type;
 type firmware_data_file, file_type, data_file_type, core_data_file_type;
 type cas_data_file, file_type, data_file_type, core_data_file_type;
+type nfc_vendor_data_file, data_file_type, file_type;
 
 # debugfs
 type debugfs_mali, fs_type, debugfs_type;
