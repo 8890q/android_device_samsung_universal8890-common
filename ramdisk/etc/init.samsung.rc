@@ -679,6 +679,11 @@ on boot
 
     # Permissions for Touchscreen
     chown system radio /sys/class/sec/tsp/cmd
+    chmod 0664 /sys/class/sec/tsp/cmd
+    chown system radio /sys/class/sec/tsp/cmd_list
+    chmod 0664  /sys/class/sec/tsp/cmd_list
+    chown system radio /sys/class/sec/tsp/cmd_result
+    chmod 0664 /sys/class/sec/tsp/cmd_result
     chown system system /sys/class/sec/tsp/input/enabled
     chmod 0660 /sys/class/sec/tsp/input/enabled
     chown root system /proc/tsp_msg
@@ -704,6 +709,7 @@ on boot
     # Permissions for Touchkey
     chmod 0660 /sys/class/sec_touchkey/input/enabled
     chown system system /sys/class/sec/sec_touchkey/input/enabled
+    chmod 664 /sys/class/sec/sec_touchkey/input/enabled
     chown system radio /sys/class/sec/sec_touchkey/brightness
     chown system radio /sys/class/sec/sec_touchkey/touchkey_firm_update
     chown system radio /sys/class/sec/sec_touchkey/touch_sensitivity
