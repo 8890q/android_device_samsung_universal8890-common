@@ -1,5 +1,5 @@
-# Files are from N935KKKU4CTH1 unless pinned
-# Vendor security patch level 2020-08-01
+# Files are from N935KKKU4CTK1 unless pinned
+# Vendor security patch level 2020-11-01
 
 # AptX - from crosshatch - QP1A.190711.020
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
