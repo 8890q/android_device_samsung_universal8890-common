@@ -171,12 +171,12 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/lib64/libexynoscamera.so|/system/lib64/libexynoscamera_shim.so \
-    /system/lib/libexynoscamera.so|/system/lib/libexynoscamera_shim.so \
-    /system/lib64/libexynosdisplay.so|/system/lib64/libexynosdisplay_shim.so \
-    /system/lib/libexynosdisplay.so|/system/lib/libexynosdisplay_shim.so \
-    /system/lib64/hw/hwcomposer.exynos5.so|/system/lib64/libexynosdisplay_shim.so \
-    /system/lib/hw/hwcomposer.exynos5.so|/system/lib/libexynosdisplay_shim.so
+    /vendor/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so \
+    /vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
+    /vendor/lib64/libexynosdisplay.so|/vendor/lib64/libexynosdisplay_shim.so \
+    /vendor/lib/libexynosdisplay.so|/vendor/lib/libexynosdisplay_shim.so \
+    /vendor/lib64/hw/hwcomposer.exynos5.so|/vendor/lib64/libexynosdisplay_shim.so \
+    /vendor/lib/hw/hwcomposer.exynos5.so|/vendor/lib/libexynosdisplay_shim.so
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)

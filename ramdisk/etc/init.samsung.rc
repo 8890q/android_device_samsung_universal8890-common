@@ -255,7 +255,7 @@ on post-fs-data
     # NFC KEY
     mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/nfc_log 0750 nfc system
-    copy /system/etc/nfc_key /data/nfc/Key
+    copy /vendor/etc/nfc_key /data/nfc/Key
     chmod 660 /data/nfc/Key
     chown nfc nfc /data/nfc/Key
 

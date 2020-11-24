@@ -33,32 +33,32 @@ vendor/firmware/bcm4359C0_murata.hcd
 vendor/firmware/bcm4359C0_semco.hcd
 
 # Camera
-lib/libexynoscamera.so
-lib/libexynoscamera3.so|eedea7c25de711dc82f8ead4820c2a989dc95794
-lib/libexynosgscaler.so
-lib/libexynosscaler.so
-lib/libhwjpeg.so
-lib/libuniapi.so
-lib/libuniplugin.so
-lib/vendor.samsung.hardware.camera.device@1.0.so
-lib/vendor.samsung.hardware.camera.device@3.2.so
-lib/vendor.samsung.hardware.camera.device@3.3.so
-lib/vendor.samsung.hardware.camera.device@3.4.so
-lib/vendor.samsung.hardware.camera.provider@2.4.so
-lib/hw/camera.exynos5.so:lib/hw/camera.vendor.exynos5.so
-lib64/libexynoscamera.so
-lib64/libexynoscamera3.so
-lib64/libexynosgscaler.so
-lib64/libexynosscaler.so
-lib64/libhwjpeg.so
-lib64/libuniapi.so
-lib64/libuniplugin.so
-lib64/vendor.samsung.hardware.camera.device@1.0.so
-lib64/vendor.samsung.hardware.camera.device@3.2.so
-lib64/vendor.samsung.hardware.camera.device@3.3.so
-lib64/vendor.samsung.hardware.camera.device@3.4.so
-lib64/vendor.samsung.hardware.camera.provider@2.4.so
-lib64/hw/camera.exynos5.so:lib64/hw/camera.vendor.exynos5.so
+lib/libexynoscamera.so:vendor/lib/libexynoscamera.so
+lib/libexynoscamera3.so:vendor/lib/libexynoscamera3.so|eedea7c25de711dc82f8ead4820c2a989dc95794
+lib/libexynosgscaler.so:vendor/lib/libexynosgscaler.so
+lib/libexynosscaler.so:vendor/lib/libexynosscaler.so
+lib/libhwjpeg.so:vendor/lib/libhwjpeg.so
+lib/libuniapi.so:vendor/lib/libuniapi.so
+lib/libuniplugin.so:vendor/lib/libuniplugin.so
+lib/vendor.samsung.hardware.camera.device@1.0.so:vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
+lib/vendor.samsung.hardware.camera.device@3.2.so:vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
+lib/vendor.samsung.hardware.camera.device@3.3.so:vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
+lib/vendor.samsung.hardware.camera.device@3.4.so:vendor/lib/vendor.samsung.hardware.camera.device@3.4.so
+lib/vendor.samsung.hardware.camera.provider@2.4.so:vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
+lib/hw/camera.exynos5.so:vendor/lib/hw/camera.vendor.exynos5.so
+lib64/libexynoscamera.so:vendor/lib64/libexynoscamera.so
+lib64/libexynoscamera3.so:vendor/lib64/libexynoscamera3.so
+lib64/libexynosgscaler.so:vendor/lib64/libexynosgscaler.so
+lib64/libexynosscaler.so:vendor/lib64/libexynosscaler.so
+lib64/libhwjpeg.so:vendor/lib64/libhwjpeg.so
+lib64/libuniapi.so:vendor/lib64/libuniapi.so
+lib64/libuniplugin.so:vendor/lib64/libuniplugin.so
+lib64/vendor.samsung.hardware.camera.device@1.0.so:vendor/lib64/vendor.samsung.hardware.camera.device@1.0.so
+lib64/vendor.samsung.hardware.camera.device@3.2.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.2.so
+lib64/vendor.samsung.hardware.camera.device@3.3.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.3.so
+lib64/vendor.samsung.hardware.camera.device@3.4.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.4.so
+lib64/vendor.samsung.hardware.camera.provider@2.4.so:vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so
+lib64/hw/camera.exynos5.so:vendor/lib64/hw/camera.vendor.exynos5.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -139,12 +139,12 @@ vendor/lib/hw/gatekeeper.exynos8890.so:vendor/lib/hw/gatekeeper.universal8890.so
 vendor/lib64/hw/gatekeeper.exynos8890.so:vendor/lib64/hw/gatekeeper.universal8890.so
 
 # GNSS
-etc/floating_feature.xml
-etc/init/init.gpscommon.rc
-lib/libfloatingfeature.so
-lib/vendor.samsung.hardware.gnss@1.0.so
-lib64/libfloatingfeature.so
-lib64/vendor.samsung.hardware.gnss@1.0.so
+etc/floating_feature.xml:vendor/etc/floating_feature.xml
+etc/init/init.gpscommon.rc:vendor/etc/init/init.gpscommon.rc
+lib/libfloatingfeature.so:vendor/lib/libfloatingfeature.so
+lib/vendor.samsung.hardware.gnss@1.0.so:vendor/lib/vendor.samsung.hardware.gnss@1.0.so
+lib64/libfloatingfeature.so:vendor/lib64/libfloatingfeature.so
+lib64/vendor.samsung.hardware.gnss@1.0.so:vendor/lib64/vendor.samsung.hardware.gnss@1.0.so
 vendor/bin/hw/gpsd
 vendor/bin/hw/vendor.samsung.hardware.gnss@1.0-service
 vendor/etc/init/init.gps.rc
@@ -159,10 +159,10 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 
 # Graphics
-lib/libexynosdisplay.so
-lib/libhdmi.so
-lib64/libexynosdisplay.so
-lib64/libhdmi.so
+lib/libexynosdisplay.so:vendor/lib/libexynosdisplay.so
+lib/libhdmi.so:vendor/lib/libhdmi.so
+lib64/libexynosdisplay.so:vendor/lib64/libexynosdisplay.so
+lib64/libhdmi.so:vendor/lib64/libhdmi.so
 vendor/lib/libcsc.so
 vendor/lib/libexynosutils.so
 vendor/lib/libion_exynos.so
@@ -184,7 +184,7 @@ vendor/lib/hw/memtrack.universal8890.so
 vendor/lib64/hw/memtrack.universal8890.so
 
 # NFC
-lib64/vendor.samsung.hardware.nfc@1.1.so
+lib64/vendor.samsung.hardware.nfc@1.1.so:vendor/lib64/vendor.samsung.hardware.nfc@1.1.so
 vendor/bin/hw/sec.android.hardware.nfc@1.1-service
 vendor/etc/init/sec.android.hardware.nfc@1.1-service.rc
 vendor/etc/nfc/sec_s3nrn81_rfreg.bin
@@ -192,34 +192,34 @@ vendor/firmware/nfc/sec_s3nrn81_firmware.bin
 vendor/lib64/nfc_nci_sec.so
 
 # OMX
-lib/libExynosOMX_Core.so
-lib/libExynosOMX_Resourcemanager.so
-lib/libstagefrighthw.so
-lib/omx/libOMX.Exynos.AVC.Decoder.so
-lib/omx/libOMX.Exynos.AVC.Encoder.so
-lib/omx/libOMX.Exynos.HEVC.Decoder.so
-lib/omx/libOMX.Exynos.HEVC.Encoder.so
-lib/omx/libOMX.Exynos.MPEG4.Decoder.so
-lib/omx/libOMX.Exynos.MPEG4.Encoder.so
-lib/omx/libOMX.Exynos.VP8.Decoder.so
-lib/omx/libOMX.Exynos.VP8.Encoder.so
-lib/omx/libOMX.Exynos.VP9.Decoder.so
-lib/omx/libOMX.Exynos.VP9.Encoder.so
-lib/omx/libOMX.Exynos.WMV.Decoder.so
-lib64/libExynosOMX_Core.so
-lib64/libExynosOMX_Resourcemanager.so
-lib64/libstagefrighthw.so
-lib64/omx/libOMX.Exynos.AVC.Decoder.so
-lib64/omx/libOMX.Exynos.AVC.Encoder.so
-lib64/omx/libOMX.Exynos.HEVC.Decoder.so
-lib64/omx/libOMX.Exynos.HEVC.Encoder.so
-lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
-lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
-lib64/omx/libOMX.Exynos.VP8.Decoder.so
-lib64/omx/libOMX.Exynos.VP8.Encoder.so
-lib64/omx/libOMX.Exynos.VP9.Decoder.so
-lib64/omx/libOMX.Exynos.VP9.Encoder.so
-lib64/omx/libOMX.Exynos.WMV.Decoder.so
+lib/libExynosOMX_Core.so:vendor/lib/libExynosOMX_Core.so
+lib/libExynosOMX_Resourcemanager.so:vendor/lib/libExynosOMX_Resourcemanager.so
+lib/libstagefrighthw.so:vendor/lib/libstagefrighthw.so
+lib/omx/libOMX.Exynos.AVC.Decoder.so:vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so
+lib/omx/libOMX.Exynos.AVC.Encoder.so:vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so
+lib/omx/libOMX.Exynos.HEVC.Decoder.so:vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so
+lib/omx/libOMX.Exynos.HEVC.Encoder.so:vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so
+lib/omx/libOMX.Exynos.MPEG4.Decoder.so:vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so
+lib/omx/libOMX.Exynos.MPEG4.Encoder.so:vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so
+lib/omx/libOMX.Exynos.VP8.Decoder.so:vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so
+lib/omx/libOMX.Exynos.VP8.Encoder.so:vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so
+lib/omx/libOMX.Exynos.VP9.Decoder.so:vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so
+lib/omx/libOMX.Exynos.VP9.Encoder.so:vendor/lib/omx/libOMX.Exynos.VP9.Encoder.so
+lib/omx/libOMX.Exynos.WMV.Decoder.so:vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so
+lib64/libExynosOMX_Core.so:vendor/lib64/libExynosOMX_Core.so
+lib64/libExynosOMX_Resourcemanager.so:vendor/lib64/libExynosOMX_Resourcemanager.so
+lib64/libstagefrighthw.so:vendor/lib64/libstagefrighthw.so
+lib64/omx/libOMX.Exynos.AVC.Decoder.so:vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so
+lib64/omx/libOMX.Exynos.AVC.Encoder.so:vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so
+lib64/omx/libOMX.Exynos.HEVC.Decoder.so:vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so
+lib64/omx/libOMX.Exynos.HEVC.Encoder.so:vendor/lib64/omx/libOMX.Exynos.HEVC.Encoder.so
+lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:vendor/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
+lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:vendor/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
+lib64/omx/libOMX.Exynos.VP8.Decoder.so:vendor/lib64/omx/libOMX.Exynos.VP8.Decoder.so
+lib64/omx/libOMX.Exynos.VP8.Encoder.so:vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so
+lib64/omx/libOMX.Exynos.VP9.Decoder.so:vendor/lib64/omx/libOMX.Exynos.VP9.Decoder.so
+lib64/omx/libOMX.Exynos.VP9.Encoder.so:vendor/lib64/omx/libOMX.Exynos.VP9.Encoder.so
+lib64/omx/libOMX.Exynos.WMV.Decoder.so:vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so
 
 # Radio - RIL
 etc/mtu-conf.xml
@@ -265,10 +265,10 @@ vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_se13.bin
 
 # Sensors
-lib/libhr.so
-lib/libsensorlistener.so
-lib64/libhr.so
-lib64/libsensorlistener.so
+lib/libhr.so:vendor/lib/libhr.so
+lib/libsensorlistener.so:vendor/lib/libsensorlistener.so
+lib64/libhr.so:vendor/lib64/libhr.so
+lib64/libsensorlistener.so:vendor/lib64/libsensorlistener.so
 vendor/bin/hw/lhd
 vendor/etc/sensor/lhd.conf
 vendor/etc/sensors/hals.conf
@@ -290,24 +290,24 @@ vendor/lib/libstagefright_soft_g711dec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
 
 # Surface Composer
-lib/libExynosHWCService.so
-lib/libGrallocWrapper.so
-lib/libhwcutils.so
-lib/libvirtualdisplay.so
-lib/vendor.samsung_slsi.hardware.configstore@1.0.so
-lib/vendor.samsung_slsi.hardware.configstore-utils.so
-lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
-lib/hw/gralloc.exynos5.so
-lib/hw/hwcomposer.exynos5.so
-lib64/libExynosHWCService.so
-lib64/libhwcutils.so
-lib64/libGrallocWrapper.so
-lib64/libvirtualdisplay.so
-lib64/vendor.samsung_slsi.hardware.configstore@1.0.so
-lib64/vendor.samsung_slsi.hardware.configstore-utils.so
-lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
-lib64/hw/gralloc.exynos5.so
-lib64/hw/hwcomposer.exynos5.so
+lib/libExynosHWCService.so:vendor/lib/libExynosHWCService.so
+lib/libGrallocWrapper.so:vendor/lib/libGrallocWrapper.so
+lib/libhwcutils.so:vendor/lib/libhwcutils.so
+lib/libvirtualdisplay.so:vendor/lib/libvirtualdisplay.so
+lib/vendor.samsung_slsi.hardware.configstore@1.0.so:vendor/lib/vendor.samsung_slsi.hardware.configstore@1.0.so
+lib/vendor.samsung_slsi.hardware.configstore-utils.so:vendor/lib/vendor.samsung_slsi.hardware.configstore-utils.so
+lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:vendor/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
+lib/hw/gralloc.exynos5.so:vendor/lib/hw/gralloc.exynos5.so
+lib/hw/hwcomposer.exynos5.so:vendor/lib/hw/hwcomposer.exynos5.so
+lib64/libExynosHWCService.so:vendor/lib64/libExynosHWCService.so
+lib64/libhwcutils.so:vendor/lib64/libhwcutils.so
+lib64/libGrallocWrapper.so:vendor/lib64/libGrallocWrapper.so
+lib64/libvirtualdisplay.so:vendor/lib64/libvirtualdisplay.so
+lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so
+lib64/vendor.samsung_slsi.hardware.configstore-utils.so:vendor/lib64/vendor.samsung_slsi.hardware.configstore-utils.so
+lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
+lib64/hw/gralloc.exynos5.so:vendor/lib64/hw/gralloc.exynos5.so
+lib64/hw/hwcomposer.exynos5.so:vendor/lib64/hw/hwcomposer.exynos5.so
 vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
 vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc
