@@ -301,8 +301,8 @@ PRODUCT_PACKAGES += \
 
 # Copy stock APN config as lineage one seams to be quite broken and outdated
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/ril/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml \
-    $(COMMON_PATH)/configs/ril/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/spn-conf.xml
+    $(COMMON_PATH)/configs/ril/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+    $(COMMON_PATH)/configs/ril/spn-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/spn-conf.xml
 
 # SamsungDoze
 PRODUCT_PACKAGES += \
