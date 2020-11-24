@@ -42,6 +42,7 @@ debug.stagefright.omx_default_rank.sw-audio=1
 
 # RIL
 keyguard.no_require_sim=true
+ro.debug_level=0x494d
 ro.hdcp2.rx=tz
 telephony.lteOnCdmaDevice=0
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
