@@ -1,4 +1,4 @@
-# Files are from N935KKKU4CTK1 unless pinned
+# Files are from N935FXXS7CTJ2 unless pinned
 # Vendor security patch level 2020-11-01
 
 # AptX - from crosshatch - QP1A.190711.020
