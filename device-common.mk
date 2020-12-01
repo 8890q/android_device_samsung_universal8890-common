@@ -298,7 +298,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.1 \
     android.hardware.radio.config@1.2 \
     init.baseband.rc \
-    libxml2
+    libxml2 \
+    libprotobuf-cpp-full
 
 # Copy stock APN config as lineage one seams to be quite broken and outdated
 PRODUCT_COPY_FILES += \
