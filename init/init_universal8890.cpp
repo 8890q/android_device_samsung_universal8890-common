@@ -64,6 +64,7 @@ void gsm_properties(const char default_network[])
 {
     // Dynamic GSM Properties
     property_override("ro.telephony.default_network", default_network);
+    property_override("ro.vendor.sec.radio.def_network", default_network);
 
     // Static GSM Properties
     property_override("telephony.lteOnGsmDevice", "1");

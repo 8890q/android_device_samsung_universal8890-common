@@ -166,7 +166,5 @@ allow init fwk_sensor_hwservice:hwservice_manager find;
 allow init hidl_base_hwservice:hwservice_manager add;
 
 allow init hal_sec_nfc_hwservice:hwservice_manager { add find };
-allow init hal_sec_radio_configsvc_hwservice:hwservice_manager add;
 allow init hal_sec_gnss_hwservice:hwservice_manager { add find };
-allow init hal_sec_radio_hwservice:hwservice_manager find;
 

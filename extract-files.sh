@@ -68,26 +68,16 @@ sed -i "s|system/lib|vendor/lib|g" $BLOB_ROOT/vendor/lib/libExynosOMX_Core.so
 sed -i "s|system/lib|vendor/lib|g" $BLOB_ROOT/vendor/lib64/libExynosOMX_Core.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libfloatingfeature.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libfloatingfeature.so
-sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libsec-ril-dsds.so
-sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libsec-ril.so
-sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
-sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libsec-ril.so
 
 # Replace protobuf with vndk29 compat libs for specified libs
 patchelf --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libwvhidl.so
 patchelf --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
-patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so $BLOB_ROOT/vendor/lib/libsec-ril-dsds.so
-patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so $BLOB_ROOT/vendor/lib/libsec-ril.so
-patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
-patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so $BLOB_ROOT/vendor/lib64/libsec-ril.so
-
-# Replace cutils with vndk29 compat libs for specified libs
-patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib/libsec-ril-dsds.so
-patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib/libsec-ril.so
-patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib64/libsec-ril-dsds.so
-patchelf --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/vendor/lib64/libsec-ril.so
 
 # Remove wpa_supplicant service from wifi.rc
 sed -i "41,51d" $BLOB_ROOT/vendor/etc/init/wifi_sec.rc
+
+# Replace libvndsecril-client with libsecril-client
+patchelf --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib/libwrappergps.so
+patchelf --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib64/libwrappergps.so
 
 "$MY_DIR"/setup-makefiles.sh

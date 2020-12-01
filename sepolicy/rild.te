@@ -71,12 +71,6 @@ allow rild init:dir search;
 allow rild init:file { getattr open read };
 allow rild radio_vendor_data_file:dir search;
 
-allow rild hal_sec_radio_channel_hwservice:hwservice_manager add;
-allow rild hal_sec_radio_hwservice:hwservice_manager add;
-allow rild hal_sec_radio_hwservice:hwservice_manager find;
-allow rild hal_sec_radio_secbridge_hwservice:hwservice_manager add;
-allow rild hal_sec_radio_sechook_hwservice:hwservice_manager add;
-
 allow rild hal_radio_default:binder call;
 allow rild imei_efs_file:file setattr;
 
@@ -85,4 +79,6 @@ allow rild hal_audio_default:file { getattr open read };
 
 set_prop(rild, cpboot-daemon_prop)
 set_prop(rild, radio_prop)
+get_prop(rild, vendor_radio_prop)
+allow rild mnt_vendor_file:dir search;
 
