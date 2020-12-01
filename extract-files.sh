@@ -76,4 +76,8 @@ sed -i "s/libprotobuf-cpp-lite.so/libprotobuf-cpp-li10.so/g" $BLOB_ROOT/vendor/l
 # Remove wpa_supplicant service from wifi.rc
 sed -i "41,51d" $BLOB_ROOT/vendor/etc/init/wifi_sec.rc
 
+# Replace libvndsecril-client with libsecril-client
+patchelf --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib/libwrappergps.so
+patchelf --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib64/libwrappergps.so
+
 "$MY_DIR"/setup-makefiles.sh
