@@ -290,8 +290,6 @@ lib/libExynosHWCService.so:vendor/lib/libExynosHWCService.so
 lib/libGrallocWrapper.so:vendor/lib/libGrallocWrapper.so
 lib/libhwcutils.so:vendor/lib/libhwcutils.so
 lib/libvirtualdisplay.so:vendor/lib/libvirtualdisplay.so
-lib/vendor.samsung_slsi.hardware.configstore@1.0.so:vendor/lib/vendor.samsung_slsi.hardware.configstore@1.0.so
-lib/vendor.samsung_slsi.hardware.configstore-utils.so:vendor/lib/vendor.samsung_slsi.hardware.configstore-utils.so
 lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:vendor/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 lib/hw/gralloc.exynos5.so:vendor/lib/hw/gralloc.exynos5.so
 lib/hw/hwcomposer.exynos5.so:vendor/lib/hw/hwcomposer.exynos5.so
@@ -299,14 +297,10 @@ lib64/libExynosHWCService.so:vendor/lib64/libExynosHWCService.so
 lib64/libhwcutils.so:vendor/lib64/libhwcutils.so
 lib64/libGrallocWrapper.so:vendor/lib64/libGrallocWrapper.so
 lib64/libvirtualdisplay.so:vendor/lib64/libvirtualdisplay.so
-lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so
-lib64/vendor.samsung_slsi.hardware.configstore-utils.so:vendor/lib64/vendor.samsung_slsi.hardware.configstore-utils.so
 lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 lib64/hw/gralloc.exynos5.so:vendor/lib64/hw/gralloc.exynos5.so
 lib64/hw/hwcomposer.exynos5.so:vendor/lib64/hw/hwcomposer.exynos5.so
-vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
-vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc
 vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
 vendor/lib/libhwc2on1adapter.so
 vendor/lib/libhwc2onfbadapter.so
