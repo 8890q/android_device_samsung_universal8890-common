@@ -63,6 +63,12 @@ on init
     chown system system /proc/extra
     chmod 0600 /proc/extra
 
+    # Vibrator
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/timed_output/vibrator/intensity
+    chmod 0660 /sys/class/timed_output/vibrator/enable
+    chmod 0660 /sys/class/timed_output/vibrator/intensity
+
 on fs
     setprop ro.crypto.fde_algorithm AES-256-XTS-DISK
     
@@ -595,8 +601,6 @@ on boot
     chown system system /sys/class/leds/vibrator/brightness
     chown system system /sys/class/leds/vibrator/duration
     chown system system /sys/class/leds/vibrator/state
-    chown system system /sys/class/timed_output/vibrator/enable
-    chown system system /sys/class/timed_output/vibrator/intensity
     chown system system /sys/class/timed_output/vibrator/multi_freq
     chown system system /sys/class/timed_output/vibrator/haptic_engine
     chown system system /sys/class/timed_output/vibrator/force_touch_intensity
