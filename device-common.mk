@@ -20,7 +20,6 @@ COMMON_PATH := device/samsung/universal8890-common
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    device/samsung/universal8890-common/overlay/packages/apps/Snap \
     device/samsung/universal8890-common/overlay/frameworks/base/packages/SystemUI \
     device/samsung/universal8890-common/overlay/packages/apps/Bluetooth \
     device/samsung/universal8890-common/overlay/hardware/samsung/AdvancedDisplay
@@ -91,7 +90,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl \
     camera.device@3.4-impl \
     camera.exynos5 \
-    Snap
+    Camera2
 
 # DRM
 PRODUCT_PACKAGES += \
