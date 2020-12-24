@@ -107,6 +107,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
+# FastCharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.samsung
+
 # Filesystem tools for resizing system partitions
 PRODUCT_PACKAGES += \
     e2fsck_static \
