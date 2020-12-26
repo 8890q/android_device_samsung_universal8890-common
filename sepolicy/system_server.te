@@ -63,3 +63,5 @@ allow system_server debugfs_ion:file { getattr open read };
 allow system_server debugfs_mali:dir { open read search };
 
 allow system_server crash_dump:process getpgid;
+
+dontaudit system_server persist_block_device:blk_file { getattr ioctl open read write };
