@@ -182,6 +182,10 @@ vendor/lib64/hw/keystore.mdfpp.so
 vendor/lib/hw/memtrack.universal8890.so
 vendor/lib64/hw/memtrack.universal8890.so
 
+# Neural Networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-armnn
+vendor/etc/init/android.hardware.neuralnetworks@1.1-service-armnn.rc
+
 # NFC
 lib64/vendor.samsung.hardware.nfc@1.1.so:vendor/lib64/vendor.samsung.hardware.nfc@1.1.so
 vendor/bin/hw/sec.android.hardware.nfc@1.1-service

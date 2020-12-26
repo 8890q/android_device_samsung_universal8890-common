@@ -192,6 +192,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0 \
+    android.hardware.neuralnetworks@1.1 \
+    libtextclassifier_hash
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
