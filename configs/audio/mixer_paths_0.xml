@@ -3943,7 +3943,7 @@
 
 	<!-- voice recording input volume -->
 	<path name="gain-recording-mic">
-		<ctl name="IN1R Digital Volume" value="137" />
+		<ctl name="IN1R Digital Volume" value="167" />
 		<ctl name="LHPF1 Input 1 Volume" value="32" />
 	</path>
 
