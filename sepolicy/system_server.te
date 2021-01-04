@@ -70,3 +70,5 @@ get_prop(system_server, userspace_reboot_config_prop)
 allow system_server crash_dump:process getpgid;
 
 dontaudit system_server persist_block_device:blk_file { getattr ioctl open read write };
+
+allow system_server app_zygote:process getpgid;
