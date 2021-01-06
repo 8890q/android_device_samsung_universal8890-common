@@ -129,6 +129,7 @@
 #/data/backup(/.*)?             u:object_r:backup_data_file:s0
 
 # Biometrics
+/data/biometrics(/.*)?             u:object_r:fingerprintd_data_file:s0
 /data/vendor/biometrics(/.*)?      u:object_r:fingerprintd_vendor_data_file:s0
 
 # Camera
