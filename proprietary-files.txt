@@ -119,24 +119,6 @@ vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
-# Fingerprint
-vendor/lib/libbauthserver.so
-vendor/lib/libbauthtzcommon.so
-vendor/lib/libegis_fp_normal_sensor_test.so
-vendor/lib/libqfp_sensortest.so
-vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib/libgf_in_system_lib.so
-vendor/lib64/libbauthserver.so
-vendor/lib64/libbauthtzcommon.so
-vendor/lib64/libegis_fp_normal_sensor_test.so
-vendor/lib64/libqfp_sensortest.so
-vendor/lib64/libsynaFpSensorTestNwd.so
-vendor/lib64/libgf_in_system_lib.so
-
-# Gatekeeper
-vendor/lib/hw/gatekeeper.exynos8890.so:vendor/lib/hw/gatekeeper.universal8890.so
-vendor/lib64/hw/gatekeeper.exynos8890.so:vendor/lib64/hw/gatekeeper.universal8890.so
-
 # GNSS
 etc/floating_feature.xml:vendor/etc/floating_feature.xml
 etc/init/init.gpscommon.rc:vendor/etc/init/init.gpscommon.rc
@@ -172,11 +154,6 @@ vendor/lib64/libexynosutils.so
 vendor/lib64/libion_exynos.so
 vendor/lib64/libmpp.so
 vendor/lib64/egl/libGLES_mali.so
-
-# Keymaster
-vendor/lib64/libkeymaster_mdfpp.so
-vendor/lib64/libkeymaster_helper.so
-vendor/lib64/hw/keystore.mdfpp.so
 
 # Memtrack
 vendor/lib/hw/memtrack.universal8890.so
