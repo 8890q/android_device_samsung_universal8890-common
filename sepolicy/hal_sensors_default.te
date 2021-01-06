@@ -13,3 +13,5 @@ allow hal_sensors_default sysfs_iio:lnk_file read;
 allow hal_sensors_default efs_file:dir search;
 
 allow hal_sensors_default baro_delta_factoryapp_efs_file:file { open read };
+
+allow hal_sensors_default sensor_factoryapp_efs_file:file { open read };
