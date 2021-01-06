@@ -287,6 +287,10 @@ on post-fs-data
     mkdir /data/vendor/biometrics 0770 system system
     restorecon_recursive /data/vendor/biometrics
 
+    # FINGERPRINT - Legacy path
+    mkdir /data/biometrics 0770 system system
+    restorecon_recursive /data/biometrics
+
     # snap gpu kernel
     mkdir /data/snap 0755 cameraserver cameraserver
     copy /vendor/etc/snap_gpu_kernel_32.bin /data/snap/snap_gpu_kernel_32.bin
