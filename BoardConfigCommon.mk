@@ -78,6 +78,7 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
