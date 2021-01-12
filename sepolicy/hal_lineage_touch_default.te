@@ -3,6 +3,7 @@ allow hal_lineage_touch_default sysfs_input:file { getattr open write };
 
 allow hal_lineage_touch_default sysfs_sec_touchkey:dir search;
 allow hal_lineage_touch_default sysfs_sec_touchkey:lnk_file read;
+allow hal_lineage_touch_default sysfs_sec_touchkey:file { getattr open read write };
 
 allow hal_lineage_touch_default sysfs_sec_tsp:dir search;
 allow hal_lineage_touch_default sysfs_sec_tsp:file { getattr open read write };
