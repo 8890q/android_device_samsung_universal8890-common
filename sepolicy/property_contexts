@@ -9,6 +9,9 @@ vendor.hal.camera.               u:object_r:vendor_camera_prop:s0
 vendor.cbd.rfs_check_done          u:object_r:cpboot-daemon_prop:s0
 vendor.cbd.dt_revision             u:object_r:cpboot-daemon_prop:s0
 
+# Fastcharge HAL
+persist.vendor.sec.fastchg_enabled     u:object_r:sec_fastcharge_prop:s0
+
 # HWC
 vendor.ddk.set.afbc              u:object_r:vendor_hwc_prop:s0
 

@@ -4,6 +4,9 @@ type vendor_camera_prop, property_type;
 # CP-Boot Daemon
 type cpboot-daemon_prop, property_type;
 
+# Fastcharge HAL
+type sec_fastcharge_prop, property_type;
+
 # HWC
 type vendor_hwc_prop, property_type;
 
