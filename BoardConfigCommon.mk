@@ -153,9 +153,6 @@ endif
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
-# Renderscript
-OVERRIDE_RS_DRIVER := libRSDriverArm.so
-
 # RIL
 BOARD_MODEM_TYPE := ss333
 ENABLE_VENDOR_RIL_SERVICE := true
