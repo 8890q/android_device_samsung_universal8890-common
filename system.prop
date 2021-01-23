@@ -11,9 +11,6 @@ ro.config.systemaudiodebug=arizona
 # Boot device
 ro.boot.bootdevice=155a0000.ufs
 
-# Charger
-ro.charger.enable_suspend=true
-
 #Cmc properties
 ro.cmc.device_type=pd
 ro.cmc.version=2.0

@@ -963,13 +963,6 @@ on shutdown
     chmod 600 /sys/class/power_supply/battery/batt_capacity_max
     copy /sys/class/power_supply/battery/batt_capacity_max /efs/Battery/prev_batt_capacity_max
 
-service charger /system/bin/charger
-    class charger
-    user system
-    group system graphics input    
-    capabilities SYS_BOOT
-    seclabel u:r:charger:s0
-
 # Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
 service watchdogd /sbin/watchdogd 10 20
     class core
