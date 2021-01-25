@@ -85,6 +85,4 @@ sed -i "41,51d" $BLOB_ROOT/vendor/etc/init/wifi_sec.rc
 "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib/libwrappergps.so
 "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib64/libwrappergps.so
 
-"${PATCHELF}" --replace-needed libcutils.so libcutils-v29.so $BLOB_ROOT/system/lib64/libpixelflinger.so
-
 "${MY_DIR}/setup-makefiles.sh"
