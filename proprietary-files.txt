@@ -62,7 +62,6 @@ vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/camera.device@3.4-impl.so
-vendor/lib/libexynosv4l2.so
 vendor/lib/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib/vendor.samsung.camera.device@3.2-impl.so
 vendor/lib/vendor.samsung.camera.device@3.3-impl.so
@@ -72,7 +71,6 @@ vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
 vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/libexynosv4l2.so
 vendor/lib64/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib64/vendor.samsung.camera.device@3.2-impl.so
 vendor/lib64/vendor.samsung.camera.device@3.3-impl.so
@@ -140,24 +138,12 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 
 # Graphics
-lib/libexynosdisplay.so:vendor/lib/libexynosdisplay.so
-lib/libhdmi.so:vendor/lib/libhdmi.so
-lib64/libexynosdisplay.so:vendor/lib64/libexynosdisplay.so
-lib64/libhdmi.so:vendor/lib64/libhdmi.so
 vendor/lib/libcsc.so
-vendor/lib/libexynosutils.so
 vendor/lib/libion_exynos.so
-vendor/lib/libmpp.so
 vendor/lib/egl/libGLES_mali.so
 vendor/lib64/libcsc.so
-vendor/lib64/libexynosutils.so
 vendor/lib64/libion_exynos.so
-vendor/lib64/libmpp.so
 vendor/lib64/egl/libGLES_mali.so
-
-# Memtrack
-vendor/lib/hw/memtrack.universal8890.so
-vendor/lib64/hw/memtrack.universal8890.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-armnn
@@ -286,32 +272,10 @@ vendor/lib/libstagefright_soft_g711dec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
 
 # Surface Composer
-lib/libExynosHWCService.so:vendor/lib/libExynosHWCService.so
 lib/libGrallocWrapper.so:vendor/lib/libGrallocWrapper.so
-lib/libhwcutils.so:vendor/lib/libhwcutils.so
-lib/libvirtualdisplay.so:vendor/lib/libvirtualdisplay.so
-lib/vendor.samsung_slsi.hardware.configstore@1.0.so:vendor/lib/vendor.samsung_slsi.hardware.configstore@1.0.so
-lib/vendor.samsung_slsi.hardware.configstore-utils.so:vendor/lib/vendor.samsung_slsi.hardware.configstore-utils.so
-lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:vendor/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 lib/hw/gralloc.exynos5.so:vendor/lib/hw/gralloc.exynos5.so
-lib/hw/hwcomposer.exynos5.so:vendor/lib/hw/hwcomposer.exynos5.so
-lib64/libExynosHWCService.so:vendor/lib64/libExynosHWCService.so
-lib64/libhwcutils.so:vendor/lib64/libhwcutils.so
 lib64/libGrallocWrapper.so:vendor/lib64/libGrallocWrapper.so
-lib64/libvirtualdisplay.so:vendor/lib64/libvirtualdisplay.so
-lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so
-lib64/vendor.samsung_slsi.hardware.configstore-utils.so:vendor/lib64/vendor.samsung_slsi.hardware.configstore-utils.so
-lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 lib64/hw/gralloc.exynos5.so:vendor/lib64/hw/gralloc.exynos5.so
-lib64/hw/hwcomposer.exynos5.so:vendor/lib64/hw/hwcomposer.exynos5.so
-vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
-vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
-vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc
-vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
-vendor/lib/libhwc2on1adapter.so
-vendor/lib/libhwc2onfbadapter.so
-vendor/lib64/libhwc2on1adapter.so
-vendor/lib64/libhwc2onfbadapter.so
 
 # Wifi
 vendor/bin/hw/macloader
