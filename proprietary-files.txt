@@ -161,20 +161,25 @@ lib64/libmaet.so|ec9939dbe9576a9ab3c27c0300d82809ab630cc1
 lib64/libsxqk_skia.so|3ff0105b643964f4da14ed18c071a76b5868ae7c
 
 # LPM
-media/battery_error.spi
-media/battery_low.spi
-media/battery_temperature_error.spi
-media/battery_temperature_limit.spi
-media/battery_water_usb.spi
-media/charging_New_Fast.spi
-media/charging_New_Normal.spi
 media/dock_error_usb.spi
-media/incomplete_connect.spi
-media/lcd_density.txt
-media/percentage.spi
-media/safety_timer_usb.spi
-media/slow_charging_usb.spi
 media/temperature_limit_usb.spi
+media/lcd_density.txt
+media/battery_error.spi
+media/charging_New_Fast.spi
+media/battery_low.spi
+media/charging_New_Normal.spi
+media/battery_temperature_error.spi
+media/crypt_bootsamsungloop.qmg
+media/bootsamsungloop.qmg
+media/safety_timer_usb.spi
+media/crypt_bootsamsung.qmg
+media/percentage.spi
+media/shutdown.qmg
+media/incomplete_connect.spi
+media/slow_charging_usb.spi
+media/battery_temperature_limit.spi
+media/bootsamsung.qmg
+media/battery_water_usb.spi
 media/water_protection_usb.spi
 
 # Memtrack
