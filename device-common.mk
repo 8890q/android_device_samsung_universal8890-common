@@ -138,11 +138,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    hwcomposer.exynos5 \
-    libfimg \
-    libhwc2on1adapter \
-    libion
+    android.hardware.graphics.mapper@2.0-impl-2.1
 
 # Health
 PRODUCT_PACKAGES += \
@@ -195,8 +191,7 @@ PRODUCT_COPY_FILES += \
 # Memory
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    memtrack.universal8890
+    android.hardware.memtrack@1.0-service
 
 # Network
 PRODUCT_PACKAGES += \
@@ -324,7 +319,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libexynoscamera_shim
+    libexynoscamera_shim \
+    libexynosdisplay_shim
 
 # Stagefright
 PRODUCT_PACKAGES += \
