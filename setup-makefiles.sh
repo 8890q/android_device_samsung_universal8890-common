@@ -31,6 +31,16 @@ write_headers "herolte hero2lte"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
+# The BSP blobs - we put a conditional in case the BSP
+# is actually being built
+printf '\n%s\n' 'ifneq ($(WITH_EXYNOS_BSP),true)' >> "$PRODUCTMK"
+printf '\n%s\n' 'ifneq ($(WITH_EXYNOS_BSP),true)' >> "$ANDROIDMK"
+
+write_makefiles "$MY_DIR"/proprietary-files-bsp.txt
+
+printf '%s\n' 'endif' >> "$PRODUCTMK"
+printf '%s\n' 'endif' >> "$ANDROIDMK"
+
 ###################################################################################################
 # CUSTOM PART START                                                                               #
 ###################################################################################################

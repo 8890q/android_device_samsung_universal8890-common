@@ -1,0 +1,19 @@
+# Graphics
+vendor/lib/hw/hwcomposer.exynos5.so|364b08d48e5560e7544df0b6426d57af95435121
+vendor/lib/hw/memtrack.universal8890.so|41c8b41531da31b6161c7652c37ebbedd4c554d8
+vendor/lib/libexynosdisplay.so|88286f37a4ba8eff0cbe7b8eafbf0754e6084621
+vendor/lib/libexynosutils.so|964bead0fb531f3728d1546a47a2af6c7129de14
+vendor/lib/libexynosv4l2.so|b699012d240cf9424df7da89cbbe666d39bc54bd
+vendor/lib/libfimg.so|309d580553fa60ec9dbfe3be9d3cc84197657480
+vendor/lib/libhdmi.so|0c252cfd5a5c344bb945d8bedabce87fb1f3dcb2
+vendor/lib/libhwcutils.so|624bcac5351bc5331defdd91f5604bf2f741cfee
+vendor/lib/libmpp.so|8116ddb123e53661ba3fc6e7b3be766db8161fd9
+vendor/lib64/hw/hwcomposer.exynos5.so|fa56c2552809f8e328f0841aafd6a677aa20bff5
+vendor/lib64/hw/memtrack.universal8890.so|4b39a551ddc5cdbace74a81e965bc5ad00ac5241
+vendor/lib64/libexynosdisplay.so|feef7fb07ee5b96da4e600e327a9a079171ddc43
+vendor/lib64/libexynosutils.so|398171f63f12a086eb821512ba97ef59928a0a3b
+vendor/lib64/libexynosv4l2.so|602f529512ade7052644f2793852b83d5c903cbd
+vendor/lib64/libfimg.so|61f21906ac89eb4fe210eb5a1c8b999fe2225176
+vendor/lib64/libhdmi.so|d8a403801b1e6e499d53d7891596f056030369aa
+vendor/lib64/libhwcutils.so|387c5c15f4a609f80eaa777b3ef3d3471a7b13b6
+vendor/lib64/libmpp.so|0d73564e594ec02fc838453f803fd8f210db5b12
