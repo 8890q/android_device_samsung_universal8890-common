@@ -2,5 +2,4 @@ subdirs = [
     "atrace",
     "bluetooth",
     "camera",
-    "livedisplay",
 ]
