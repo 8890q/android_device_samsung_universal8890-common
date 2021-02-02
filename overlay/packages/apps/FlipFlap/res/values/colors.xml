@@ -17,10 +17,9 @@
 
 <resources>
 
-    <!-- Rectangular parameters (config_deviceCoverType == 3) -->
-    <dimen name="rectangular_window_top">27.0dip</dimen>
-    <dimen name="rectangular_window_left">24.0dip</dimen>
-    <dimen name="rectangular_window_width">322.0dip</dimen>
-    <dimen name="rectangular_window_height">321.0dip</dimen>
+    <!-- override full colour to black -->
+    <color name="full_bat_bg">#000000</color>
+    <color name="low_bat_bg">#000000</color>
+    <color name="charge_bat_bg">#000000</color>
 
 </resources>
