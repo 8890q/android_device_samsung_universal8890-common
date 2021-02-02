@@ -1,0 +1,34 @@
+# init.te
+
+allow init efs_block_device:blk_file relabelto;
+
+# Bind mount files on /system
+allow init system_file:file mounton;
+
+# Mount EFS on /efs
+allow init efs_file:dir  mounton;
+
+# Mount CPEFS on /cpefs
+allow init sec_efs_file:dir mounton;
+
+allow init iorapd_data_file:file getattr;
+
+allow init proc_last_kmsg:file setattr;
+
+allow init sysfs_scsi_host:dir relabelfrom;
+allow init sysfs_scsi_host:file relabelfrom;
+
+# Sockets
+allow init socket_device:sock_file { read write getattr setattr create unlink };
+allow init node:tcp_socket node_bind;
+allow init self:netlink_kobject_uevent_socket { bind create setopt };
+allow init dnsproxyd_socket:sock_file write;
+allow init fwmarkd_socket:sock_file write;
+allow init netd:unix_stream_socket connectto;
+allow init port:tcp_socket { name_bind name_connect };
+allow init self:tcp_socket { bind connect create write getopt read };
+
+allow init fwk_sensor_hwservice:hwservice_manager find;
+allow init hidl_base_hwservice:hwservice_manager add;
+
+unix_socket_connect(init, property, rild)

@@ -1,0 +1,12 @@
+# surfaceflinger.te
+
+allow surfaceflinger secmem_device:chr_file rw_file_perms;
+
+allow surfaceflinger {
+    debugfs_ion
+    debugfs_mali
+    debugfs_mali_mem
+}:dir search;
+
+allow surfaceflinger sysfs_graphics:dir r_dir_perms;
+allow surfaceflinger sysfs_graphics:file rw_file_perms;

@@ -1,0 +1,18 @@
+# lhd.te
+
+allow lhd {
+    efs_file
+    sec_efs_file
+}:dir search;
+
+allow lhd {
+    sysfs_lhd
+    sysfs_sec_sensorhub
+}:dir search;
+
+allow lhd {
+    sysfs_lhd
+    sysfs_sec_sensorhub
+}:file rw_file_perms;
+
+allow lhd sysfs_sec_gps:lnk_file r_file_perms;

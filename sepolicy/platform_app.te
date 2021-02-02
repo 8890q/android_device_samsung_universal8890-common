@@ -1,2 +1,0 @@
-allow platform_app debugfs_ion:dir search;
-allow platform_app debugfs_mali:dir search;

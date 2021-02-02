@@ -1,0 +1,71 @@
+# rild.te
+
+binder_call(rild, hal_radio_default)
+
+# Modem firmware download
+allow rild radio_block_device:blk_file r_file_perms;
+
+# /dev/mbin0
+allow rild block_device:dir r_dir_perms;
+allow rild emmcblk_device:blk_file r_file_perms;
+
+# /dev/umts_boot0, /dev/umts_ipc0
+allow rild mif_device:chr_file rw_file_perms;
+
+allow rild {
+    app_efs_file
+    imei_efs_file
+}:dir r_dir_perms;
+
+allow rild app_efs_file:file r_file_perms;
+allow rild imei_efs_file:file rw_file_perms;
+
+# /efs/nv_data.bin
+allow rild bin_nv_data_efs_file:file create_file_perms;
+allowxperm rild bin_nv_data_efs_file:file ioctl { 0x6601 0x6602 };
+
+allow rild init:dir search;
+allow rild init:file r_file_perms;
+
+allow rild {
+    media_rw_data_file
+    mnt_user_file
+    mnt_vendor_file
+    storage_file
+}:dir r_dir_perms;
+
+allow rild {
+    radio_data_file
+    radio_vendor_data_file
+}:dir rw_dir_perms;
+
+allow rild {
+    radio_data_file
+    radio_vendor_data_file
+}:file create_file_perms;
+
+allow rild {
+    mnt_user_file
+    radio_data_file
+    storage_file
+}:lnk_file r_file_perms;
+
+# /proc/sys/net/ipv6/conf/*/accept_ra_defrtr
+allow rild proc_net:file rw_file_perms;
+
+allow rild proc_qtaguid_stat:file r_file_perms;
+
+# /sys/devices/virtual/misc/multipdp/waketime
+allow rild sysfs_multipdp:file rw_file_perms;
+
+# Allow rild to change perms
+allow rild self:capability chown;
+
+r_dir_file(rild, audioserver);
+r_dir_file(rild, gpsd);
+r_dir_file(rild, hal_audio_default);
+r_dir_file(rild, mediaserver);
+
+set_prop(rild, ctl_rildaemon_prop)
+set_prop(rild, radio_prop)
+get_prop(rild, vendor_radio_prop)

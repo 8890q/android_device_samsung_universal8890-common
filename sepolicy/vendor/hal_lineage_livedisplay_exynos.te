@@ -1,0 +1,4 @@
+# hal_lineage_livedisplay_exynos.te
+
+allow hal_lineage_livedisplay_exynos sysfs_graphics:dir search;
+allow hal_lineage_livedisplay_exynos sysfs_mdnie:file rw_file_perms;

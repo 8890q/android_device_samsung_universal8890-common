@@ -1,0 +1,6 @@
+# gmscore_app.te
+
+allow gmscore_app {
+    debugfs_mali
+    debugfs_mali_mem
+}:dir search;

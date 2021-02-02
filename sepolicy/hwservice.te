@@ -1,8 +1,0 @@
-type hal_sec_radio_configsvc_hwservice, hwservice_manager_type;
-type hal_sec_radio_channel_hwservice, hwservice_manager_type;
-type hal_sec_nfc_hwservice, hwservice_manager_type;
-type hal_sec_gnss_hwservice, hwservice_manager_type;
-type hal_sec_radio_hwservice, hwservice_manager_type;
-type hal_sec_radio_secbridge_hwservice, hwservice_manager_type;
-type hal_sec_radio_sechook_hwservice, hwservice_manager_type;
-type hal_vendor_surfaceflinger_hwservice, hwservice_manager_type;

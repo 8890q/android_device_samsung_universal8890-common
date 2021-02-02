@@ -1,0 +1,18 @@
+# hal_wifi_default.te
+
+allow hal_wifi_default {
+    efs_file
+    wifi_efs_file
+}:dir search;
+
+allow hal_wifi_default wifi_efs_file:file r_file_perms;
+
+allow hal_wifi_default {
+    conn_vendor_data_file
+    wifi_data_file
+}:dir search;
+
+allow hal_wifi_default system_data_file:file r_file_perms;
+allow hal_wifi_default wifi_data_file:file rw_file_perms;
+
+set_prop(hal_wifi_default, wifi_prop)

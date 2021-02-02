@@ -1,0 +1,25 @@
+# device.te
+
+# Block devices
+type bota_block_device, dev_type;
+type cid_block_device, dev_type;
+type debug_block_device, dev_type;
+type dnt_block_device, dev_type;
+type hidden_block_device, dev_type;
+type NAD_REFER_block_device, dev_type;
+type ota_block_device, dev_type;
+type param_block_device, dev_type;
+type persdata_block_device, dev_type;
+type persist_block_device, dev_type;
+type sdd_block_device, dev_type;
+type steady_block_device, dev_type;
+type tombstones_block_device, dev_type;
+type emmcblk_device, file_type;
+
+type fingerprint_device, dev_type;
+type gps_device, dev_type;
+type mif_device, dev_type;
+type rfkill_device, dev_type;
+type secmem_device, dev_type;
+type seiren_device, dev_type;
+type sensor_device, dev_type;
