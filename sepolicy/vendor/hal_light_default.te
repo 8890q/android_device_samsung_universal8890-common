@@ -1,0 +1,16 @@
+# hal_light_default.te
+
+allow hal_light_default{
+    sysfs_backlight_writable
+    sysfs_graphics
+    sysfs_light
+    sysfs_sec_led
+    sysfs_sec_touchkey
+}:dir search;
+
+allow hal_light_default{
+    sysfs_graphics
+    sysfs_light
+    sysfs_sec_led
+    sysfs_sec_touchkey
+}:file rw_file_perms;

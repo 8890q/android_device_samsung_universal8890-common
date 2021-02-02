@@ -1,0 +1,19 @@
+# hal_power_default.te
+
+allow hal_power_default{
+    sysfs_backlight_writable
+    sysfs_batteryinfo
+    sysfs_devices_system_cpu
+    sysfs_graphics
+    sysfs_light
+    sysfs_sec_tsp
+}:dir r_dir_perms;
+
+allow hal_power_default{
+    sysfs_backlight_writable
+    sysfs_batteryinfo
+    sysfs_devices_system_cpu
+    sysfs_graphics
+    sysfs_light
+    sysfs_sec_tsp
+}:file rw_file_perms;

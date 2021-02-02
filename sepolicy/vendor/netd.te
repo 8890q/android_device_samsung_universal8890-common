@@ -1,0 +1,18 @@
+# netd.te
+
+allow netd dhcp_data_file:dir setattr;
+allow netd wifi_data_file:sock_file create_file_perms;
+
+allow netd gpsd:udp_socket rw_socket_perms;
+
+allow netd {
+    gpsd
+    init
+}:tcp_socket rw_socket_perms;
+
+allow netd sysfs_net:dir search;
+allow netd sysfs_net:file w_file_perms;
+
+allow netd self:capability sys_module;
+
+allow netd gpsd:fd use;

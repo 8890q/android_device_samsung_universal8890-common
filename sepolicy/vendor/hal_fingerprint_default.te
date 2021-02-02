@@ -1,0 +1,25 @@
+# hal_fingerprint_default.te
+
+# allow hal_fingerprint_default to communicate with various devices
+binder_call(system_app, hal_fingerprint_default)
+
+# kernel fp device
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+
+# secure memory device
+allow hal_fingerprint_default secmem_device:chr_file rw_file_perms;
+
+# trust zone device
+allow hal_fingerprint_default tee:unix_stream_socket connectto;
+
+# /data/biometrics/*
+allow hal_fingerprint_default fingerprintd_data_file:dir create_dir_perms;
+allow hal_fingerprint_default fingerprintd_data_file:file create_file_perms;
+
+# /data/vendor/biometrics/*
+allow hal_fingerprint_default biometrics_vendor_data_file:dir create_dir_perms;
+allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
+
+# Fingerprint sysfs
+allow hal_fingerprint_default sysfs_fingerprint:dir search;
+allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;

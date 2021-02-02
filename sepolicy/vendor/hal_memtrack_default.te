@@ -1,0 +1,14 @@
+# hal_memtrack_default.te
+
+allow hal_memtrack_default {
+    debugfs
+    debugfs_ion
+    debugfs_mali
+    debugfs_mali_mem
+}:dir r_dir_perms;
+
+allow hal_memtrack_default {
+    debugfs_ion
+    debugfs_mali
+    debugfs_mali_mem
+}:file r_file_perms;

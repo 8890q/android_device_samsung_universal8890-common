@@ -1,0 +1,131 @@
+####################################
+# DebugFS
+#
+
+genfscon debugfs /mali/                         u:object_r:debugfs_mali:s0
+genfscon debugfs /mali/mem/                     u:object_r:debugfs_mali_mem:s0
+genfscon debugfs /dma_buf                       u:object_r:debugfs_ion:s0
+genfscon debugfs /ion                           u:object_r:debugfs_ion:s0
+genfscon debugfs /debug/ipa                     u:object_r:debugfs_ipa:s0
+
+####################################
+# Proc
+#
+
+genfscon proc /device-tree                      u:object_r:proc_dt_firmware:s0
+
+genfscon proc /sys/vm/dirty_ratio               u:object_r:proc_vm:s0
+genfscon proc /sys/vm/dirty_bytes               u:object_r:proc_vm:s0
+genfscon proc /sys/vm/dirty_background_bytes    u:object_r:proc_vm:s0
+genfscon proc /sys/vm/min_free_kbytes           u:object_r:proc_vm:s0
+
+genfscon proc /sys/vm/swappiness                u:object_r:proc_vm:s0
+genfscon proc /sys/vm/vfs_cache_pressure        u:object_r:proc_vm:s0
+
+genfscon proc /reset_reason                     u:object_r:proc_reset_reason:s0
+
+genfscon proc /bus/input/devices                u:object_r:proc_input_devices:s0
+
+genfscon proc /last_kmsg                        u:object_r:proc_last_kmsg:s0
+
+# SEC devices
+genfscon proc /sec_log                          u:object_r:proc_sec:s0
+
+genfscon proc /avc_msg                          u:object_r:proc_audit:s0
+
+genfscon proc /store_lastkmsg                   u:object_r:proc_reset_reason:s0
+
+genfscon proc /bluetooth/uart/log               u:object_r:proc_bluetooth:s0
+
+####################################
+# Sysfs
+#
+
+# Audio
+genfscon sysfs /devices/virtual/audio/earjack       u:object_r:sysfs_jack:s0
+genfscon sysfs /devices/virtual/audio/codec         u:object_r:sysfs_codec:s0
+
+# Camera
+genfscon sysfs /devices/virtual/camera              u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/152e0000.mfc0/video6/name   u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/152e0000.mfc0/video7/name   u:object_r:sysfs_camera:s0
+
+# CPU/Scheduler devices
+genfscon sysfs /power/cpufreq_table                                 u:object_r:sysfs_devices_system_cpu:s0
+genfscon sysfs /power/cpuhotplug                                    u:object_r:sysfs_devices_system_cpu:s0
+genfscon sysfs /power/call_state                                    u:object_r:sysfs_devices_system_cpu:s0
+
+genfscon sysfs /module/cpuidle/parameters/off                       u:object_r:sysfs_devices_system_cpu:s0
+genfscon sysfs /module/cpuidle_exynos64/parameters/enable_mask      u:object_r:sysfs_devices_system_cpu:s0
+
+genfscon sysfs /module/workqueue/parameters/power_efficient         u:object_r:sysfs_devices_system_cpu:s0
+
+genfscon sysfs /power/ipa                                           u:object_r:sysfs_devices_system_cpu:s0
+genfscon sysfs /firmware/devicetree/base/ipa_pdata                  u:object_r:sysfs_devices_system_cpu:s0
+
+genfscon sysfs /kernel/hmp                                          u:object_r:sysfs_devices_system_cpu:s0
+
+genfscon sysfs /firmware/devicetree/base/cpus/hmp/down_threshold    u:object_r:sysfs_socinfo:s0
+
+# Decon
+genfscon sysfs /devices/13960000.decon_f  u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13e10000.decon_s  u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13e20000.decon_t  u:object_r:sysfs_graphics:s0
+
+# Hall
+genfscon sysfs /devices/certify_hall/input  u:object_r:sysfs_hall:s0
+genfscon sysfs /devices/hall/input/input11  u:object_r:sysfs_hall:s0
+
+# Input booster
+genfscon sysfs /class/input_booster/level   u:object_r:sysfs_input:s0
+genfscon sysfs /class/input_booster/head    u:object_r:sysfs_input:s0
+genfscon sysfs /class/input_booster/tail    u:object_r:sysfs_input:s0
+
+# Input devices
+genfscon sysfs /devices/gpio_keys/input/input10                                   u:object_r:sysfs_input:s0
+genfscon sysfs /devices/14e10000.hsi2c/i2c-4/4-0048/input                         u:object_r:sysfs_input:s0
+genfscon sysfs /devices/14d20000.spi/spi_master/spi0/spi0.0/arizona-extcon/input  u:object_r:sysfs_input:s0
+
+# ION
+genfscon sysfs /devices/virtual/misc/ion                    u:object_r:sysfs_ion:s0
+
+# LHD
+genfscon sysfs /devices/136d0000.pinctrl/gpio/gpio101       u:object_r:sysfs_lhd:s0
+
+# MMC block device cache files
+genfscon sysfs /devices/virtual/bdi/254:0/read_ahead_kb     u:object_r:sysfs_block:s0
+
+genfscon sysfs /devices/15660000.pcie0                      u:object_r:sysfs_pcie:s0
+
+# Power supply devices
+genfscon sysfs /devices/battery/power_supply                              u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/14e30000.hsi2c/i2c-8/8-0061/power_supply          u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/13650000.hsi2c/i2c-1/1-0066/max77854-charger      u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/13650000.hsi2c/i2c-1/1-0066/max77854-fuelgauge    u:object_r:sysfs_batteryinfo:s0
+
+# Rmnet
+genfscon sysfs /devices/virtual/net/rmnet0    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet1    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet2    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet3    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet4    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet5    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet6    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/virtual/net/rmnet7    u:object_r:sysfs_net:s0
+
+# SCSI
+genfscon sysfs /devices/155a0000.ufs/host0    u:object_r:sysfs_scsi_host:s0
+
+# Touchkey
+genfscon sysfs /devices/i2c@20/i2c-10/10-0020/input                 u:object_r:sysfs_sec_touchkey:s0
+
+# USB lun device
+genfscon sysfs /devices/15400000.usb/15400000.dwc3/gadget/lun0      u:object_r:sysfs_android_usb:s0
+
+# USB
+genfscon sysfs /devices/virtual/android_usb/android0                u:object_r:sysfs_android_usb:s0
+
+# video4linux
+genfscon sysfs /devices/fimc_is_preprocessor@14020000/video4linux   u:object_r:sysfs_v4l:s0
+
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                     u:object_r:sysfs_vmscan:s0

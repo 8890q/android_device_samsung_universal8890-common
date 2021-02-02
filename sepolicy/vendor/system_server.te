@@ -1,0 +1,68 @@
+# system_server.te
+
+binder_call(system_server, gpsd)
+
+# used to access the fwk_sensor_hwservice over hwbinder
+binder_call(system_server, hal_camera_default)
+
+allow system_server {
+    debugfs_ion
+    debugfs_mali
+    debugfs_mali_mem
+}:dir r_dir_perms;
+
+allow system_server debugfs_ion:file r_file_perms;
+
+allow system_server sensor_device:chr_file rw_file_perms;
+
+allow system_server {
+    app_efs_file
+    efs_file
+    wifi_efs_file
+}:dir r_dir_perms;
+
+allow system_server {
+    app_efs_file
+    baro_delta_factoryapp_efs_file
+    efs_file
+    sensor_efs_file
+    sensor_factoryapp_efs_file
+    wifi_efs_file
+}:file r_file_perms;
+
+# /data/system/gps/.gps.interface.pipe.*
+type_transition system_server system_data_file:fifo_file gps_data_file ".flp.interface.pipe.to_gpsd";
+type_transition system_server system_data_file:fifo_file gps_data_file ".gps.interface.pipe.to_gpsd";
+type_transition system_server system_data_file:fifo_file gps_data_file ".gps.interface.pipe.to_jni";
+
+# /data/system/gps/xtraee.bin, /data/system/gps/chip.info
+allow system_server gps_data_file:dir rw_dir_perms;
+allow system_server gps_data_file:file create_file_perms;
+allow system_server gps_data_file:fifo_file create_file_perms;
+
+allow system_server {
+    proc_input_devices
+    proc_last_kmsg
+}:file r_file_perms;
+
+allow system_server {
+    sysfs_graphics
+    sysfs_mdnie
+}:file rw_file_perms;
+
+allow system_server sysfs_mdnie:lnk_file rw_file_perms;
+
+allow system_server {
+    app_zygote
+    crash_dump
+}:process getpgid;
+
+allow system_server self:capability sys_module;
+
+get_prop(system_server, bluetooth_prop)
+get_prop(system_server, userspace_reboot_exported_prop)
+get_prop(system_server, userspace_reboot_config_prop)
+
+unix_socket_connect(system_server, property, gpsd)
+
+dontaudit system_server persist_block_device:blk_file { getattr ioctl open read write };

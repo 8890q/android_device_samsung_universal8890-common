@@ -1,0 +1,10 @@
+# bluetooth.te
+
+# /dev/ttySAC3
+allow bluetooth bt_device:chr_file rw_file_perms;
+
+# /data/.cid.info, /data/.cid.info
+allow bluetooth wifi_data_file:file r_file_perms;
+
+allow bluetooth sysfs_bluetooth_writable:file rw_file_perms;
+allow bluetooth sysfs_bluetooth_writable:dir search;

@@ -1,0 +1,18 @@
+# mediaserver.te
+
+# /dev/seiren, /dev/s5p-smem, /dev/m2m1shot_scaler
+allow mediaserver {
+    camera_device
+    seiren_device
+    secmem_device
+}:chr_file rw_file_perms;
+
+# /efs
+allow mediaserver efs_file:dir r_dir_perms;
+allow mediaserver efs_file:file r_file_perms;
+
+# Snap permissions
+allow mediaserver sensorservice_service:service_manager find;
+allow mediaserver system_server:unix_stream_socket rw_stream_socket_perms;
+
+allow mediaserver debugfs_ion:dir search;

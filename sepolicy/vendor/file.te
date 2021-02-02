@@ -1,0 +1,86 @@
+# file.te
+
+# data types
+type camera_vendor_data_file, data_file_type, file_type;
+type cas_data_file, file_type, data_file_type, core_data_file_type;
+type display_vendor_data_file, file_type, data_file_type;
+type fingerprintd_vendor_data_file, data_file_type, file_type;
+type firmware_data_file, file_type, data_file_type, core_data_file_type;
+type gps_data_file, file_type, data_file_type, core_data_file_type;
+type nfc_vendor_data_file, data_file_type, file_type;
+
+# debug types
+type debugfs_ion, fs_type, debugfs_type;
+type debugfs_ipa, fs_type, debugfs_type;
+type debugfs_mali, fs_type, debugfs_type;
+type debugfs_mali_mem, fs_type, debugfs_type;
+
+# efs types
+type baro_delta_factoryapp_efs_file, file_type;
+type cpdebug_efs_file, file_type;
+type factorymode_factoryapp_efs_file, file_type;
+type mediadrm_vendor_data_file, file_type, data_file_type;
+type ota_efs_file, file_type;
+type radio_factoryapp_efs_file, file_type;
+type sensor_efs_file, file_type;
+type sensor_factoryapp_efs_file, file_type;
+type ssm_efs_file, file_type;
+
+# proc types
+type proc_audit, fs_type, proc_type;
+type proc_bluetooth, fs_type, proc_type;
+type proc_dt_firmware, fs_type, proc_type;
+type proc_input_devices, fs_type, proc_type;
+type proc_last_kmsg, fs_type, proc_type;
+type proc_reset_reason, fs_type, proc_type;
+type proc_sec, fs_type, proc_type;
+type proc_simslot_count, fs_type, proc_type;
+type proc_vm, fs_type, proc_type;
+
+# sysfs types
+type sysfs_block, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_camera, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_codec, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_devfreq, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_dsm, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_graphics, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_hall, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_hmt, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_jack, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_lhd, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_light, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mali, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mdnie, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mfc, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mipi, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mmc, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_modem, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_mst, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_multipdp, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_pcie, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_scsi_host, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_ap_thermistor, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_barcode_emul, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_bsp, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_led, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_mfd, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_motor, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_pa_thermistor, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_sec_heavy_cpu, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_sdcard, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_sddata, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_sdinfo, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_secureos, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_touchkey, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_ts, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_tsp, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_sec_wlan, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_socinfo, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_ssp, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_v4l, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_vmscan, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_usb_otg, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_usb_supply, sysfs_type, fs_type, mlstrustedobject;
+
+# socket types
+type gps_socket, file_type;
