@@ -137,6 +137,7 @@
 # Block/Storage
 /sys/devices/[a-f0-9]+\.ufs/host0/power(/.*)?                                 u:object_r:sysfs_mmc:s0
 /sys/devices/[a-f0-9]+\.ufs/host0/target0:0:0/0:0:0:0/block/sda/queue(/.*)?   u:object_r:sysfs_io_sched_tuneable:s0
+/sys/devices/[0-9]+\.dwmmc[0-9]+/mmc_host/mmc[0-9]+/mmc[0-9]+:[a-z]+/block/mmcblk[0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
 
 # Bluetooth
 /sys/devices/bluetooth/rfkill/rfkill0/state  u:object_r:sysfs_bluetooth_writable:s0
