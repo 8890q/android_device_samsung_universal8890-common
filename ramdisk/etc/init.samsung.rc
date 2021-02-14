@@ -983,4 +983,4 @@ on property:sys.boot_completed=1
     mkdir /data/vendor/log/hwc 0771 system graphics
 
 on property:apexd.status=ready
-    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
+    mount none /vendor/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
