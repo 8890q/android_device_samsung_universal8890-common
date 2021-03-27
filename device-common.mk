@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
 
 # Livedisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.universal8890
+    vendor.lineage.livedisplay@2.1-service.universal8890
 
 # Media
 PRODUCT_COPY_FILES += \
