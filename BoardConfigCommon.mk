@@ -199,4 +199,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit from the proprietary version
--include vendor/samsung/universal8890-common/BoardConfigVendor.mk
+include vendor/samsung/universal8890-common/BoardConfigVendor.mk
