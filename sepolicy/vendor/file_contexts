@@ -123,9 +123,7 @@
 /(vendor|system/vendor)/lib(64)?/egl/libGLES_mali\.so       u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/gralloc\.[a-z0-9]*\.so  u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/hw/vulkan\.[a-z0-9]*\.so   u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib(64)?/libbccArm\.so              u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libion_exynos\.so          u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib(64)?/libRSDriverArm\.so         u:object_r:same_process_hal_file:s0
 
 ####################################
 # Sysfs
