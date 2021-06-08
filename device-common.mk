@@ -70,8 +70,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl.universal8890:64 \
-    android.hardware.bluetooth@1.0-service.universal8890 \
+    android.hardware.bluetooth@1.0-impl:64 \
+    android.hardware.bluetooth@1.0-service \
     libbt-vendor
 
 # Camera
