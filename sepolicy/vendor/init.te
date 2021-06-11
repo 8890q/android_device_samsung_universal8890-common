@@ -13,8 +13,6 @@ allow init sec_efs_file:dir mounton;
 
 allow init iorapd_data_file:file getattr;
 
-allow init proc_last_kmsg:file setattr;
-
 allow init sysfs_scsi_host:dir relabelfrom;
 allow init sysfs_scsi_host:file relabelfrom;
 
