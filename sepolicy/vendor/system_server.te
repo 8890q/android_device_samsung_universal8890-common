@@ -36,7 +36,6 @@ allow system_server gps_data_file:fifo_file create_file_perms;
 
 allow system_server {
     proc_input_devices
-    proc_last_kmsg
 }:file r_file_perms;
 
 allow system_server {
