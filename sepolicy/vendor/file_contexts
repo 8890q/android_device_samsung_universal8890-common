@@ -174,6 +174,9 @@
 # HMT relay mode node
 /sys/devices/virtual/relay_on                       u:object_r:sysfs_hmt:s0
 
+# HRM
+/sys/devices/virtual/input/input4(/.*)?             u:object_r:sysfs_hrm:s0
+
 # IIO
 /sys/bus/iio/devices(/.*)?                                                            u:object_r:sysfs_iio:s0
 /sys/devices/[a-f0-9]+\.adc/iio:device[0-9](/.*)?                                     u:object_r:sysfs_iio:s0
