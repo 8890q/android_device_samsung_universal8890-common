@@ -1,0 +1,3 @@
+# hal_lineage_batterylifeextender_default
+
+allow hal_lineage_batterylifeextender_default sysfs_batteryinfo:dir search;
