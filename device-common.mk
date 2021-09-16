@@ -160,7 +160,8 @@ PRODUCT_PACKAGES += \
 # iorapd
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true
+    iorapd.readahead.enable=true \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
