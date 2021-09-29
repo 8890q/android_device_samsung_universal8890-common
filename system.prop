@@ -58,6 +58,10 @@ vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
 # SLSI
 debug.slsi_platform=1
 
+# SoC
+ro.soc.manufacturer=Samsung
+ro.soc.model=Exynos 8890
+
 # Widevine
 drm.service.enabled=true
 
