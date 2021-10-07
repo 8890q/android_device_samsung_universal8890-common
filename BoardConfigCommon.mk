@@ -141,6 +141,10 @@ BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 #BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor2
 
+# Bringup haxx
+TARGET_DISABLE_LINEAGE_SDK := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so \
