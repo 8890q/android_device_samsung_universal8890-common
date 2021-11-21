@@ -24,7 +24,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
-    hardware/samsung/hidl/light/include
+    hardware/samsung/aidl/light/include
 
 LOCAL_SHARED_LIBRARIES := \
     libbase \
