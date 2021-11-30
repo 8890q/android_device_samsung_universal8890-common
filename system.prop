@@ -11,6 +11,9 @@ ro.config.systemaudiodebug=arizona
 # Boot device
 ro.boot.bootdevice=155a0000.ufs
 
+# BPF
+ro.kernel.ebpf.supported=false
+
 #Cmc properties
 ro.cmc.device_type=pd
 ro.cmc.version=2.0
@@ -65,3 +68,8 @@ wifi.direct.interface=p2p-dev-wlan0
 	
 # WiFi Display
 ro.vendor.wfdsupport=1
+
+# Android first shipping level
+# (Should be 24 for Note FE, or we can bump it) board wide who cares
+ro.product.first_api_level=23
+ro.vndk.version=23
