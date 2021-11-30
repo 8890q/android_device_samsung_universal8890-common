@@ -31,7 +31,7 @@ TARGET_SCREEN_WIDTH := 1440
 
 # AdvancedDisplay (MDNIE)
 PRODUCT_PACKAGES += \
-    AdvancedDisplay 
+    AdvancedDisplay
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -140,6 +140,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
+    libhwc2on1adapter \
+    libion \
     libbfqio
 
 # Health
@@ -322,8 +324,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libexynoscamera_shim \
-    libexynosdisplay_shim
+    libexynoscamera_shim
 
 # Stagefright
 PRODUCT_PACKAGES += \

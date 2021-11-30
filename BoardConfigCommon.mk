@@ -148,11 +148,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so \
-    /vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
-    /vendor/lib64/libexynosdisplay.so|/vendor/lib64/libexynosdisplay_shim.so \
-    /vendor/lib/libexynosdisplay.so|/vendor/lib/libexynosdisplay_shim.so \
-    /vendor/lib64/hw/hwcomposer.exynos5.so|/vendor/lib64/libexynosdisplay_shim.so \
-    /vendor/lib/hw/hwcomposer.exynos5.so|/vendor/lib/libexynosdisplay_shim.so
+    /vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
