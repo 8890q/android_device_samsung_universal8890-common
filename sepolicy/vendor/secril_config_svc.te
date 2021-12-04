@@ -1,3 +1,0 @@
-# secril_config_svc.te
-
-set_prop(secril_config_svc, radio_control_prop)

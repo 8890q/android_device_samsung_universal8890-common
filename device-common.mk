@@ -303,7 +303,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0 \
     init.baseband.rc \
-    libxml2
+    libxml2 \
+    secril_config_svc
 
 # Copy stock APN config as lineage one seams to be quite broken and outdated
 PRODUCT_COPY_FILES += \

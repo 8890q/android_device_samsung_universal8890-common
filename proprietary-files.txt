@@ -250,10 +250,6 @@ vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so|44d2173ab0187ec3460dd5
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so|e9985c207ffec829a1746af29d45d9da1994805f
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so|12953d8fe923094410dfa0ea983515b0b16e8eba
 
-# Radio - RIL - from G960FXXSBETH2
-vendor/bin/secril_config_svc|0c48e7ebcc2635c228ecbb37a290248849075f99
-vendor/etc/init/init.vendor.rilcommon.rc|bcc99fdc49022c36250bb7c914cc351f1af8adb1
-
 # RIL
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_chn.bin
