@@ -136,11 +136,10 @@ TARGET_USES_VND_SECRIL := true
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 
 # SELinux
-#include device/lineage/sepolicy/exynos/sepolicy.mk
-#BOARD_SEPOLICY_TEE_FLAVOR := mobicore
-#include device/samsung_slsi/sepolicy/sepolicy.mk
-#BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor2
+include device/lineage/sepolicy/exynos/sepolicy.mk
+BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+include device/samsung_slsi/sepolicy/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Bringup haxx
 #TARGET_DISABLE_LINEAGE_SDK := true
