@@ -37,7 +37,7 @@ type proc_simslot_count, fs_type, proc_type;
 type proc_vm, fs_type, proc_type;
 
 # sysfs types
-type sysfs_block, sysfs_type, fs_type, mlstrustedobject;
+#type sysfs_block, sysfs_type, fs_type, mlstrustedobject;
 type sysfs_camera, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_codec, sysfs_type, fs_type, mlstrustedobject;
 type sysfs_devfreq, fs_type, sysfs_type, mlstrustedobject;
