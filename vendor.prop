@@ -1,0 +1,38 @@
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+af.fast_track_multiplier=1
+audio_hal.force_voice_config=wide
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+ro.config.systemaudiodebug=arizona
+
+# Cmc properties
+ro.cmc.device_type=pd
+ro.cmc.version=2.0
+
+# Graphics
+debug.hwc.winupdate=1
+ro.hardware.egl=mali
+ro.opengles.version=196610
+
+# Keystore
+ro.hardware.keystore=mdfpp
+
+# RIL
+ro.debug_level=0x494d
+ro.hdcp2.rx=tz
+telephony.lteOnCdmaDevice=0
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
+vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
+
+# SLSI
+debug.slsi_platform=1
+
+# SoC
+ro.soc.manufacturer=Samsung
+ro.soc.model=Exynos 8890
+
+# WiFi
+wifi.direct.interface=p2p-dev-wlan0
