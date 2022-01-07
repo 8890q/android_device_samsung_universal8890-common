@@ -56,6 +56,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+## ELF
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
