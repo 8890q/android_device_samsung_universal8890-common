@@ -46,6 +46,7 @@ type sysfs_grip, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_hall, sysfs_type, fs_type, mlstrustedobject;
 type sysfs_hmt, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_hrm, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_io_sched_tuneable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_jack, sysfs_type, fs_type, mlstrustedobject;
 type sysfs_lhd, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_light, fs_type, sysfs_type, mlstrustedobject;
