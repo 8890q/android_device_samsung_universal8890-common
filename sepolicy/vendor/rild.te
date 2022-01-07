@@ -66,6 +66,6 @@ r_dir_file(rild, gpsd);
 r_dir_file(rild, hal_audio_default);
 r_dir_file(rild, mediaserver);
 
-set_prop(rild, ctl_rildaemon_prop)
 set_prop(rild, radio_prop)
 get_prop(rild, vendor_radio_prop)
+set_prop(rild, vendor_radio_prop)

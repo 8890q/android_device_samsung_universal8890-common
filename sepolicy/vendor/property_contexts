@@ -1,4 +1,9 @@
+# Audio
+persist.vendor.audio.            u:object_r:vendor_audio_prop:s0
+audio_hal.                       u:object_r:vendor_audio_prop:s0
+
 # Camera
+persist.sys.camera.              u:object_r:vendor_camera_prop:s0
 persist.vendor.sys.camera.       u:object_r:vendor_camera_prop:s0
 persist.vendor.hifills.          u:object_r:vendor_camera_prop:s0
 persist.vendor.dualCam.          u:object_r:vendor_camera_prop:s0
@@ -6,7 +11,8 @@ persist.vendor.camera.           u:object_r:vendor_camera_prop:s0
 vendor.hal.camera.               u:object_r:vendor_camera_prop:s0
 
 # HWC
-vendor.ddk.set.afbc              u:object_r:vendor_hwc_prop:s0
+vendor.ddk.                      u:object_r:vendor_hwc_prop:s0
+debug.hwc.                       u:object_r:vendor_hwc_prop:s0
 
 # NFC
 persist.nfc.log.index            u:object_r:vendor_nfc_prop:s0
@@ -14,7 +20,17 @@ vendor.nfc.fw.                   u:object_r:vendor_nfc_prop:s0
 persist.vendor.nfc.log.index     u:object_r:vendor_nfc_prop:s0
 
 # Radio
-persist.ril.interfaceconf.failed u:object_r:radio_prop:s0
+persist.ril.interfaceconf.       u:object_r:radio_prop:s0
+persist.radio.multisim.          u:object_r:vendor_radio_prop:s0
+ro.multisim.                     u:object_r:vendor_radio_prop:s0
+ril.clatd.                       u:object_r:clatd_radio_prop:s0
+ril.phone.connected.             u:object_r:vendor_radio_prop:s0
+vendor.rild.                     u:object_r:vendor_radio_prop:s0
+vendor.sec.rild.                 u:object_r:vendor_radio_prop:s0
+
+# OMX
+ro.vendor.cscsupported           u:object_r:vendor_omx_prop:s0
+ro.vendor.debug.omx.             u:object_r:vendor_omx_prop:s0
 
 # Wifi
 wifi.active.interface            u:object_r:wifi_prop:s0

@@ -55,8 +55,9 @@ allow system_server self:capability sys_module;
 get_prop(system_server, bluetooth_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 get_prop(system_server, userspace_reboot_config_prop)
-get_prop(system_server, vendor_radio_prop)
 
 unix_socket_connect(system_server, property, gpsd)
+
+get_prop(system_server, build_bootimage_prop)
 
 dontaudit system_server persist_block_device:blk_file { getattr ioctl open read write };
