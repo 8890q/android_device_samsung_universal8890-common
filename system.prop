@@ -8,7 +8,7 @@ ro.kernel.ebpf.supported=false
 dalvik.vm.dex2oat64.enabled=true
 
 # Factory Reset Protection
-ro.frp.pst=/dev/block/persistent
+#ro.frp.pst=/dev/block/persistent
 
 # Graphics
 debug.sf.latch_unsignaled=1
