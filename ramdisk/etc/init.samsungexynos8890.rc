@@ -428,9 +428,6 @@ on boot
     chown system system sys/devices/system/cpu/cpufreq/mp-cpufreq/boot_low_freq
     chmod 0660 sys/devices/system/cpu/cpufreq/mp-cpufreq/boot_low_freq
 
-    #MST HW Support
-    setprop ro.mst.support 1
-
     # Cluster1 (Mongoose)
     chown system system /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
     chmod 0660 /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
@@ -641,14 +638,11 @@ on charger
 on fs
     mount_all /vendor/etc/fstab.samsungexynos8890  --early
     swapon_all /vendor/etc/fstab.samsungexynos8890
-    setprop ro.crypto.fuse_sdcard true
 
     # Start HW service manager early
     start hwservicemanager
 
     setprop sys.usb.ffs.aio_compat 1
-    setprop persist.adb.nonblocking_ffs 0
-    setprop ro.adb.nonblocking_ffs 0
     setprop sys.usb.mtp.device_type 2
 
     # Permissions for TouchScreen
@@ -973,6 +967,5 @@ on property:ro.debuggable=1
     write /sys/module/fiq_debugger/parameters/kgdb_enable 1
     
 on property:sys.boot_completed=1
-    setprop sys.io.scheduler bfq
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1    

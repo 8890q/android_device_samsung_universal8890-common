@@ -29,6 +29,11 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
+# Adb
+PRODUCT_PRODUCT_PROPERTIES := \
+    persist.adb.nonblocking_ffs=0 \
+    ro.adb.nonblocking_ffs=0
+
 # AdvancedDisplay (MDNIE)
 PRODUCT_PACKAGES += \
     AdvancedDisplay

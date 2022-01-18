@@ -1,3 +1,7 @@
+# Adb
+#allow adb daemon to read "persist.adb.nonblocking_ffs"
+persist.adb.nonblocking_ffs      u:object_r:exported_default_prop:s0 exact int
+
 # Audio
 persist.vendor.audio.            u:object_r:vendor_audio_prop:s0
 audio_hal.                       u:object_r:vendor_audio_prop:s0
