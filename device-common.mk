@@ -281,6 +281,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.samsungexynos8890 \
     init.recovery.samsungexynos8890.rc \
+    init.vendor.rilcommon.rc \
     init.samsung.rc \
     init.samsungexynos8890.rc \
     init.samsungexynos8890.usb.rc \
