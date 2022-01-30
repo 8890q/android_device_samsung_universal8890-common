@@ -79,8 +79,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.exynos5 \
-    android.hardware.camera.provider@2.5-service \
-    Snap
+    android.hardware.camera.provider@2.5-service
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
