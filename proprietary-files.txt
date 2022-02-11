@@ -45,6 +45,10 @@ lib/vendor.samsung.hardware.camera.device@3.3.so:vendor/lib/vendor.samsung.hardw
 lib/vendor.samsung.hardware.camera.device@3.4.so:vendor/lib/vendor.samsung.hardware.camera.device@3.4.so
 lib/vendor.samsung.hardware.camera.provider@2.4.so:vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
 lib/hw/camera.exynos5.so:vendor/lib/hw/camera.vendor.exynos5.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-impl.so
 lib64/libexynoscamera.so:vendor/lib64/libexynoscamera.so
 lib64/libexynoscamera3.so:vendor/lib64/libexynoscamera3.so
 lib64/libexynosgscaler.so:vendor/lib64/libexynosgscaler.so
@@ -58,6 +62,10 @@ lib64/vendor.samsung.hardware.camera.device@3.3.so:vendor/lib64/vendor.samsung.h
 lib64/vendor.samsung.hardware.camera.device@3.4.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.4.so
 lib64/vendor.samsung.hardware.camera.provider@2.4.so:vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so
 lib64/hw/camera.exynos5.so:vendor/lib64/hw/camera.vendor.exynos5.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-impl.so
 vendor/lib/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib/vendor.samsung.camera.device@3.2-impl.so
 vendor/lib/vendor.samsung.camera.device@3.3-impl.so
