@@ -39,11 +39,6 @@ lib/libexynosscaler.so:vendor/lib/libexynosscaler.so
 lib/libhwjpeg.so:vendor/lib/libhwjpeg.so
 lib/libuniapi.so:vendor/lib/libuniapi.so
 lib/libuniplugin.so:vendor/lib/libuniplugin.so
-lib/vendor.samsung.hardware.camera.device@1.0.so:vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
-lib/vendor.samsung.hardware.camera.device@3.2.so:vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
-lib/vendor.samsung.hardware.camera.device@3.3.so:vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
-lib/vendor.samsung.hardware.camera.device@3.4.so:vendor/lib/vendor.samsung.hardware.camera.device@3.4.so
-lib/vendor.samsung.hardware.camera.provider@2.4.so:vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
 lib/hw/camera.exynos5.so:vendor/lib/hw/camera.vendor.exynos5.so
 lib64/libexynoscamera.so:vendor/lib64/libexynoscamera.so
 lib64/libexynoscamera3.so:vendor/lib64/libexynoscamera3.so
@@ -52,26 +47,7 @@ lib64/libexynosscaler.so:vendor/lib64/libexynosscaler.so
 lib64/libhwjpeg.so:vendor/lib64/libhwjpeg.so
 lib64/libuniapi.so:vendor/lib64/libuniapi.so
 lib64/libuniplugin.so:vendor/lib64/libuniplugin.so
-lib64/vendor.samsung.hardware.camera.device@1.0.so:vendor/lib64/vendor.samsung.hardware.camera.device@1.0.so
-lib64/vendor.samsung.hardware.camera.device@3.2.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.2.so
-lib64/vendor.samsung.hardware.camera.device@3.3.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.3.so
-lib64/vendor.samsung.hardware.camera.device@3.4.so:vendor/lib64/vendor.samsung.hardware.camera.device@3.4.so
-lib64/vendor.samsung.hardware.camera.provider@2.4.so:vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so
 lib64/hw/camera.exynos5.so:vendor/lib64/hw/camera.vendor.exynos5.so
-vendor/lib/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib/vendor.samsung.camera.device@3.2-impl.so
-vendor/lib/vendor.samsung.camera.device@3.3-impl.so
-vendor/lib/vendor.samsung.camera.device@3.4-impl.so
-vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
-vendor/lib64/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib64/vendor.samsung.camera.device@3.2-impl.so
-vendor/lib64/vendor.samsung.camera.device@3.3-impl.so
-vendor/lib64/vendor.samsung.camera.device@3.4-impl.so
-vendor/lib64/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
-
-# Camera - from G960FXXS7CTA1
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service|6b0a79b7f804b9368b90160722d9e8ae970f4bf5
-vendor/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc|478dfd69630183d80fe6ef03e28de98352f2261c
 
 # Camera Firmware
 vendor/firmware/companion_2l1_master_setfile.bin

@@ -78,11 +78,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-impl \
     camera.exynos5 \
+    android.hardware.camera.provider@2.5-service \
     Snap
 
 PRODUCT_COPY_FILES += \
