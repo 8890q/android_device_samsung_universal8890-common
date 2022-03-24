@@ -86,7 +86,6 @@ vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # GNSS
-etc/floating_feature.xml:vendor/etc/floating_feature.xml
 etc/init/init.gpscommon.rc:vendor/etc/init/init.gpscommon.rc
 lib/libfloatingfeature.so:vendor/lib/libfloatingfeature.so
 lib/vendor.samsung.hardware.gnss@1.0.so:vendor/lib/vendor.samsung.hardware.gnss@1.0.so
