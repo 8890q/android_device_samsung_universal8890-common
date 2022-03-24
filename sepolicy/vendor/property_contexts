@@ -11,6 +11,8 @@ vendor.ddk.                      u:object_r:vendor_hwc_prop:s0
 debug.hwc.                       u:object_r:vendor_hwc_prop:s0
 
 # NFC
+ro.build.type                    u:object_r:exported_system_prop:s0
+ro.debug_level                   u:object_r:exported_system_prop:s0
 persist.nfc.log.index            u:object_r:vendor_nfc_prop:s0
 vendor.nfc.fw.                   u:object_r:vendor_nfc_prop:s0 
 persist.vendor.nfc.log.index     u:object_r:vendor_nfc_prop:s0
