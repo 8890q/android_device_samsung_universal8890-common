@@ -10,8 +10,6 @@ type NAD_REFER_block_device, dev_type;
 type ota_block_device, dev_type;
 type param_block_device, dev_type;
 type persdata_block_device, dev_type;
-type persist_block_device, dev_type;
-type sdd_block_device, dev_type;
 type steady_block_device, dev_type;
 type tombstones_block_device, dev_type;
 type emmcblk_device, file_type;
