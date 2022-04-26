@@ -139,8 +139,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     libhwc2on1adapter \
-    libion \
-    libbfqio
+    libion
 
 # Health
 PRODUCT_PACKAGES += \
