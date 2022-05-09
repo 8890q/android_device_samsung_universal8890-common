@@ -145,9 +145,6 @@ TARGET_LD_SHIM_LIBS += \
     /vendor/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so \
     /vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
-
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
