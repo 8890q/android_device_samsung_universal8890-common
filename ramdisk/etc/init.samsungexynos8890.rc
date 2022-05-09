@@ -942,6 +942,26 @@ on fs
     chown system system /sys/class/rtc/rtc0/device/adc_reg_7
     chown system system /sys/class/rtc/rtc0/device/adc_ctrl1
 
+    # Set cpu governor params
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 20000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack 20000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 40000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 40000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate 20000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_slack 20000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time 40000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse_duration 40000
+
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 858000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 85
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "75 1170000:85"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 1274000:39000"
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq 1248000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load 89
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads "80 1040000:81 1352000:87 1664000:90"
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay "59000 1248000:79000 1664000:19000"
+
+
     # Copy DRM Key
     copy /system/app/wv.keys /factory/wv.keys
 
