@@ -673,7 +673,9 @@ on boot
 
     # Permissions for Touchscreen
     chown system radio /sys/class/sec/tsp/cmd
+    chown system radio /sys/class/sec/tsp/cmd2
     chmod 0664 /sys/class/sec/tsp/cmd
+    chmod 0664 /sys/class/sec/tsp/cmd2
     chown system radio /sys/class/sec/tsp/cmd_list
     chmod 0664  /sys/class/sec/tsp/cmd_list
     chown system radio /sys/class/sec/tsp/cmd_result

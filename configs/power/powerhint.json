@@ -150,6 +150,16 @@
             "ResetOnInit": false
         },
         {
+            "Name": "DoubleTapToWakeRect",
+            "Path": "/sys/class/sec/tsp/cmd2",
+            "Values": [
+                "set_aod_rect,0,0,0,0",
+                "set_aod_rect,1440,2560,0,0",
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": false
+        },
+        {
             "Name": "PowerHALMainState",
             "Path": "vendor.powerhal.state",
             "Values": [
@@ -402,6 +412,12 @@
             "Node": "DoubleTapToWakeEnable",
             "Duration": 0,
             "Value": "aod_enable,1"
+        },
+        {
+            "PowerHint": "DOUBLE_TAP_TO_WAKE",
+            "Node": "DoubleTapToWakeRect",
+            "Duration": 0,
+            "Value": "set_aod_rect,1440,2560,0,0"
         }
     ]
 }
