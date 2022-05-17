@@ -1,6 +1,16 @@
 {
     "Nodes": [
         {
+            "Name": "CPUHotplugMaxCores",
+            "Path": "/sys/power/cpuhotplug/max_online_cpu",
+            "Values": [
+                "8",
+                "6"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
             "Name": "CPUBigClusterIOIsBusy",
             "Path": "/sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy",
             "Values": [
@@ -438,6 +448,12 @@
             "Node": "CPULittleClusterMinFreq",
             "Duration": 0,
             "Value": "442000"
+        },
+        {
+            "PowerHint": "LOW_POWER",
+            "Node": "CPUHotplugMaxCores",
+            "Duration": 0,
+            "Value": "6"
         },
         {
             "PowerHint": "DOUBLE_TAP_TO_WAKE",
