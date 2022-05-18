@@ -16,5 +16,11 @@
 -->
 <resources>
     <bool name="call_recording_enabled">true</bool>
-    <integer name="call_recording_audio_source">4</integer>
+    <!-- 
+         AUDIO_SOURCE_VOICE_CALL doesnt seem to work with our audio hal or 
+         With audio policy we are using, AUDIO_DEVICE_IN_VOICE_CALL might fix it
+         Check if mic only picks us up or both ends if internal is used to record 
+         Other party this is honestly just fine
+     -->
+    <!--integer name="call_recording_audio_source">4</integer-->
 </resources>
