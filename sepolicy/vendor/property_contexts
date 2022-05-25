@@ -4,15 +4,15 @@ persist.adb.nonblocking_ffs      u:object_r:exported_default_prop:s0 exact int
 
 # Audio
 persist.vendor.audio.            u:object_r:vendor_audio_prop:s0
-audio_hal.                       u:object_r:vendor_audio_prop:s0
+ro.vendor.audio_hal.             u:object_r:vendor_audio_prop:s0
 
 # HWC
+ro.vendor.winupdate              u:object_r:vendor_hwc_prop:s0
 vendor.ddk.                      u:object_r:vendor_hwc_prop:s0
 debug.hwc.                       u:object_r:vendor_hwc_prop:s0
 
 # NFC
-ro.build.type                    u:object_r:exported_system_prop:s0
-ro.debug_level                   u:object_r:exported_system_prop:s0
+ro.debug_level                   u:object_r:vendor_nfc_prop:s0
 persist.nfc.log.index            u:object_r:vendor_nfc_prop:s0
 vendor.nfc.fw.                   u:object_r:vendor_nfc_prop:s0 
 persist.vendor.nfc.log.index     u:object_r:vendor_nfc_prop:s0

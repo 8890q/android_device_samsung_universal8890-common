@@ -29,5 +29,8 @@ allow vendor_init tmpfs:dir create_dir_perms;
 get_prop(vendor_init, clatd_radio_prop)
 get_prop(vendor_init, vts_status_prop)
 
+set_prop(vendor_init, vendor_nfc_prop)
+set_prop(vendor_init, vendor_audio_prop)
+set_prop(vendor_init, vendor_hwc_prop)
 set_prop(vendor_init, tee_prop)
 set_prop(vendor_init, vendor_radio_prop)
