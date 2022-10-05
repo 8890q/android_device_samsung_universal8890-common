@@ -76,6 +76,14 @@ sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libfloatingfeature.so
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libwvhidl.so
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
 
+# HWC wants old libutils
+"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/vendor/lib64/libexynosdisplay.so
+"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/vendor/lib/libexynosdisplay.so
+"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib64/hw/hwcomposer.exynos5.so
+"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib/hw/hwcomposer.exynos5.so
+"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib64/libhwcutils.so
+"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib/libhwcutils.so
+
 # Remove wpa_supplicant service from wifi.rc
 sed -i "41,48d" $BLOB_ROOT/vendor/etc/init/wifi_sec.rc
 
