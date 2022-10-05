@@ -151,9 +151,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
     libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
@@ -219,7 +217,6 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service
 
 # Permissions
@@ -373,14 +370,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hostapd \
     wificond \
-    wifilogd \
-    wlutil \
     libwpa_client \
     TetheringConfigOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
     android.hardware.wifi@1.0 \
-    android.hardware.wifi@1.0-impl \
     android.hardware.wifi@1.0-service
 
 PRODUCT_COPY_FILES += \
