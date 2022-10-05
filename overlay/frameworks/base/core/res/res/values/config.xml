@@ -949,4 +949,8 @@
      For devices with sensors on the back of the device, this corresponds to the location on the
      screen directly in front of the sensor. -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">2560px</dimen>
+
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">false</bool>
 </resources>
