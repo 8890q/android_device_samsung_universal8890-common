@@ -95,7 +95,8 @@ TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_LLVM_BINUTILS := false
 BOARD_USES_FULL_RECOVERY_IMAGE := false
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" \
+    KBUILD_BUILD_USER=$(BUILD_USERNAME) KBUILD_BUILD_HOST=$(BUILD_HOSTNAME)
 
 # LED
 RED_LED_PATH := "/sys/class/leds/led_r/brightness"
