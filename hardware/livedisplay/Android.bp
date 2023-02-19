@@ -12,18 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.universal8890",
+cc_defaults {
+    name: "livedisplay_samsung_hero_defaults",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.universal8890.rc"],
     srcs: [
         "AntiFlicker.cpp",
         "DisplayColorCalibration.cpp",
         "DisplayModes.cpp",
         "ReadingEnhancement.cpp",
         "SunlightEnhancement.cpp",
-        "service.cpp",
+        "service_hero.cpp",
     ],
     shared_libs: [
         "libbase",
@@ -34,4 +33,40 @@ cc_binary {
         "vendor.lineage.livedisplay@2.1",
     ],
     vendor: true,
+}
+
+cc_defaults {
+    name: "livedisplay_samsung_grace_defaults",
+    defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
+    srcs: [
+        "DisplayColorCalibration.cpp",
+        "DisplayModes.cpp",
+        "ReadingEnhancement.cpp",
+        "SunlightEnhancement.cpp",
+        "service_grace.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "libhidlbase",
+        "libutils",
+        "vendor.lineage.livedisplay@2.0",
+        "vendor.lineage.livedisplay@2.1",
+    ],
+    vendor: true,
+}
+
+cc_binary {
+    name: "vendor.lineage.livedisplay@2.1-service.universal8890",
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.universal8890.rc"],
+    vintf_fragments: ["livedisplay.hero.xml"],
+    defaults: ["livedisplay_samsung_hero_defaults"],
+}
+
+cc_binary {
+    name: "vendor.lineage.livedisplay@2.1-service.grace",
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.grace.rc"],
+    vintf_fragments: ["livedisplay.grace.xml"],
+    defaults: ["livedisplay_samsung_grace_defaults"],
 }

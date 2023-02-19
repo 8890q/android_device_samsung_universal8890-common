@@ -89,6 +89,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.atrace@1\.0-service\.universal8890      u:object_r:hal_atrace_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service\.universal8890   u:object_r:hal_bluetooth_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-armnn       u:object_r:hal_neuralnetworks_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.grace           u:object_r:hal_lineage_livedisplay_exynos_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.universal8890   u:object_r:hal_lineage_livedisplay_exynos_exec:s0
 
 ####################################
