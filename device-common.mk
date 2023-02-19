@@ -338,8 +338,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/samsung-sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
 
 # Thermal
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.samsung
 
 # Touch features
 PRODUCT_PACKAGES += \
