@@ -27,7 +27,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "herolte hero2lte gracelte graceltekor gracerlte gracerltekor"
+write_headers "herolte hero2lte gracerlte"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 

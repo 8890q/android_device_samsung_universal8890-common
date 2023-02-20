@@ -16,7 +16,7 @@
 
 LOCAL_PATH := device/samsung/universal8890-common
 
-ifneq ($(filter herolte hero2lte gracelte graceltekor gracerlte gracerltekor, $(TARGET_DEVICE)),)
+ifneq ($(filter herolte hero2lte gracerlte, $(TARGET_DEVICE)),)
 
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
