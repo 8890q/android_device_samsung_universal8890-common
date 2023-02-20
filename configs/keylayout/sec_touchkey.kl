@@ -13,7 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-key 158   BACK	VIRTUAL
-key 254 APP_SWITCH     VIRTUAL
-
+key 158   BACK
+key 254   APP_SWITCH
