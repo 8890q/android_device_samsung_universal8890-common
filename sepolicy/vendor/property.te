@@ -1,9 +1,6 @@
 # Audio
 vendor_internal_prop(vendor_audio_prop);
 
-# HWC
-vendor_internal_prop(vendor_hwc_prop);
-
 # NFC
 vendor_internal_prop(vendor_nfc_prop);
 

@@ -59,5 +59,3 @@ get_prop(system_server, userspace_reboot_config_prop)
 unix_socket_connect(system_server, property, gpsd)
 
 get_prop(system_server, build_bootimage_prop)
-
-dontaudit system_server frp_block_device:blk_file { getattr ioctl open read write };

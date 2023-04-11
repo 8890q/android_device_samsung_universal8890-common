@@ -2,7 +2,6 @@
 
 allow fsck{
     cid_block_device
-    frp_block_device
     cpefs_block_device
 }:blk_file rw_file_perms;
 
