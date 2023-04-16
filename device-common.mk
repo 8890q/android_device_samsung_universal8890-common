@@ -29,6 +29,13 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
+# ih8sn
+PRODUCT_PACKAGES += \
+    ih8sn
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/ih8sn/system/etc/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
+
 # Adb
 PRODUCT_PRODUCT_PROPERTIES := \
     persist.adb.nonblocking_ffs=0 \
