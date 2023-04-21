@@ -67,22 +67,12 @@ sed -i -z "s/    setprop wifi.interface wlan0\n\n/    setprop wifi.interface wla
 sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" $BLOB_ROOT/vendor/bin/hw/gpsd
 
 # Vendor separation
-sed -i "s|system/lib|vendor/lib|g" $BLOB_ROOT/vendor/lib/libExynosOMX_Core.so
-sed -i "s|system/lib|vendor/lib|g" $BLOB_ROOT/vendor/lib64/libExynosOMX_Core.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libfloatingfeature.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libfloatingfeature.so
 
 # Replace protobuf with vndk29 compat libs for specified libs
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libwvhidl.so
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
-
-# HWC wants old libutils
-"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/vendor/lib64/libexynosdisplay.so
-"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/vendor/lib/libexynosdisplay.so
-"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib64/hw/hwcomposer.exynos5.so
-"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib/hw/hwcomposer.exynos5.so
-"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib64/libhwcutils.so
-"${PATCHELF}" --replace-needed libutils.so libutils-v32.so $BLOB_ROOT/proprietary/vendor/lib/libhwcutils.so
 
 # Remove wpa_supplicant service from wifi.rc
 sed -i "41,48d" $BLOB_ROOT/vendor/etc/init/wifi_sec.rc
