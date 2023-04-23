@@ -34,17 +34,11 @@ vendor/firmware/bcm4359C0_semco.hcd
 # Camera
 lib/libexynoscamera.so:vendor/lib/libexynoscamera.so
 lib/libexynoscamera3.so:vendor/lib/libexynoscamera3.so
-lib/libexynosgscaler.so:vendor/lib/libexynosgscaler.so
-lib/libexynosscaler.so:vendor/lib/libexynosscaler.so
-lib/libhwjpeg.so:vendor/lib/libhwjpeg.so
 lib/libuniapi.so:vendor/lib/libuniapi.so
 lib/libuniplugin.so:vendor/lib/libuniplugin.so
 lib/hw/camera.exynos5.so:vendor/lib/hw/camera.vendor.exynos5.so
 lib64/libexynoscamera.so:vendor/lib64/libexynoscamera.so
 lib64/libexynoscamera3.so:vendor/lib64/libexynoscamera3.so
-lib64/libexynosgscaler.so:vendor/lib64/libexynosgscaler.so
-lib64/libexynosscaler.so:vendor/lib64/libexynosscaler.so
-lib64/libhwjpeg.so:vendor/lib64/libhwjpeg.so
 lib64/libuniapi.so:vendor/lib64/libuniapi.so
 lib64/libuniplugin.so:vendor/lib64/libuniplugin.so
 lib64/hw/camera.exynos5.so:vendor/lib64/hw/camera.vendor.exynos5.so
@@ -105,11 +99,7 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 
 # Graphics
-vendor/lib/libcsc.so
-vendor/lib/libion_exynos.so
 vendor/lib/egl/libGLES_mali.so
-vendor/lib64/libcsc.so
-vendor/lib64/libion_exynos.so
 vendor/lib64/egl/libGLES_mali.so
 
 # LPM - from N975FXXU6ETLL
@@ -141,36 +131,6 @@ vendor/etc/init/android.hardware.neuralnetworks@1.1-service-armnn.rc
 # NFC
 vendor/etc/nfc/sec_s3nrn81_rfreg.bin
 vendor/firmware/nfc/sec_s3nrn81_firmware.bin
-
-# OMX
-lib/libExynosOMX_Core.so:vendor/lib/libExynosOMX_Core.so
-lib/libExynosOMX_Resourcemanager.so:vendor/lib/libExynosOMX_Resourcemanager.so
-lib/libstagefrighthw.so:vendor/lib/libstagefrighthw.so
-lib/omx/libOMX.Exynos.AVC.Decoder.so:vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so
-lib/omx/libOMX.Exynos.AVC.Encoder.so:vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so
-lib/omx/libOMX.Exynos.HEVC.Decoder.so:vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so
-lib/omx/libOMX.Exynos.HEVC.Encoder.so:vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so
-lib/omx/libOMX.Exynos.MPEG4.Decoder.so:vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so
-lib/omx/libOMX.Exynos.MPEG4.Encoder.so:vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so
-lib/omx/libOMX.Exynos.VP8.Decoder.so:vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so
-lib/omx/libOMX.Exynos.VP8.Encoder.so:vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so
-lib/omx/libOMX.Exynos.VP9.Decoder.so:vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so
-lib/omx/libOMX.Exynos.VP9.Encoder.so:vendor/lib/omx/libOMX.Exynos.VP9.Encoder.so
-lib/omx/libOMX.Exynos.WMV.Decoder.so:vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so
-lib64/libExynosOMX_Core.so:vendor/lib64/libExynosOMX_Core.so
-lib64/libExynosOMX_Resourcemanager.so:vendor/lib64/libExynosOMX_Resourcemanager.so
-lib64/libstagefrighthw.so:vendor/lib64/libstagefrighthw.so
-lib64/omx/libOMX.Exynos.AVC.Decoder.so:vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so
-lib64/omx/libOMX.Exynos.AVC.Encoder.so:vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so
-lib64/omx/libOMX.Exynos.HEVC.Decoder.so:vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so
-lib64/omx/libOMX.Exynos.HEVC.Encoder.so:vendor/lib64/omx/libOMX.Exynos.HEVC.Encoder.so
-lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:vendor/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
-lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:vendor/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
-lib64/omx/libOMX.Exynos.VP8.Decoder.so:vendor/lib64/omx/libOMX.Exynos.VP8.Decoder.so
-lib64/omx/libOMX.Exynos.VP8.Encoder.so:vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so
-lib64/omx/libOMX.Exynos.VP9.Decoder.so:vendor/lib64/omx/libOMX.Exynos.VP9.Decoder.so
-lib64/omx/libOMX.Exynos.VP9.Encoder.so:vendor/lib64/omx/libOMX.Exynos.VP9.Encoder.so
-lib64/omx/libOMX.Exynos.WMV.Decoder.so:vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so
 
 # Protobuf vendor variant - from N975FXXU6ZTK6
 vendor/lib/libprotobuf-cpp-full-3.9.1.so|4290c27525874cb687d072dcfe20244e65685f2a
@@ -232,22 +192,6 @@ vendor/lib64/sensors.bio.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.sensorhub.so
 
-# Stagefright
-vendor/lib/libstagefright_bufferqueue_helper_vendor.so
-vendor/lib/libstagefright_foundation.so
-vendor/lib/libstagefright_xmlparser.so
-vendor/lib/libstagefright_omx_utils.so
-vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_soft_rawdec.so
-vendor/lib/libstagefright_soft_g711dec.so
-vendor/lib/libstagefright_soft_vorbisdec.so
-
-# Surface Composer
-lib/libGrallocWrapper.so:vendor/lib/libGrallocWrapper.so
-lib/hw/gralloc.exynos5.so:vendor/lib/hw/gralloc.exynos5.so
-lib64/libGrallocWrapper.so:vendor/lib64/libGrallocWrapper.so
-lib64/hw/gralloc.exynos5.so:vendor/lib64/hw/gralloc.exynos5.so
-
 # Wifi
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
@@ -262,26 +206,3 @@ vendor/etc/wifi/nvram.txt_c0_plus
 vendor/etc/wifi/nvram.txt_murata_c0_plus
 vendor/lib/libwifi-hal.so
 vendor/lib64/libwifi-hal.so
-
-# Blobs built from BSP source
-# Graphics
-vendor/lib/hw/hwcomposer.exynos5.so
-vendor/lib/hw/memtrack.universal8890.so
-vendor/lib/libexynosdisplay.so
-vendor/lib/libexynosutils.so
-vendor/lib/libexynosv4l2.so
-vendor/lib/libfimg.so
-vendor/lib/libhdmi.so
-vendor/lib/libhwcutils.so
-vendor/lib/libmpp.so
-vendor/lib/libvirtualdisplay.so
-vendor/lib64/hw/hwcomposer.exynos5.so
-vendor/lib64/hw/memtrack.universal8890.so
-vendor/lib64/libexynosdisplay.so
-vendor/lib64/libexynosutils.so
-vendor/lib64/libexynosv4l2.so
-vendor/lib64/libfimg.so
-vendor/lib64/libhdmi.so
-vendor/lib64/libhwcutils.so
-vendor/lib64/libmpp.so
-vendor/lib64/libvirtualdisplay.so
