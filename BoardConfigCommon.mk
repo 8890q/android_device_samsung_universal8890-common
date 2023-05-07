@@ -114,6 +114,7 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOOTLOADER_BOARD_NAME := universal8890
 TARGET_SOC := exynos8890
+include hardware/samsung_slsi-linaro/config/BoardConfig8890.mk
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
