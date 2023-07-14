@@ -953,8 +953,4 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">false</bool>
-
-    <!-- Default value for whether a SFPS device is required to be interactive for 
-         fingerprint auth to unlock the device.  -->
-    <bool name="config_requireScreenOnToAuthEnabled">true</bool>
 </resources>
