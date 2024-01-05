@@ -70,6 +70,14 @@ sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" $BLOB_ROOT
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libfloatingfeature.so
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib64/libfloatingfeature.so
 
+# RIL patches
+xxd -p -c0 $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril-dsds.so | sed "s/600e40f9820c8052e10315aae30314aa/600e40f9820c8052e10315aa030080d2/g" | xxd -r -p > $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril-dsds.so.patched
+mv $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril-dsds.so.patched $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril-dsds.so
+
+xxd -p -c0 $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril.so | sed "s/600e40f9820c8052e10315aae30314aa/600e40f9820c8052e10315aa030080d2/g" | xxd -r -p > $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril.so.patched
+mv $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril.so.patched $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril.so
+
+
 # hidlbase legacy hack
 "${PATCHELF}" --replace-needed libhidlbase.so libhidlbase-v32.so $BLOB_ROOT/vendor/lib/vendor.samsung.hardware.gnss@1.0.so
 "${PATCHELF}" --replace-needed libhidlbase.so libhidlbase-v32.so $BLOB_ROOT/vendor/lib64/vendor.samsung.hardware.gnss@1.0.so
