@@ -1,6 +1,5 @@
 cc_library_shared {
     name: "camera.exynos5",
-    vendor: true,
     relative_install_path: "hw",
 
     srcs: [
