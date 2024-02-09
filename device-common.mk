@@ -52,7 +52,6 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    libaudioroute \
     audio.usb.default \
     audio.r_submix.default \
     audio.primary.universal8890_32 \
