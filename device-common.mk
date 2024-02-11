@@ -312,10 +312,10 @@ PRODUCT_PACKAGES += \
     ueventd.samsungexynos8890.rc
 
 # RCS
-PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager \
-    PresencePolling \
-    RcsService
+#PRODUCT_PACKAGES += \
+#    com.android.ims.rcsmanager \
+#    PresencePolling \
+#    RcsService
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
