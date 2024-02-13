@@ -7,6 +7,7 @@
 # files in /system
 /system/bin/lpm                               u:object_r:charger_exec:s0
 /system/bin/move_widevine_data\.sh            u:object_r:move-widevine-data-sh_exec:s0
+/(system/)?(vendor/)?app/mcRegistry(/.*)?     u:object_r:mobicore_vendor_file:s0
 
 ####################################
 # Data Files
@@ -147,6 +148,8 @@
 
 # GPU
 /sys/devices/[a-f0-9]+\.mali(/.*)?                  u:object_r:sysfs_mali:s0
+/sys/kernel/gpu/gpu_min_clock                       u:object_r:sysfs_gpuclock:s0
+/sys/kernel/gpu/gpu_max_clock                       u:object_r:sysfs_gpuclock:s0
 
 # HMT relay mode node
 /sys/devices/virtual/relay_on                       u:object_r:sysfs_hmt:s0

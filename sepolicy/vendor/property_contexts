@@ -17,6 +17,11 @@ persist.nfc.log.index            u:object_r:vendor_nfc_prop:s0
 vendor.nfc.fw.                   u:object_r:vendor_nfc_prop:s0 
 persist.vendor.nfc.log.index     u:object_r:vendor_nfc_prop:s0
 
+# PowerHAL
+vendor.powerhal.state      u:object_r:vendor_power_prop:s0
+vendor.powerhal.audio      u:object_r:vendor_power_prop:s0
+vendor.powerhal.rendering  u:object_r:vendor_power_prop:s0
+
 # Radio
 persist.ril.interfaceconf.       u:object_r:radio_prop:s0
 persist.radio.multisim.          u:object_r:vendor_radio_prop:s0

@@ -17,4 +17,11 @@ allow hal_power_default{
     sysfs_graphics
     sysfs_light
     sysfs_sec_tsp
+    sysfs_input
+    sysfs_gpuclock
 }:file rw_file_perms;
+
+allow hal_power_default sysfs_sec_tsp:lnk_file { read };
+
+# To get/set powerhal state property
+set_prop(hal_power_default, vendor_power_prop)
