@@ -42,6 +42,8 @@ vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
 debug.slsi_platform=1
 
 # SoC
+ro.product.vendor.manufacturer=Google
+ro.product.manufacturer=Google
 ro.soc.manufacturer=Samsung
 ro.soc.model=Exynos 8890
 
