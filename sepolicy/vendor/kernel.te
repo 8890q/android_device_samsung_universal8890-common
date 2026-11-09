@@ -47,4 +47,4 @@ allow kernel self:capability { chown mknod sys_module};
 # Allow internal devtmpfs node creation/removal; ueventd labels Android /dev separately.
 allow kernel device:chr_file { create setattr };
 allow kernel device:blk_file { create getattr setattr unlink };
-allow kernel device:dir remove_name;
+allow kernel device:dir { write add_name remove_name };

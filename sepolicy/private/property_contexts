@@ -1,0 +1,4 @@
+
+
+# Core init owns this read-only override; netd and bpfloader consume it.
+ro.bpf.kver_override u:object_r:exported_default_prop:s0 exact string

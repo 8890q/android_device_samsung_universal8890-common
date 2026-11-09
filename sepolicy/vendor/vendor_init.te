@@ -34,3 +34,9 @@ set_prop(vendor_init, vendor_audio_prop)
 set_prop(vendor_init, vendor_hwc_prop)
 set_prop(vendor_init, tee_prop)
 set_prop(vendor_init, vendor_radio_prop)
+
+# Baseband init expands the SIM-slot-count property.
+get_prop(vendor_init, radio_prop)
+
+# The device has no physical metadata partition; early init mounts tmpfs there.
+allow vendor_init tmpfs:dir relabelfrom;

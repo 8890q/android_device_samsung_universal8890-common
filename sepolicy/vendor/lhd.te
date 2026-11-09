@@ -18,3 +18,6 @@ allow lhd {
 allow lhd sysfs_sec_gps:lnk_file r_file_perms;
 allow lhd hal_system_suspend_service:service_manager find;
 dontaudit lhd system_data_file:dir search;
+
+# The GPS helper looks up the system suspend service.
+binder_use(lhd)

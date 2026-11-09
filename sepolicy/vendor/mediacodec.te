@@ -9,3 +9,6 @@ allow mediacodec {
 }:file r_file_perms;
 
 get_prop(mediacodec vendor_omx_prop)
+
+# MediaCodec requests power hints while codecs are active.
+hal_client_domain(mediacodec, hal_power)

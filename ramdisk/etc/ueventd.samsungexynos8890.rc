@@ -215,3 +215,6 @@
 
 # Reactivation Lock
 /dev/block/platform/155a0000.ufs/by-name/STEADY    0660    system    system
+
+# The power HAL keeps this PM QoS descriptor open for latency hints.
+/dev/cpu_dma_latency 0660 system system

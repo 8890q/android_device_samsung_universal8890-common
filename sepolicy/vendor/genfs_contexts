@@ -158,3 +158,6 @@ genfscon sysfs /devices/platform/136d0000.pinctrl/gpio/gpio101             u:obj
 genfscon sysfs /devices/platform/155a0000.ufs/host0                        u:object_r:sysfs_scsi_host:s0
 genfscon sysfs /devices/platform/155a0000.ufs/host0/power                  u:object_r:sysfs_mmc:s0
 genfscon sysfs /devices/platform/155a0000.ufs/host0/target0:0:0/0:0:0:0/block/sda/queue u:object_r:sysfs_io_sched_tuneable:s0
+
+# Capacitive keys are platform devices on Linux 4.4.
+genfscon sysfs /devices/platform/i2c@20/i2c-10/10-0020/input u:object_r:sysfs_sec_touchkey:s0

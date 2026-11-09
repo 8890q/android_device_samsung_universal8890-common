@@ -218,7 +218,6 @@ on late-fs
     mount_all /vendor/etc/fstab.samsungexynos8890 --late
 
 on post-fs-data
-    mkdir /data/media 0770 media_rw media_rw
     setprop vold.post_fs_data_done 1
 
     # for WIFI MAC address
@@ -312,9 +311,6 @@ on post-fs-data
     # MST/NFC Switch
     chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
-
-# Persistent logcat
-    mkdir /data/.logs 0775 system system
 
 on boot
     setprop vendor.powerhal.init 1
