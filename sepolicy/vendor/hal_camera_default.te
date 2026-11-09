@@ -25,4 +25,4 @@ get_prop(hal_camera_default, exported_camera_prop)
 vndbinder_use(hal_camera_default)
 
 # libmeminfo startup reads /system/etc/init/netbpfload.rc for the full API level.
-allow hal_camera_default system_file:file read;
+allow hal_camera_default system_file:file { getattr open read };
