@@ -213,7 +213,6 @@ on late-fs
     start surfaceflinger
     start bootanim
     start vendor.gralloc-2-0
-    start persistentLogging
 
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.samsungexynos8890 --late
@@ -1001,8 +1000,3 @@ on property:ro.debuggable=1
 on property:sys.boot_completed=1
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1    
-
-service persistentLogging /system/bin/logcat -f /data/.logs/log -r 1024 -n 10
-    class core
-    user system
-    group system
