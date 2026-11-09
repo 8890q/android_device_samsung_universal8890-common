@@ -50,3 +50,6 @@ wifi.direct.interface=p2p-dev-wlan0
 
 # Power HAL
 vendor.powerhal.disp.idle_support=false
+
+# Incremental FS is enabled in the Linux 4.4 port.
+ro.incremental.enable=true
