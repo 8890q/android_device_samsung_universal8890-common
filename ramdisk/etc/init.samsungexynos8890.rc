@@ -655,6 +655,7 @@ on fs
     chown system radio /sys/class/sec/tsp/cmd
     chown system system /sys/class/sec/tsp/cmd2
     chown system system /sys/class/sec/tsp/input/enabled
+    chmod 0660 /sys/class/sec/tsp/input/enabled
 
     # Permissions for Touchkey
     chown system radio /sys/class/sec/sec_touchkey/brightness
