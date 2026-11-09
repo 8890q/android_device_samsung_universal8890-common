@@ -934,4 +934,8 @@
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
+    <!-- Require one second of stable light before changing automatic brightness. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+
 </resources>
