@@ -51,3 +51,8 @@ ro.vendor.wfdsupport u:object_r:vendor_wfd_config_prop:s0 exact string
 
 # Camera API compatibility configuration shared with framework clients.
 persist.vendor.camera.privapp.list u:object_r:vendor_camera_config_prop:s0 exact string
+
+# Pixel thermal HAL controls; keep reads within the thermal property domain.
+persist.vendor.enable.thermal.genl u:object_r:vendor_thermal_prop:s0 exact bool
+vendor.disable.thermalhal.control u:object_r:vendor_thermal_prop:s0 exact bool
+vendor.disable.thermal.powerlink u:object_r:vendor_thermal_prop:s0 exact bool
