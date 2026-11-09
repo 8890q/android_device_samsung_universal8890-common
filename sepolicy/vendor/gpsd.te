@@ -5,3 +5,6 @@ dontaudit gpsd system_data_file:dir search;
 # The current GNSS wrapper uses the AIDL system-suspend service for wakelocks.
 binder_use(gpsd)
 allow gpsd hal_system_suspend_service:service_manager find;
+
+# The legacy Broadcom daemon reads /system/etc/gps.conf.
+allow gpsd system_file:file r_file_perms;

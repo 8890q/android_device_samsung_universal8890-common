@@ -1,3 +1,7 @@
 # nfc.te
 
 allow nfc sec_efs_file:dir search;
+
+# libnfc-nci checks its optional vendor update configuration.
+allow nfc nfc_vendor_data_file:dir search;
+allow nfc nfc_vendor_data_file:file r_file_perms;

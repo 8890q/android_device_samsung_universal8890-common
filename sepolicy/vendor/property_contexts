@@ -42,3 +42,9 @@ wlan.driver.status               u:object_r:wifi_prop:s0
 
 # Bluetooth controller firmware version
 vendor.bluetooth_fw_ver          u:object_r:vendor_bluetooth_firmware_prop:s0 exact string
+
+# Legacy audio configuration read by the audio service and audioserver.
+ro.vendor.qti.va_aosp.support u:object_r:vendor_audio_config_prop:s0 exact bool
+
+# Legacy Wi-Fi Display capability queried by framework clients.
+ro.vendor.wfdsupport u:object_r:vendor_wfd_config_prop:s0 exact string

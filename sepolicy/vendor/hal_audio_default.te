@@ -13,3 +13,5 @@ allow hal_audio_default rild:unix_stream_socket connectto;
 wakelock_use(hal_audio_default)
 
 get_prop(hal_audio_default, vendor_audio_prop)
+
+get_prop(hal_audio_default, vendor_audio_config_prop)

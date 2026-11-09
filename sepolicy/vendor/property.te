@@ -12,3 +12,9 @@ vendor_internal_prop(clatd_radio_prop)
 
 # Bluetooth controller firmware version, written by the Bluetooth HAL.
 vendor_internal_prop(vendor_bluetooth_firmware_prop)
+
+# Read-only configuration shared with audioserver and framework clients.
+vendor_restricted_prop(vendor_audio_config_prop)
+vendor_restricted_prop(vendor_wfd_config_prop)
+
+get_prop({ appdomain system_server }, vendor_wfd_config_prop)
