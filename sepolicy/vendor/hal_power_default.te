@@ -25,3 +25,6 @@ allow hal_power_default sysfs_sec_tsp:lnk_file { read };
 
 # To get/set powerhal state property
 set_prop(hal_power_default, vendor_power_prop)
+
+# AIDL power HAL registration includes servicemanager callbacks.
+binder_use(hal_power_default)
