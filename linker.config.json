@@ -1,0 +1,6 @@
+{
+    "requireLibs": [
+        "android.frameworks.schedulerservice@1.0.so",
+        "libcamera_client.so"
+    ]
+}

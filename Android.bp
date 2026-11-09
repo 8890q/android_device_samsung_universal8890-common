@@ -4,3 +4,9 @@ soong_namespace {
 subdirs = [
     "hardware",
 ]
+
+linker_config {
+    name: "universal8890_linker_config",
+    src: "linker.config.json",
+    vendor: true,
+}

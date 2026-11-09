@@ -441,3 +441,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal8890-common/universal8890-common-vendor.mk)
+
+# Legacy HAL system library dependencies
+PRODUCT_PACKAGES += universal8890_linker_config
+PRODUCT_EXTRA_STUB_LIBRARIES += \
+    android.frameworks.schedulerservice@1.0 \
+    libcamera_client
