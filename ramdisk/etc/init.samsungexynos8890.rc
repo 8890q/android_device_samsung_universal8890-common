@@ -643,6 +643,12 @@ on charger
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor interactive
 
 on fs
+    # Framework CPU policy reader falls back here on this legacy CPUFreq driver.
+    chown root system /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq
+    chmod 0440 /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq
+    chown root system /sys/devices/system/cpu/cpufreq/policy4/cpuinfo_cur_freq
+    chmod 0440 /sys/devices/system/cpu/cpufreq/policy4/cpuinfo_cur_freq
+
     mount_all /vendor/etc/fstab.samsungexynos8890  --early
     swapon_all /vendor/etc/fstab.samsungexynos8890
 
