@@ -45,6 +45,8 @@ allow kernel kernel:capability chown;
 allow kernel self:capability { chown mknod sys_module};
 
 # Allow internal devtmpfs node creation/removal; ueventd labels Android /dev separately.
-allow kernel device:chr_file { create setattr };
+# vfs_getattr() verifies ownership before devtmpfs unlinks a disconnected node.
+allow kernel device:chr_file { create getattr setattr unlink };
 allow kernel device:blk_file { create getattr setattr unlink };
-allow kernel device:dir { write add_name remove_name };
+# delete_path() also attempts to remove the now-unused parent directory.
+allow kernel device:dir { write add_name remove_name rmdir };
