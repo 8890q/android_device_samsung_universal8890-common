@@ -43,3 +43,7 @@ allow kernel tmpfs:dir search;
 
 allow kernel kernel:capability chown;
 allow kernel self:capability { chown mknod sys_module};
+
+# Allow internal devtmpfs node creation; ueventd labels Android /dev separately.
+allow kernel device:chr_file { create setattr };
+allow kernel device:blk_file { create setattr };
