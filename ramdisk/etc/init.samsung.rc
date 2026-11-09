@@ -253,7 +253,7 @@ on post-fs-data
 
 # [ SEC_SELINUX_PORTING_COMMON
     restorecon --recursive /efs
-    restorecon --recursive /cpefs
+    # CPEFS is the write-protected modem NV backup; retain its on-disk labels.
     restorecon /sys/kernel/debug/tracing/trace_marker
 # ] SEC_SELINUX_PORTING_COMMON
 
