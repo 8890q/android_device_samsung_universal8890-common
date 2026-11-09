@@ -18,3 +18,7 @@ vendor_restricted_prop(vendor_audio_config_prop)
 vendor_restricted_prop(vendor_wfd_config_prop)
 
 get_prop({ appdomain bootanim surfaceflinger system_server }, vendor_wfd_config_prop)
+
+# Camera framework reads this vendor-owned compatibility configuration.
+vendor_restricted_prop(vendor_camera_config_prop)
+get_prop({ appdomain cameraserver hal_camera_default }, vendor_camera_config_prop)

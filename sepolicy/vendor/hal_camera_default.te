@@ -26,3 +26,6 @@ vndbinder_use(hal_camera_default)
 
 # libmeminfo startup reads /system/etc/init/netbpfload.rc for the full API level.
 allow hal_camera_default system_file:file { getattr open read };
+
+# The camera gralloc adapter queries the AIDL allocator.
+hal_client_domain(hal_camera_default, hal_graphics_allocator)

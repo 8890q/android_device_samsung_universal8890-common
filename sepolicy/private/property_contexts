@@ -12,3 +12,5 @@ ro.hardware.chipname u:object_r:soc_prop:s0 exact string
 # Legacy fingerprint SoC lookup and current platform SDK reader.
 ro.chipname u:object_r:soc_prop:s0 exact string
 ro.build.version.sdk_full u:object_r:build_prop:s0 exact string
+
+ro.build.PDA u:object_r:exported_default_prop:s0 exact string
