@@ -17,8 +17,8 @@
 
 # VOLD
 /dev/block/platform/155a0000.ufs/by-name/HIDDEN           /preload    ext4      defaults                                                                                                       voldmanaged=preload:auto
-/devices/15740000.dwmmc2/mmc_host/mmc*                    auto        auto      defaults                                                                                                       voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*  auto        auto      defaults                                                                                                       voldmanaged=usb:auto
+/devices/platform/15740000.dwmmc2/mmc_host*                    auto        auto      defaults                                                                                                       voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/platform/15400000.usb/15400000.dwc3*  auto        auto      defaults                                                                                                       voldmanaged=usb:auto
 
 # ZRAM
 /dev/block/zram0                                          none        swap      defaults                                                                                                       zramsize=2147483648,max_comp_streams=8
