@@ -446,4 +446,6 @@ $(call inherit-product, vendor/samsung/universal8890-common/universal8890-common
 PRODUCT_PACKAGES += universal8890_linker_config
 PRODUCT_EXTRA_STUB_LIBRARIES += \
     android.frameworks.schedulerservice@1.0 \
-    libcamera_client
+    libandroid \
+    libcamera_client \
+    libstdc++
