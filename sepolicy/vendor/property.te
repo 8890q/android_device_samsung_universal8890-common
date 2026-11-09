@@ -17,4 +17,4 @@ vendor_internal_prop(vendor_bluetooth_firmware_prop)
 vendor_restricted_prop(vendor_audio_config_prop)
 vendor_restricted_prop(vendor_wfd_config_prop)
 
-get_prop({ appdomain system_server }, vendor_wfd_config_prop)
+get_prop({ appdomain bootanim surfaceflinger system_server }, vendor_wfd_config_prop)

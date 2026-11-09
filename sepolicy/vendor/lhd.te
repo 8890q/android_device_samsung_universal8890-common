@@ -24,3 +24,6 @@ binder_use(lhd)
 
 # Broadcom GPS helper uses netd to mark network sockets.
 unix_socket_connect(lhd, fwmarkd, netd)
+
+# netd receives the socket descriptor in the fwmark request.
+allow netd lhd:fd use;
