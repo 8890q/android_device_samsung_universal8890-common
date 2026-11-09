@@ -1,9 +1,6 @@
 # Boot device
 ro.boot.bootdevice=155a0000.ufs
 
-# BPF
-ro.kernel.ebpf.supported=false
-
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
