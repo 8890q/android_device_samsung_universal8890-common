@@ -30,6 +30,13 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 PRODUCT_CGROUP_V2_SYS_APP_ISOLATION_ENABLED := false
 
+# Select real v1 memory/freezer controllers on the ported Linux 4.4 kernel.
+# The vendor descriptors override the platform defaults by controller name.
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    $(COMMON_PATH)/ramdisk/etc/init.universal8890.cgroups.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.universal8890.cgroups.rc
+
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true

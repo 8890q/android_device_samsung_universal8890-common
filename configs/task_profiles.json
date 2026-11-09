@@ -1,0 +1,35 @@
+{
+  "Attributes": [
+    {
+      "Name": "FreezerState",
+      "Controller": "freezer",
+      "File": "freezer.state"
+    }
+  ],
+  "Profiles": [
+    {
+      "Name": "Frozen",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params": {
+            "Controller": "freezer",
+            "Path": "frozen"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Unfrozen",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params": {
+            "Controller": "freezer",
+            "Path": ""
+          }
+        }
+      ]
+    }
+  ]
+}

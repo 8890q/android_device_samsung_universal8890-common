@@ -1,0 +1,19 @@
+{
+  "Cgroups": [
+    {
+      "Controller": "freezer",
+      "Path": "/dev/freezer",
+      "Mode": "0755",
+      "UID": "system",
+      "GID": "system"
+    },
+    {
+      "Controller": "memory",
+      "Path": "/dev/memcg",
+      "Mode": "0700",
+      "UID": "root",
+      "GID": "system",
+      "Optional": true
+    }
+  ]
+}

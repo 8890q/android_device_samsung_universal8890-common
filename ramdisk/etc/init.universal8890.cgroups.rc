@@ -1,0 +1,11 @@
+# Initialize the v1 freezer controller provided by the Linux 4.4 kernel.
+# This supplies legacy task profiles, not Android's v2 cached-app freezer API.
+on init
+    mkdir /dev/freezer/frozen 0755 system system
+    write /dev/freezer/frozen/freezer.state FROZEN
+    chown system system /dev/freezer/cgroup.procs
+    chmod 0664 /dev/freezer/cgroup.procs
+    chown system system /dev/freezer/frozen/freezer.state
+    chmod 0664 /dev/freezer/frozen/freezer.state
+    chown system system /dev/freezer/frozen/cgroup.procs
+    chmod 0664 /dev/freezer/frozen/cgroup.procs
