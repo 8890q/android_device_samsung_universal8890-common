@@ -11,3 +11,8 @@
 /system/vendor/odm/etc/selinux/odm_keystore2_key_contexts                                 u:object_r:keystore2_key_contexts_file:s0
 /system/vendor/odm/etc/selinux/odm_mac_permissions\.xml                                   u:object_r:mac_perms_file:s0
 /system/vendor/odm/etc/selinux/odm_tee_service_contexts                                   u:object_r:tee_service_contexts_file:s0
+
+# Bionic also reads these ODM account databases through the canonical path.
+# Match the platform's /vendor/odm/etc label without allowing generic vendor files.
+/system/vendor/odm/etc/passwd    u:object_r:vendor_configs_file:s0
+/system/vendor/odm/etc/group     u:object_r:vendor_configs_file:s0
