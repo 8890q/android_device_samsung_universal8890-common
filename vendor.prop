@@ -53,3 +53,6 @@ vendor.powerhal.disp.idle_support=false
 
 # Incremental FS is enabled in the Linux 4.4 port.
 ro.incremental.enable=true
+
+# BPF
+ro.bpf.kver_override=5.4.300
