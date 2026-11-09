@@ -218,3 +218,6 @@
 
 # The power HAL keeps this PM QoS descriptor open for latency hints.
 /dev/cpu_dma_latency 0660 system system
+
+# Set touch boost ownership before the core power HAL starts.
+/sys/devices/virtual/sec/tsp cmd2 0664 system system

@@ -23,3 +23,5 @@ allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms
 # Fingerprint sysfs
 allow hal_fingerprint_default sysfs_fingerprint:dir search;
 allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
+
+get_prop(hal_fingerprint_default, soc_prop)

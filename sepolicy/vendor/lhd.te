@@ -27,3 +27,6 @@ unix_socket_connect(lhd, fwmarkd, netd)
 
 # netd receives the socket descriptor in the fwmark request.
 allow netd lhd:fd use;
+
+# FwmarkServer reads and marks the socket passed by LHD.
+allow netd lhd:tcp_socket { read write getopt setopt };

@@ -8,3 +8,7 @@ audio_hal.period_size u:object_r:audio_config_prop:s0 exact int
 persist.ril.esim.slotswitch u:object_r:radio_prop:s0 exact string
 ro.product_ship u:object_r:exported_default_prop:s0 exact string
 ro.hardware.chipname u:object_r:soc_prop:s0 exact string
+
+# Legacy fingerprint SoC lookup and current platform SDK reader.
+ro.chipname u:object_r:soc_prop:s0 exact string
+ro.build.version.sdk_full u:object_r:build_prop:s0 exact int
