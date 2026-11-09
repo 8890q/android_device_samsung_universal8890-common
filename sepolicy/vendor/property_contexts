@@ -39,3 +39,6 @@ wifi.active.interface            u:object_r:wifi_prop:s0
 wifi.direct.interface            u:object_r:wifi_prop:s0
 wifi.interface                   u:object_r:wifi_prop:s0
 wlan.driver.status               u:object_r:wifi_prop:s0
+
+# Bluetooth controller firmware version
+vendor.bluetooth_fw_ver          u:object_r:vendor_bluetooth_firmware_prop:s0 exact string

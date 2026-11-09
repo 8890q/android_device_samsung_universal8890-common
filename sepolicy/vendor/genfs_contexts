@@ -131,3 +131,30 @@ genfscon sysfs /devices/virtual/android_usb/android0                u:object_r:s
 genfscon sysfs /devices/fimc_is_preprocessor@14020000/video4linux   u:object_r:sysfs_v4l:s0
 
 genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                     u:object_r:sysfs_vmscan:s0
+
+# Canonical platform-device paths on the ported Linux 4.4 kernel.
+# Keep the existing 3.18 paths above for the same hardware interfaces.
+genfscon sysfs /devices/platform/13960000.decon_f                        u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/13900000.dsim/lcd/panel                  u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/13900000.dsim/lcd/panel/mdnie            u:object_r:sysfs_mdnie:s0
+genfscon sysfs /devices/platform/13900000.dsim/backlight/panel            u:object_r:sysfs_backlight_writable:s0
+genfscon sysfs /devices/platform/14d30000.spi/spi_master/spi1/spi1.0/iio:device u:object_r:sysfs_spi_writeable:s0
+genfscon sysfs /devices/platform/14e10000.hsi2c/i2c-4/4-0048/input         u:object_r:sysfs_input:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery            u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/battery/power_supply/ac                 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/battery/power_supply/usb                u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/battery/power_supply/wireless           u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/battery/power_supply/ps                 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/13650000.hsi2c/i2c-1/1-0066/max77854-charger   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/13650000.hsi2c/i2c-1/1-0066/max77854-fuelgauge u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/14e30000.hsi2c/i2c-8/8-0061/power_supply   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/152e0000.mfc0/video4linux/video6/name     u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/152e0000.mfc0/video4linux/video7/name     u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/152e0000.mfc0/video4linux/video8/name     u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/152e0000.mfc0/video4linux/video9/name     u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/bluetooth/rfkill/rfkill0/state            u:object_r:sysfs_bluetooth_writable:s0
+genfscon sysfs /devices/platform/bluetooth/rfkill/rfkill0/type             u:object_r:sysfs_bluetooth_writable:s0
+genfscon sysfs /devices/platform/136d0000.pinctrl/gpio/gpio101             u:object_r:sysfs_lhd:s0
+genfscon sysfs /devices/platform/155a0000.ufs/host0                        u:object_r:sysfs_scsi_host:s0
+genfscon sysfs /devices/platform/155a0000.ufs/host0/power                  u:object_r:sysfs_mmc:s0
+genfscon sysfs /devices/platform/155a0000.ufs/host0/target0:0:0/0:0:0:0/block/sda/queue u:object_r:sysfs_io_sched_tuneable:s0

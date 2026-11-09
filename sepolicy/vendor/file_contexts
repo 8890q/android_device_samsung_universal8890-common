@@ -110,13 +110,13 @@
 /sys/devices/virtual/dsm/max98506(/.*)?          u:object_r:sysfs_codec:s0
 
 # Block/Storage
-/sys/devices/[a-f0-9]+\.ufs/host0/power(/.*)?                                 u:object_r:sysfs_mmc:s0
-/sys/devices/[a-f0-9]+\.ufs/host0/target0:0:0/0:0:0:0/block/sda/queue(/.*)?   u:object_r:sysfs_io_sched_tuneable:s0
-/sys/devices/[0-9]+\.dwmmc[0-9]+/mmc_host/mmc[0-9]+/mmc[0-9]+:[a-z]+/block/mmcblk[0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
+/sys/devices/(platform/)?[a-f0-9]+\.ufs/host0/power(/.*)?                                 u:object_r:sysfs_mmc:s0
+/sys/devices/(platform/)?[a-f0-9]+\.ufs/host0/target0:0:0/0:0:0:0/block/sda/queue(/.*)?   u:object_r:sysfs_io_sched_tuneable:s0
+/sys/devices/(platform/)?[0-9]+\.dwmmc[0-9]+/mmc_host/mmc[0-9]+/mmc[0-9]+:[a-z]+/block/mmcblk[0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
 
 # Bluetooth
-/sys/devices/bluetooth/rfkill/rfkill0/state  u:object_r:sysfs_bluetooth_writable:s0
-/sys/devices/bluetooth/rfkill/rfkill0/type   u:object_r:sysfs_bluetooth_writable:s0
+/sys/devices/(platform/)?bluetooth/rfkill/rfkill0/state  u:object_r:sysfs_bluetooth_writable:s0
+/sys/devices/(platform/)?bluetooth/rfkill/rfkill0/type   u:object_r:sysfs_bluetooth_writable:s0
 /sys/class/rfkill/rfkill0/state              u:object_r:sysfs_bluetooth_writable:s0
 /sys/class/rfkill/rfkill0/type               u:object_r:sysfs_bluetooth_writable:s0
 
@@ -127,10 +127,10 @@
 /sys/firmware/devicetree/base/model_info-system_rev    u:object_r:sysfs_socinfo:s0
 
 # DevFreq
-/sys/devices/[0-9]+\.devfreq_int/devfreq/[0-9]+\.devfreq_int(/.*)?     u:object_r:sysfs_devfreq:s0
-/sys/devices/[0-9]+\.devfreq_disp/devfreq/[0-9]+\.devfreq_disp(/.*)?   u:object_r:sysfs_devfreq:s0
-/sys/devices/[0-9]+\.devfreq_mif/devfreq/[0-9]+\.devfreq_mif(/.*)?     u:object_r:sysfs_devfreq:s0
-/sys/devices/[0-9]+\.devfreq_cam/devfreq/[0-9]+\.devfreq_cam(/.*)?     u:object_r:sysfs_devfreq:s0
+/sys/devices/(platform/)?[0-9]+\.devfreq_int/devfreq/[0-9]+\.devfreq_int(/.*)?     u:object_r:sysfs_devfreq:s0
+/sys/devices/(platform/)?[0-9]+\.devfreq_disp/devfreq/[0-9]+\.devfreq_disp(/.*)?   u:object_r:sysfs_devfreq:s0
+/sys/devices/(platform/)?[0-9]+\.devfreq_mif/devfreq/[0-9]+\.devfreq_mif(/.*)?     u:object_r:sysfs_devfreq:s0
+/sys/devices/(platform/)?[0-9]+\.devfreq_cam/devfreq/[0-9]+\.devfreq_cam(/.*)?     u:object_r:sysfs_devfreq:s0
 
 # Fingerprint
 /sys/devices/virtual/fingerprint/fingerprint(/.*)?  u:object_r:sysfs_fingerprint:s0
@@ -138,17 +138,17 @@
 # GPS
 /sys/devices/soc0/machine                           u:object_r:sysfs_gps_writable:s0
 /sys/devices/soc0/revision                          u:object_r:sysfs_gps_writable:s0
-/sys/devices/139c0000.pinctrl/gpio/gpio137/value    u:object_r:sysfs_gps_writable:s0
+/sys/devices/(platform/)?139c0000.pinctrl/gpio/gpio137/value    u:object_r:sysfs_gps_writable:s0
 
 # Graphics/Panel
-/sys/devices/[0-9]+\.dsim/lcd/panel(/.*)?           u:object_r:sysfs_graphics:s0
+/sys/devices/(platform/)?[0-9]+\.dsim/lcd/panel(/.*)?           u:object_r:sysfs_graphics:s0
 /sys/class/lcd/panel/smart_on                       u:object_r:sysfs_graphics:s0
 
 # Grip
 /sys/devices/virtual/input/input2(/.*)?             u:object_r:sysfs_grip:s0
 
 # GPU
-/sys/devices/[a-f0-9]+\.mali(/.*)?                  u:object_r:sysfs_mali:s0
+/sys/devices/(platform/)?[a-f0-9]+\.mali(/.*)?                  u:object_r:sysfs_mali:s0
 /sys/kernel/gpu/gpu_min_clock                       u:object_r:sysfs_gpuclock:s0
 /sys/kernel/gpu/gpu_max_clock                       u:object_r:sysfs_gpuclock:s0
 
@@ -160,19 +160,19 @@
 
 # IIO
 /sys/bus/iio/devices(/.*)?                                                            u:object_r:sysfs_iio:s0
-/sys/devices/[a-f0-9]+\.adc/iio:device[0-9](/.*)?                                     u:object_r:sysfs_iio:s0
-/sys/devices/[a-f0-9]+\.spi/spi_master/spi[0-9]+/spi[0-9]+\.0/iio:device[0-9]+(/.*)?  u:object_r:sysfs_spi_writeable:s0
+/sys/devices/(platform/)?[a-f0-9]+\.adc/iio:device[0-9](/.*)?                                     u:object_r:sysfs_iio:s0
+/sys/devices/(platform/)?[a-f0-9]+\.spi/spi_master/spi[0-9]+/spi[0-9]+\.0/iio:device[0-9]+(/.*)?  u:object_r:sysfs_spi_writeable:s0
 
 # Lights
-/sys/devices/[0-9]+\.dsim/backlight/panel(/.*)?                                 u:object_r:sysfs_backlight_writable:s0
-/sys/devices/[0-9]+\.hsi2c/i2c-[0-9]+/[0-9]+-[0-9]+/leds-max77854-rgb(/.*)?     u:object_r:sysfs_light:s0
-/sys/devices/[0-9]+\.hsi2c/i2c-[0-9]+/[0-9]+-[0-9]+/s2mpb02-led(/.*)?           u:object_r:sysfs_light:s0
+/sys/devices/(platform/)?[0-9]+\.dsim/backlight/panel(/.*)?                                 u:object_r:sysfs_backlight_writable:s0
+/sys/devices/(platform/)?[0-9]+\.hsi2c/i2c-[0-9]+/[0-9]+-[0-9]+/leds-max77854-rgb(/.*)?     u:object_r:sysfs_light:s0
+/sys/devices/(platform/)?[0-9]+\.hsi2c/i2c-[0-9]+/[0-9]+-[0-9]+/s2mpb02-led(/.*)?           u:object_r:sysfs_light:s0
 
 # mDNIe
-/sys/devices/[0-9]+\.dsim/lcd/panel/mdnie(/.*)                         u:object_r:sysfs_mdnie:s0 
+/sys/devices/(platform/)?[0-9]+\.dsim/lcd/panel/mdnie(/.*)                         u:object_r:sysfs_mdnie:s0
 
 # MFC
-/sys/devices/[a-f0-9]+\.mfc0/video8(/.*)?                              u:object_r:sysfs_mfc:s0
+/sys/devices/(platform/)?[a-f0-9]+\.mfc0/(video4linux/)?video8(/.*)?                              u:object_r:sysfs_mfc:s0
 
 # MFD node
 /sys/module/sec_core/parameters(/.*)?                                  u:object_r:sysfs_sec_mfd:s0
@@ -190,7 +190,7 @@
 /sys/devices/virtual/misc/multipdp(/.*)                                u:object_r:sysfs_multipdp:s0
 
 # Rtc
-/sys/devices/[0-9]+\.hsi2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/s2m-rtc(/.*)    u:object_r:sysfs_rtc:s0
+/sys/devices/(platform/)?[0-9]+\.hsi2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/s2m-rtc(/.*)    u:object_r:sysfs_rtc:s0
 
 # SEC
 /sys/devices/virtual/sec/sec_key(/.*)?            u:object_r:sysfs_sec_key:s0
