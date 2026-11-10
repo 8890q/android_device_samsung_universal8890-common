@@ -86,8 +86,12 @@ mv $BLOB_ROOT/proprietary/vendor/lib64/libsec-ril.so.patched $BLOB_ROOT/propriet
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libwvhidl.so
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
 
-# Remove wpa_supplicant service from wifi.rc
-sed -i "41,48d" $BLOB_ROOT/vendor/etc/init/wifi_sec.rc
+# Remove the stock supplicant service, including when extracting an updated ROM.
+sed -i '/^service wpa_supplicant /,/^[[:space:]]*$/d' "$BLOB_ROOT/vendor/etc/init/wifi_sec.rc"
+
+# macloader needs AID_INET for datagram sockets on the 4.4 kernel.
+sed -i -z 's|service macloader /system/vendor/bin/hw/macloader\n    class main\n    oneshot|service macloader /system/vendor/bin/hw/macloader\n    class main\n    group root inet\n    oneshot|' "$BLOB_ROOT/vendor/etc/init/wifi_sec.rc"
+sed -i -E 's|^[[:space:]]*exec /system/vendor/bin/hw/macloader[[:space:]]*$|    exec - root root inet -- /system/vendor/bin/hw/macloader|' "$BLOB_ROOT/vendor/etc/init/wifi_sec.rc"
 
 # Replace libvndsecril-client with libsecril-client
 "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so $BLOB_ROOT/vendor/lib/libwrappergps.so

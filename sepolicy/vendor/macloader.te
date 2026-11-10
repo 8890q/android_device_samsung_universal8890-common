@@ -1,0 +1,2 @@
+# Set wifi ownership on generated module identity and calibration caches.
+allow macloader self:capability chown;
