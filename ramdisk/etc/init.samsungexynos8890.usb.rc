@@ -48,7 +48,7 @@ on charger && property:ro.debuggable=1
     write /sys/kernel/config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "Conf 1"
     symlink /sys/kernel/config/usb_gadget/g1/functions/ffs.adb /sys/kernel/config/usb_gadget/g1/configs/b.1/ffs.adb
     setprop sys.usb.configfs 2
-    setprop sys.usb.config adb
+    setprop sys.usb.config ${persist.sys.usb.config:-none}
 
 # Used to disable USB when switching states
 on property:sys.usb.config=none
