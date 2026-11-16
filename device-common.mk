@@ -388,7 +388,9 @@ PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota \
     hardware/samsung \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal
 
 # Shims
 PRODUCT_PACKAGES += \
