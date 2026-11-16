@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service.universal8890 \
     android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio-impl \
     libstagefright_softomx \
     libtinycompress \
     libstagefright_softomx_plugin
@@ -186,9 +186,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.samsung \
+    android.hardware.health-service.samsung-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
