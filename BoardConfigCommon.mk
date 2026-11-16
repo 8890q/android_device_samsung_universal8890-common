@@ -68,6 +68,9 @@ TARGET_SCREEN_DENSITY := 560
 # The Exynos gralloc HAL implements mapper 2.1.
 $(call soong_config_set_bool,libui,legacy_gralloc,true)
 
+# The camera HAL uses the legacy ION userspace allocation API.
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE  := ext4
 BOARD_HAS_LARGE_FILESYSTEM := true
