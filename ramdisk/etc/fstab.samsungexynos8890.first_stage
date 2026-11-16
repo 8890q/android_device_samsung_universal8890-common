@@ -1,0 +1,5 @@
+# Android 17 no longer reads the first-stage fstab from the device tree.
+# Keep the early SYSTEM/EFS mounts available before /vendor/etc is accessible.
+#<src>                                                <mnt_point> <type> <mnt_flags and options>                                                                                                       <fs_mgr_flags>
+/dev/block/platform/155a0000.ufs/by-name/SYSTEM           /system     ext4   ro,errors=panic,noload                                                                                                        wait,first_stage_mount
+/dev/block/platform/155a0000.ufs/by-name/EFS              /efs        ext4   noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,no_sehash_xattr,errors=panic                       wait,check,first_stage_mount

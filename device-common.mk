@@ -28,6 +28,10 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+# The first-stage fstab must be readable before SYSTEM supplies /vendor.
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos8890.first_stage:$(TARGET_COPY_OUT_RAMDISK)/fstab.samsungexynos8890
+
 PRODUCT_CGROUP_V2_SYS_APP_ISOLATION_ENABLED := false
 
 # Select real v1 memory/freezer controllers on the ported Linux 4.4 kernel.
