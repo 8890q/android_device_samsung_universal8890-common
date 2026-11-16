@@ -95,7 +95,7 @@ genfscon sysfs /devices/virtual/misc/ion                    u:object_r:sysfs_ion
 genfscon sysfs /devices/136d0000.pinctrl/gpio/gpio101       u:object_r:sysfs_lhd:s0
 
 # MMC block device cache files
-genfscon sysfs /devices/virtual/bdi/254:0/read_ahead_kb     u:object_r:sysfs_block:s0
+genfscon sysfs /devices/virtual/bdi/254:0/read_ahead_kb     u:object_r:vendor_sysfs_bdi:s0
 
 genfscon sysfs /devices/15660000.pcie0                      u:object_r:sysfs_pcie:s0
 
