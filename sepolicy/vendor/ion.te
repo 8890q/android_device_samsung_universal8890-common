@@ -5,3 +5,9 @@ allow hal_graphics_allocator_default ion_device:chr_file rw_file_perms;
 # Android 17 dropped these platform rules with legacy ION support.
 allow bootanim ion_device:chr_file rw_file_perms;
 allow { surfaceflinger hal_graphics_composer_default } ion_device:chr_file r_file_perms;
+
+# Preserve Android 16 ION access for screen capture and Codec2 clients.
+# Codec2 software codecs allocate linear buffers in the calling process.
+allow { adbd shell } ion_device:chr_file rw_file_perms;
+allow { appdomain -isolated_app_all } ion_device:chr_file r_file_perms;
+allow { hal_codec2_client hal_codec2_server } ion_device:chr_file r_file_perms;
