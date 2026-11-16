@@ -65,6 +65,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Display
 TARGET_SCREEN_DENSITY := 560
+# The Exynos gralloc HAL implements mapper 2.1.
+$(call soong_config_set_bool,libui,legacy_gralloc,true)
 
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE  := ext4
