@@ -89,6 +89,7 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 
 # Graphics
+vendor/lib/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_mali.so
 
 # LPM - from N975FXXU6ETLL
